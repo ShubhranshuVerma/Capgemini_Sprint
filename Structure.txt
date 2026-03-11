@@ -1,0 +1,20 @@
+cloud-finops-pipeline/
+│
+├── data/
+│   ├── raw/
+│   ├── cleaned/
+│   └── transformed/
+│
+├── scripts/
+│   ├── generate_dataset.py
+│   ├── cleaning_pipeline.py
+│   ├── transformations.py
+│   └── analytics_metrics.py
+│
+├── dashboards/
+│   └── plots.py
+│
+├── notebooks/
+│   └── exploration.ipynb
+│
+└── README.md
