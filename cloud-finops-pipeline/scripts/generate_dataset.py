@@ -5,25 +5,39 @@ from datetime import datetime, timedelta, timezone
 rows = 10000
 
 services = ["Compute","Storage","Database","AI","Networking"]
-regions = ["us-east-1","eu-west-1","ap-south-1"]
-units = ["hours","seconds","minutes"]
+
+regions = [
+    "US East 1",
+    "us-east-1",
+    "ap south 1",
+    "eu-west-1"
+]
+
+units = ["hours","minutes","seconds"]
+
 pricing_types = ["on-demand","reserved","spot"]
 
-departments = ["Engineering","Finance","Sales","Research"]
-projects = ["Project-A","Project-B","Project-C"]
+purchase_types = ["reserved","spot","on-demand"]
+
+departments = ["Engineering","Finance","Sales","Research",None]
+
+projects = ["Project-A","Project-B","Project-C",None]
 
 owners = ["alice","bob","charlie","david",None]
+
 envs = ["prod","dev","test",None]
 
 currencies = ["USD","EUR","INR"]
 
-# different timezone offsets
+severity_levels = ["LOW","MEDIUM","HIGH",None]
+
+# timezone offsets
 timezones = [
     timezone.utc,
-    timezone(timedelta(hours=5, minutes=30)),   # India
-    timezone(timedelta(hours=-4)),              # US East
-    timezone(timedelta(hours=1)),               # Europe
-    timezone(timedelta(hours=9))                # Japan
+    timezone(timedelta(hours=5,minutes=30)),
+    timezone(timedelta(hours=-4)),
+    timezone(timedelta(hours=1)),
+    timezone(timedelta(hours=9))
 ]
 
 start = datetime(2026,1,1)
@@ -49,43 +63,46 @@ for i in range(rows):
 
         "Usage_ID": f"U{i}",
 
+        # account variations
         "Account": random.choice([
             "acct-001",
             "ACCT-002",
-            " acct-003 "
+            " acct003 ",
+            "acct001"
         ]),
 
+        # timestamp variations
         "TS": random.choice([
-            ts.isoformat(),                  # timezone timestamp
-            ts.strftime("%Y/%m/%d %H:%M"),   # messy timestamp
+            ts.isoformat(),
+            ts.strftime("%Y/%m/%d %H:%M"),
             ts.strftime("%Y-%m-%d %H:%M:%S"),
-            "2026/03/10 25:05"               # invalid
+            "2026/03/10 25:05"
         ]),
 
         "Service": random.choice(services),
 
+        # inconsistent SKU naming
         "SKU": random.choice([
             "vm_std_4",
             "VM-STD-4",
-            "db_gp_2"
+            "db_gp_2",
+            "DB-GP-2"
         ]),
 
         "Usage": round(usage,2),
 
         "Unit": random.choice(units),
 
+        # cost with symbols
         "Cost": random.choice([
             f"${round(cost,2)}",
-            f"₹{round(cost,2)}"
+            f"₹{round(cost,2)}",
+            f"{round(cost,2)}"
         ]),
 
         "Currency": random.choice(currencies),
 
-        "Region": random.choice([
-            "US East 1",
-            "us-east-1",
-            "ap south 1"
-        ]),
+        "Region": random.choice(regions),
 
         "Free_Tier_Flag": random.choice([True,False]),
 
@@ -93,6 +110,7 @@ for i in range(rows):
 
         "Tag_Env": random.choice(envs),
 
+        # resource ids valid and invalid
         "Resource_ID": random.choice([
             f"R{random.randint(1000,9999)}",
             f"resource-{random.randint(1000,9999)}"
@@ -106,14 +124,18 @@ for i in range(rows):
             "Customer reported latency issue"
         ]),
 
+        "Severity": random.choice(severity_levels),
+
         "Incident_ID": random.choice([
             f"I-{random.randint(1,100)}",
             None
         ]),
 
-        "Price_Version": random.choice(["v1","v2","v3"]),
+        "Price_Version": random.choice(["v1","v2","v3",None]),
 
         "Pricing_Type": random.choice(pricing_types),
+
+        "Purchase_Type": random.choice(purchase_types),
 
         "Department": random.choice(departments),
 
@@ -130,18 +152,12 @@ for i in range(rows):
             None
         ]),
 
-        "FX_Rate": random.uniform(70,90),
-
-        "Purchase_Type": random.choice([
-            "reserved",
-            "spot",
-            "on-demand"
-        ])
+        "FX_Rate": random.uniform(70,90)
     })
 
 df = pd.DataFrame(data)
 
-# introduce duplicates
+# create duplicate rows intentionally
 df = pd.concat([df, df.sample(200)])
 
 df.to_csv("../data/raw/cloud_case_study_dataset.csv", index=False)

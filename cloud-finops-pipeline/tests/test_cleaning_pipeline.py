@@ -25,10 +25,10 @@ def test_sku_uppercase():
 
 # 5 Usage normalization
 def test_usage_positive():
-    assert (df["Usage"] >= 0).all()
+    assert (df["Usage_seconds"] >= 0).all()
 
 
-# 6 Currency normalization
+# 6 Cost normalization
 def test_cost_numeric():
     assert df["Cost"].dtype != object
 
@@ -50,12 +50,12 @@ def test_spike_column_exists():
 
 # 10 Tag normalization
 def test_tags_exist():
-    assert df["Tag_Owner"].notnull().any()
+    assert df["Tag_Owner"].notnull().all()
 
 
 # 11 Resource ID validation
 def test_resource_id_format():
-    assert df["Resource_ID"].notnull().all()
+    assert df["Resource_ID"].str.startswith("R-").all()
 
 
 # 12 PII masking
@@ -63,19 +63,19 @@ def test_ticket_masking():
     assert df["Ticket_Text"].str.contains("MASKED").any()
 
 
-# 13 Incident timestamps
+# 13 Incident linkage
 def test_incident_exists():
-    assert df["Incident_ID"].notnull().any()
+    assert df["Incident_ID"].notnull().all()
 
 
-# 14 Pricing version
+# 14 Price version
 def test_price_version():
     assert df["Price_Version"].notnull().all()
 
 
-# 15 Currency normalization
-def test_currency_uppercase():
-    assert df["Currency"].str.isupper().all()
+# 15 FX conversion
+def test_cost_inr_exists():
+    assert "Cost_INR" in df.columns
 
 
 # 16 Idle resource detection
@@ -83,7 +83,7 @@ def test_idle_column():
     assert "Idle_Resource" in df.columns
 
 
-# 17 Pricing model normalization
+# 17 Pricing normalization
 def test_pricing_model():
     assert df["Pricing_Type"].str.islower().all()
 
@@ -101,4 +101,3 @@ def test_sla_event():
 # 20 Log skew correction
 def test_log_skew():
     assert df["Log_Skew_Seconds"].notnull().all()
-

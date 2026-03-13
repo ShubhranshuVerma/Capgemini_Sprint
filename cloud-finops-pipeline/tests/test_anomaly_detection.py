@@ -13,7 +13,7 @@ def test_anomaly_columns_exist():
     df = pd.read_csv("data/transformed/anomaly_spikes.csv")
 
     assert "Cost_INR" in df.columns
-    assert "Usage" in df.columns
+    assert "Usage_seconds" in df.columns
 
 
 def test_anomaly_cost_spikes():

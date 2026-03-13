@@ -19,8 +19,7 @@ def test_dataset_columns():
         "Tag_Env","Resource_ID","Ticket_ID","Ticket_Text",
         "Incident_ID","Price_Version","Pricing_Type","Department",
         "Project","SLA_Event","Log_Skew_Seconds","FX_Rate",
-        "Purchase_Type","Anomaly_Flag","Duplicate_Flag",
-        "Cost_Allocation_Valid"
+        "Purchase_Type"
 
     ]
 

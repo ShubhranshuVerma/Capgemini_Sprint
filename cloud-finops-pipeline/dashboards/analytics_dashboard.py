@@ -1,14 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 OUTPUT = "./output/"
+os.makedirs(OUTPUT, exist_ok=True)
 
 sns.set(style="whitegrid")
-
-# -----------------------------
-# Load transformed datasets
-# -----------------------------
 
 daily = pd.read_csv("../data/transformed/daily_cost_cube.csv")
 monthly = pd.read_csv("../data/transformed/monthly_cost_cube.csv")
@@ -18,36 +16,28 @@ unit_cost = pd.read_csv("../data/transformed/unit_cost_metrics.csv")
 carbon = pd.read_csv("../data/transformed/carbon_estimates.csv")
 incident = pd.read_csv("../data/transformed/incident_metrics.csv")
 
-# -----------------------------
-# 1 Daily Cost Trend
-# -----------------------------
-
+# Daily cost trend
 daily["TS"] = pd.to_datetime(daily["TS"])
+daily_total = daily.groupby("TS")["Cost_INR"].sum().reset_index()
 
 plt.figure(figsize=(10,5))
-sns.lineplot(data=daily, x="TS", y="Cost_INR")
+sns.lineplot(data=daily_total, x="TS", y="Cost_INR")
 plt.title("Daily Cost Trend")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.savefig(OUTPUT + "daily_cost_trend.png")
 plt.close()
 
-# -----------------------------
-# 2 Monthly Cost by Service
-# -----------------------------
-
+# Monthly cost
 plt.figure(figsize=(10,5))
-sns.barplot(data=monthly, x="TS", y="Cost_INR")
-plt.title("Monthly Cost")
+sns.barplot(data=monthly, x="TS", y="Cost_INR", hue="Service")
+plt.title("Monthly Cost by Service")
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.savefig(OUTPUT + "monthly_cost.png")
 plt.close()
 
-# -----------------------------
-# 3 Department Chargeback
-# -----------------------------
-
+# Chargeback
 plt.figure(figsize=(10,5))
 sns.barplot(data=chargeback, x="Department", y="Cost_INR")
 plt.title("Department Chargeback")
@@ -56,21 +46,15 @@ plt.tight_layout()
 plt.savefig(OUTPUT + "chargeback.png")
 plt.close()
 
-# -----------------------------
-# 4 Cost Anomaly Detection
-# -----------------------------
-
+# Anomaly detection
 plt.figure(figsize=(8,5))
-sns.scatterplot(data=anomaly, x="Usage_seconds", y="Cost_INR")
-plt.title("Cost Anomaly Detection")
+sns.scatterplot(data=anomaly, x="Usage_seconds", y="Cost_INR", hue="Service")
+plt.title("Cost Anomalies")
 plt.tight_layout()
 plt.savefig(OUTPUT + "cost_anomalies.png")
 plt.close()
 
-# -----------------------------
-# 5 Unit Cost Metrics
-# -----------------------------
-
+# Unit cost
 plt.figure(figsize=(8,5))
 sns.barplot(data=unit_cost, x="Service", y="Unit_Cost")
 plt.title("Unit Cost by Service")
@@ -79,10 +63,7 @@ plt.tight_layout()
 plt.savefig(OUTPUT + "unit_cost.png")
 plt.close()
 
-# -----------------------------
-# 6 Carbon Emissions by Region
-# -----------------------------
-
+# Carbon emissions
 plt.figure(figsize=(8,5))
 sns.barplot(data=carbon, x="Region", y="carbon")
 plt.title("Carbon Emissions by Region")
@@ -90,13 +71,12 @@ plt.tight_layout()
 plt.savefig(OUTPUT + "carbon_emissions.png")
 plt.close()
 
-# -----------------------------
-# 7 MTTR Metrics
-# -----------------------------
+# MTTR
+incident = incident.sort_values("MTTR_minutes", ascending=False).head(20)
 
 plt.figure(figsize=(10,5))
 sns.barplot(data=incident, x="Incident_ID", y="MTTR_minutes")
-plt.title("Incident MTTR")
+plt.title("Top Incident MTTR")
 plt.xticks(rotation=90)
 plt.tight_layout()
 plt.savefig(OUTPUT + "mttr_metrics.png")

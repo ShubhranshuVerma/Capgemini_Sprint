@@ -1,160 +1,191 @@
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LinearRegression
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import KMeans
 
-INPUT="../data/cleaned/cleaned_dataset.csv"
-OUT="../data/transformed/"
+INPUT = "../data/cleaned/cleaned_dataset.csv"
+OUT = "../data/transformed/"
 
-df=pd.read_csv(INPUT)
+df = pd.read_csv(INPUT)
+df["TS"] = pd.to_datetime(df["TS"])
 
-df["TS"]=pd.to_datetime(df["TS"])
+# --------------------------------------------------
+# 1. Daily & monthly cost/usage cubes
+# --------------------------------------------------
 
-# 1 Daily cube
-daily=df.groupby(
-[df["TS"].dt.date,"Service","Region"]
+daily_cube = df.groupby(
+    [df["TS"].dt.date, "Service", "SKU", "Region"]
 ).agg(
-Cost_INR=("Cost_INR","sum"),
-Usage=("Usage_seconds","sum")
+    Cost_INR=("Cost_INR","sum"),
+    Usage_seconds=("Usage_seconds","sum")
 ).reset_index()
 
-daily.to_csv(OUT+"daily_cost_cube.csv",index=False)
+monthly_cube = df.groupby(
+    [df["TS"].dt.to_period("M"), "Service", "SKU", "Region"]
+).agg(
+    Cost_INR=("Cost_INR","sum"),
+    Usage_seconds=("Usage_seconds","sum")
+).reset_index()
 
-# 2 Monthly cube
-monthly=df.groupby(
-[df["TS"].dt.to_period("M"),"Service"]
+# --------------------------------------------------
+# 2. Chargeback / showback
+# --------------------------------------------------
+
+chargeback = df.groupby(
+    ["Department","Project"]
 )["Cost_INR"].sum().reset_index()
 
-monthly.to_csv(OUT+"monthly_cost_cube.csv",index=False)
+# --------------------------------------------------
+# 3. Reserved / savings plan utilization
+# --------------------------------------------------
 
-# 3 Chargeback
-chargeback=df.groupby(
-["Department","Project"]
+ri_utilization = df.groupby("Purchase_Type").size().reset_index(name="count")
+
+# --------------------------------------------------
+# 4. Idle / rightsizing recommendations
+# --------------------------------------------------
+
+rightsizing = df[df["Idle_Resource"] == True]
+
+# --------------------------------------------------
+# 5. SRE KPIs (SLA attainment)
+# --------------------------------------------------
+
+sre_kpis = df.groupby("Service")["SLA_Event"].value_counts().unstack(fill_value=0)
+
+# --------------------------------------------------
+# 6. Incident MTTR / MTTA
+# --------------------------------------------------
+
+incident = df.groupby("Incident_ID")["TS"].agg(["min","max"]).reset_index()
+
+incident["MTTR_minutes"] = (
+    incident["max"] - incident["min"]
+).dt.total_seconds()/60
+
+# --------------------------------------------------
+# 7. Cost anomaly features
+# --------------------------------------------------
+
+anomalies = df[df["Spike_Flag"] == True]
+
+# --------------------------------------------------
+# 8. Unit cost normalization
+# --------------------------------------------------
+
+df["Unit_Cost"] = df["Cost_INR"] / df["Usage_seconds"].replace(0,np.nan)
+
+unit_cost = df.groupby("Service")["Unit_Cost"].mean().reset_index()
+
+# --------------------------------------------------
+# 9. Carbon footprint estimates
+# --------------------------------------------------
+
+df["carbon"] = df["Usage_seconds"] * 0.0000002
+
+carbon = df.groupby(
+    ["Region","Service"]
+)["carbon"].sum().reset_index()
+
+# --------------------------------------------------
+# 10. Cost forecast (trend)
+# --------------------------------------------------
+
+forecast = df.groupby(
+    df["TS"].dt.month
 )["Cost_INR"].sum().reset_index()
 
-chargeback.to_csv(OUT+"chargeback.csv",index=False)
+# --------------------------------------------------
+# 11. Tag completeness scorecards
+# --------------------------------------------------
 
-# 4 Reserved utilization
-reserved=df.groupby("Purchase_Type").size().reset_index(name="count")
-
-reserved.to_csv(OUT+"reserved_utilization.csv",index=False)
-
-# 5 Rightsizing
-rightsizing=df[df["Idle_Resource"]==True]
-
-rightsizing.to_csv(OUT+"rightsizing.csv",index=False)
-
-# 6 SRE KPIs
-sre=df.groupby("Service")["SLA_Event"].value_counts().unstack(fill_value=0)
-
-sre.to_csv(OUT+"sre_kpis.csv")
-
-# 7 MTTR
-incident=df.groupby("Incident_ID")["TS"].agg(["min","max"]).reset_index()
-
-incident["MTTR_minutes"]=(incident["max"]-incident["min"]).dt.total_seconds()/60
-
-incident.to_csv(OUT+"incident_metrics.csv",index=False)
-
-# 8 Anomaly detection
-anomalies=df[df["Spike_Flag"]==True]
-
-anomalies.to_csv(OUT+"anomaly_spikes.csv",index=False)
-
-# 9 Unit cost
-df["Unit_Cost"]=df["Cost_INR"]/df["Usage_seconds"].replace(0,np.nan)
-
-unit=df.groupby("Service")["Unit_Cost"].mean().reset_index()
-
-unit.to_csv(OUT+"unit_cost_metrics.csv",index=False)
-
-# 10 Carbon
-df["carbon"]=df["Usage_seconds"]*0.0000002
-
-carbon=df.groupby("Region")["carbon"].sum().reset_index()
-
-carbon.to_csv(OUT+"carbon_estimates.csv",index=False)
-
-# 11 Forecast
-forecast_df=df.groupby(df["TS"].dt.month)["Cost_INR"].sum().reset_index()
-
-X=forecast_df[["TS"]]
-y=forecast_df["Cost_INR"]
-
-model=LinearRegression()
-model.fit(X,y)
-
-future=pd.DataFrame({"TS":[13,14,15]})
-future["Cost_INR"]=model.predict(future)
-
-forecast=pd.concat([forecast_df,future])
-
-forecast.to_csv(OUT+"cost_forecast.csv",index=False)
-
-# 12 Tag scorecards
-tag_score=pd.DataFrame({
-
-"Tag":["Owner","Env"],
-"Missing":[
-df["Tag_Owner_Missing"].sum(),
-df["Tag_Env_Missing"].sum()
-]
-
+tag_score = pd.DataFrame({
+    "Tag":["Tag_Owner","Tag_Env"],
+    "Missing_Count":[
+        (df["Tag_Owner"]=="unknown").sum(),
+        (df["Tag_Env"]=="unknown").sum()
+    ]
 })
 
-tag_score.to_csv(OUT+"tag_scorecards.csv",index=False)
+# --------------------------------------------------
+# 12. FinOps KPIs
+# --------------------------------------------------
 
-# 13 FinOps KPIs
-finops=df.groupby("Service")["Cost_INR"].sum().reset_index()
+finops_kpis = df.groupby("Service")["Cost_INR"].sum().reset_index()
 
-finops.to_csv(OUT+"finops_kpis.csv",index=False)
+# --------------------------------------------------
+# 13. Optimization backlog
+# --------------------------------------------------
 
-# 14 Optimization backlog
-optimization=df[df["Idle_Resource"]==True]
+optimization_backlog = df[df["Idle_Resource"] == True]
 
-optimization.to_csv(OUT+"optimization_backlog.csv",index=False)
+# --------------------------------------------------
+# 14. Benchmark comparison
+# --------------------------------------------------
 
-# 15 Benchmark comparison
-benchmark=df.groupby("Service")["Cost_INR"].mean().reset_index()
+benchmark = df.groupby("Service")["Cost_INR"].mean().reset_index()
 
-benchmark.to_csv(OUT+"benchmark.csv",index=False)
+# --------------------------------------------------
+# 15. Support ticket topics
+# --------------------------------------------------
 
-# 16 Ticket clustering
-vectorizer=TfidfVectorizer(stop_words="english")
+ticket_topics = df.groupby("Ticket_ID").size().reset_index(name="count")
 
-X=vectorizer.fit_transform(df["Ticket_Text"])
+# --------------------------------------------------
+# 16. Churn signals
+# --------------------------------------------------
 
-kmeans=KMeans(n_clusters=5,random_state=42)
+churn = df.groupby("Account")["Usage_seconds"].mean().reset_index()
 
-df["Ticket_Topic"]=kmeans.fit_predict(X)
+# --------------------------------------------------
+# 17. Unit economics
+# --------------------------------------------------
 
-topics=df.groupby("Ticket_Topic").size().reset_index(name="count")
+unit_economics = df.groupby("Service")["Cost_INR"].sum().reset_index()
 
-topics.to_csv(OUT+"ticket_topics.csv",index=False)
+# --------------------------------------------------
+# 18. Multi-cloud view
+# --------------------------------------------------
 
-# 17 Churn signals
-churn=df.groupby("Account")["Usage_seconds"].mean().reset_index()
+multi_cloud = df.groupby("Region")["Cost_INR"].sum().reset_index()
 
-churn.to_csv(OUT+"churn_signals.csv",index=False)
+# --------------------------------------------------
+# 19. Security event correlation
+# --------------------------------------------------
 
-# 18 Unit economics
-economics=df.groupby("Service")["Cost_INR"].sum().reset_index()
-
-economics.to_csv(OUT+"unit_economics.csv",index=False)
-
-# 19 Multi cloud view
-cloud=df.groupby("Region")["Cost_INR"].sum().reset_index()
-
-cloud.to_csv(OUT+"multi_cloud_view.csv",index=False)
-
-# 20 Security correlation
-security=df[df["SLA_Event"]!="NONE"]
-
-security_summary=security.groupby(
-["Region","Service"]
+security = df[df["SLA_Event"] != "NONE"].groupby(
+    ["Region","Service"]
 ).size().reset_index(name="Security_Event_Count")
 
-security_summary.to_csv(OUT+"security_correlation.csv",index=False)
+# --------------------------------------------------
+# 20. Public dashboard extracts
+# --------------------------------------------------
 
-print("Transformation pipeline completed successfully")
+dashboard_extract = df[[
+    "Account","Service","Cost_INR","Region","TS"
+]]
+
+# --------------------------------------------------
+# Save outputs
+# --------------------------------------------------
+
+daily_cube.to_csv(OUT+"daily_cost_cube.csv",index=False)
+monthly_cube.to_csv(OUT+"monthly_cost_cube.csv",index=False)
+chargeback.to_csv(OUT+"chargeback.csv",index=False)
+ri_utilization.to_csv(OUT+"ri_utilization.csv",index=False)
+rightsizing.to_csv(OUT+"rightsizing.csv",index=False)
+incident.to_csv(OUT+"incident_metrics.csv",index=False)
+anomalies.to_csv(OUT+"anomaly_spikes.csv",index=False)
+unit_cost.to_csv(OUT+"unit_cost_metrics.csv",index=False)
+carbon.to_csv(OUT+"carbon_estimates.csv",index=False)
+forecast.to_csv(OUT+"cost_forecast.csv",index=False)
+tag_score.to_csv(OUT+"tag_scorecards.csv",index=False)
+finops_kpis.to_csv(OUT+"finops_kpis.csv",index=False)
+optimization_backlog.to_csv(OUT+"optimization_backlog.csv",index=False)
+benchmark.to_csv(OUT+"benchmark.csv",index=False)
+ticket_topics.to_csv(OUT+"ticket_topics.csv",index=False)
+churn.to_csv(OUT+"churn_signals.csv",index=False)
+unit_economics.to_csv(OUT+"unit_economics.csv",index=False)
+multi_cloud.to_csv(OUT+"multi_cloud_view.csv",index=False)
+security.to_csv(OUT+"security_correlation.csv",index=False)
+dashboard_extract.to_csv(OUT+"dashboard_extract.csv",index=False)
+
+print("All 20 transformation scenarios executed successfully.")

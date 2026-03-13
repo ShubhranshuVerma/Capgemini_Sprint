@@ -1,6 +1,6 @@
 Service,DEGRADED,NONE,OUTAGE
-Ai,184,162,175
-Compute,173,163,167
-Database,155,148,151
-Networking,176,183,188
-Storage,160,175,166
+AI,165,168,139
+Compute,175,166,140
+Database,191,163,156
+Networking,172,164,178
+Storage,165,153,150
