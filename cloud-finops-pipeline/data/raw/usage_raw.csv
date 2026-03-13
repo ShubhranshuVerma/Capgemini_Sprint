@@ -1,0 +1,801 @@
+Usage_ID,Account,TS,Service,SKU,Usage,Unit,Cost,Region,Ticket_ID
+U6000, acct-001 ,2026-04-03 05:46+00:00,Database,DB-gp_2,12958,min,₹ 474.22,ap-south-1,t-77
+U6001,ACCT-002,2026/07/22 20:44,Networking,STORAGE-prem,4459,seconds,₹ 1126.16,ap-south 1,T-12
+U6002, acct-001 ,2026-10-03 02:14+00:00,AI,VM-STD-4,3982,sec,₹ 365.62,us-east 1,T-45
+U6003, acct-001 ,2026-06-13 17:07+00:00,Database,VM-STD-4,16040,seconds,₹ 1083.85,ap-south 1,T-12
+U6004,ACCT-002,2026-01-13 10:30:00,Compute,vm_std_4,17099,hr,₹ 192.56,ap-south-1,T-45
+U6005,ACCT-004,2026/08/18 07:09,Storage,vm_std_4,5091,hr,₹ 129.81,ap-south-1,t-33
+U6006, acct-001 ,2026-09-14 22:30+00:00,Networking,vm_std_4,9422,min,₹ 510.53,us-east 1,T-12
+U6007, acct-001 ,2026-08-13 09:24:00,Compute,VM-STD-4,16132,seconds,₹ 1537.65,ap-south-1,t-33
+U6008,acct-003,2026-08-31 01:21:00,Database,VM-std_4,623950,hr,₹ 38426.799999999996,AP-SOUTH-1,t-77
+U6009,acct-003,2026-01-04 04:37+00:00,Storage,DB-gp_2,12166,sec,₹ 807.1,us-east 1,T-12
+U6010,ACCT-004,2026-01-12 00:09+00:00,Database,vm_std_4,6399,min,₹ 583.59,ap-south-1,t-33
+U6011,ACCT-004,2026-10-27 18:07+00:00,AI,VM-std_4,12332,min,₹ 368.27,us-east 1,t-77
+U6012,ACCT-002,2026-02-11 16:34+00:00,AI,VM-STD-4,425,seconds,₹ 817.6,us-east 1,T-12
+U6013,acct-003,2026-06-11 09:32:00,Storage,STORAGE-prem,12235,sec,₹ 836.27,ap-south-1,t-33
+U6014, acct-001 ,2026-07-13 14:15:00,AI,VM-STD-4,3177,seconds,₹ 1107.0,us-east 1,T-45
+U6015,ACCT-004,2026-02-17 01:09+00:00,Storage,DB-gp_2,15438,sec,₹ 247.17,AP-SOUTH-1,t-77
+U6016, acct-001 ,2026/01/01 00:24,Storage,vm_std_4,16599,hr,₹ 1964.36,us-east 1,T-12
+U6017, acct-001 ,2026-06-03 09:50:00,Networking,DB-gp_2,6298,hr,₹ 1210.62,AP-SOUTH-1,T-12
+U6018, acct-001 ,2026-09-26 13:35:00,Compute,STORAGE-prem,2603,min,₹ 1738.21,us-east 1,t-77
+U6019,ACCT-002,2026-09-07 12:33+00:00,Compute,vm_std_4,14350,sec,₹ 1708.01,us-east 1,T-45
+U6020,acct-003,2026/10/11 07:36,AI,vm_std_4,10689,sec,₹ 1550.18,AP-SOUTH-1,T-12
+U6021,ACCT-002,2026-10-21 10:57+00:00,Networking,vm_std_4,9353,sec,₹ 1889.22,ap-south-1,t-33
+U6022,acct-003,2026-05-13 16:47+00:00,Storage,VM-STD-4,9651,seconds,₹ 318.61,AP-SOUTH-1,T-45
+U6023,ACCT-004,2026-11-28 04:26:00,AI,STORAGE-prem,8628,hr,₹ 1219.93,us-east 1,T-45
+U6024,acct-003,2026-01-18 09:51+00:00,Compute,STORAGE-prem,17501,sec,₹ 1174.29,ap-south-1,t-77
+U6025,acct-003,2026-10-10 22:46:00,Networking,vm_std_4,16547,min,₹ 1556.62,AP-SOUTH-1,t-33
+U6026, acct-001 ,2026-01-09 17:12:00,Compute,DB-gp_2,18127,min,₹ 1618.84,us-east 1,t-77
+U6027,ACCT-004,2026/04/24 23:57,Storage,VM-STD-4,17143,hr,₹ 870.72,AP-SOUTH-1,T-12
+U6028,ACCT-002,2026-12-12 06:19+00:00,Compute,STORAGE-prem,8276,sec,₹ 1731.35,us-east 1,T-12
+U6029,ACCT-004,2026-05-10 21:55:00,AI,VM-std_4,1411,seconds,₹ 131.57,AP-SOUTH-1,T-12
+U6030,ACCT-002,2026-04-02 22:56:00,Storage,DB-gp_2,6363,sec,₹ 1196.17,ap-south 1,T-12
+U6031,acct-003,2026/10/01 14:32,Database,VM-STD-4,16951,sec,₹ 1499.33,ap-south-1,t-33
+U6032, acct-001 ,2026/03/29 01:44,Networking,VM-STD-4,5072,min,₹ 1344.71,AP-SOUTH-1,t-33
+U6033,acct-003,2026-03-04 07:18:00,Database,VM-STD-4,18138,sec,₹ 844.63,AP-SOUTH-1,T-12
+U6034,ACCT-004,2026/10/23 14:30,AI,VM-std_4,11926,min,₹ 1383.81,ap-south 1,T-45
+U6035, acct-001 ,2026-02-17 19:26+00:00,Storage,VM-std_4,14775,sec,₹ 651.01,us-east 1,T-12
+U6036,acct-003,2026-03-20 03:56:00,Database,VM-std_4,10572,min,₹ 1258.55,ap-south-1,t-33
+U6037, acct-001 ,2026-08-25 21:30:00,AI,STORAGE-prem,6020,hr,₹ 528.87,AP-SOUTH-1,T-12
+U6038,acct-003,2026/05/16 15:29,AI,DB-gp_2,12602,seconds,₹ 541.47,ap-south-1,t-77
+U6039,ACCT-004,2026-07-05 08:08:00,Database,vm_std_4,18416,min,₹ 1418.34,ap-south-1,t-77
+U6040,ACCT-004,2026-03-22 21:30:00,Storage,VM-std_4,10536,min,₹ 311.44,ap-south 1,t-33
+U6041,ACCT-002,2026-06-27 22:58:00,Database,VM-std_4,6658,seconds,₹ 1779.96,ap-south-1,t-33
+U6042,ACCT-004,2026/07/04 14:40,Networking,DB-gp_2,15836,min,₹ 1822.22,us-east 1,t-33
+U6043,ACCT-004,2026-04-16 02:10+00:00,AI,VM-std_4,3204,hr,₹ 1430.79,AP-SOUTH-1,T-45
+U6044,ACCT-004,2026/10/27 09:01,AI,VM-STD-4,13530,min,₹ 811.24,us-east 1,t-33
+U6045,acct-003,2026-02-05 23:36:00,Database,VM-STD-4,9757,seconds,₹ 65.52,us-east 1,t-33
+U6046, acct-001 ,2026/06/14 02:26,Storage,STORAGE-prem,4636,hr,₹ 1290.25,us-east 1,T-45
+U6047,acct-003,2026/07/02 00:23,Storage,vm_std_4,6110,seconds,₹ 1095.33,us-east 1,t-33
+U6048,ACCT-004,2026/04/22 03:09,Networking,VM-std_4,19317,sec,₹ 1985.11,ap-south 1,t-33
+U6049,acct-003,2026-09-22 05:18+00:00,AI,DB-gp_2,12805,sec,₹ 207.36,AP-SOUTH-1,t-77
+U6050,acct-003,2026-05-24 12:17:00,Compute,VM-std_4,14901,seconds,₹ 946.82,us-east 1,T-12
+U6051,ACCT-002,2026-11-08 17:54+00:00,AI,vm_std_4,1578,min,₹ 1236.95,ap-south-1,T-45
+U6052,ACCT-002,2026-04-06 23:02:00,Storage,DB-gp_2,10543,min,₹ 1536.73,us-east 1,T-45
+U6053,ACCT-004,2026-08-03 16:59:00,AI,STORAGE-prem,9442,hr,₹ 1203.63,us-east 1,T-45
+U6054,ACCT-004,2026/08/10 07:33,Database,STORAGE-prem,3020,min,₹ 1652.54,ap-south 1,T-12
+U6055,ACCT-002,2026-09-02 21:03:00,Storage,VM-STD-4,3868,hr,₹ 1191.36,ap-south-1,t-33
+U6056,ACCT-004,2026-11-30 17:42:00,Database,STORAGE-prem,4216,sec,₹ 241.04,us-east 1,t-77
+U6057,ACCT-002,2026/08/05 06:10,Database,DB-gp_2,9922,seconds,₹ 1350.9,ap-south-1,t-77
+U6058,acct-003,2026-03-10 06:49+00:00,Storage,DB-gp_2,19875,sec,₹ 479.21,AP-SOUTH-1,T-12
+U6059,ACCT-002,2026/08/07 19:52,Networking,STORAGE-prem,2772,sec,₹ 1887.34,AP-SOUTH-1,t-77
+U6060,ACCT-004,2026-08-11 17:05:00,Networking,vm_std_4,16372,sec,₹ 444.75,AP-SOUTH-1,t-33
+U6061,ACCT-004,2026/07/27 05:00,AI,vm_std_4,6455,seconds,₹ 1922.67,us-east 1,t-33
+U6062,acct-003,2026-08-24 22:38:00,Storage,vm_std_4,16323,seconds,₹ 450.32,ap-south 1,t-33
+U6063,acct-003,2026-09-28 11:57+00:00,Storage,VM-STD-4,9774,min,₹ 137.68,ap-south 1,t-77
+U6064,acct-003,2026-05-23 15:41+00:00,Storage,VM-STD-4,10310,seconds,₹ 582.44,us-east 1,T-12
+U6065,ACCT-002,2026-07-25 23:27:00,Compute,vm_std_4,18628,hr,₹ 1869.45,ap-south-1,t-77
+U6066,acct-003,2026-10-23 05:06:00,Compute,VM-STD-4,1415,min,₹ 733.64,ap-south-1,T-45
+U6067, acct-001 ,2026-02-21 04:45:00,Storage,STORAGE-prem,9628,hr,₹ 1999.13,ap-south-1,t-33
+U6068,ACCT-004,2026-06-09 13:26+00:00,Compute,DB-gp_2,7903,min,₹ 1312.35,AP-SOUTH-1,t-77
+U6069,acct-003,2026-03-17 18:09:00,Compute,VM-STD-4,17594,sec,₹ 1355.7,ap-south 1,t-33
+U6070,ACCT-002,2026-11-03 11:24:00,Storage,STORAGE-prem,738550,seconds,₹ 13172.8,AP-SOUTH-1,t-33
+U6071,ACCT-004,2026-12-03 09:54:00,Compute,STORAGE-prem,1360,hr,₹ 1267.33,ap-south-1,T-45
+U6072,acct-003,2026-04-26 22:55:00,Database,vm_std_4,166,min,₹ 57.04,us-east 1,T-12
+U6073,ACCT-002,2026/03/25 22:38,Database,DB-gp_2,4285,seconds,₹ 921.06,us-east 1,t-77
+U6074,ACCT-004,2026-04-03 13:22:00,Networking,VM-std_4,11552,seconds,₹ 1896.02,AP-SOUTH-1,T-45
+U6075,ACCT-002,2026-02-13 07:10+00:00,Networking,VM-STD-4,11130,hr,₹ 1788.68,us-east 1,t-33
+U6076,ACCT-002,2026/02/09 16:38,Storage,STORAGE-prem,14776,seconds,₹ 1148.67,ap-south 1,t-77
+U6077,acct-003,2026-10-14 03:48+00:00,AI,VM-std_4,5542,sec,₹ 1302.16,ap-south-1,T-12
+U6078, acct-001 ,2026-03-10 13:46+00:00,AI,VM-std_4,17716,sec,₹ 200.55,ap-south 1,T-45
+U6079,acct-003,2026-12-10 17:14:00,AI,VM-STD-4,2926,hr,₹ 1119.74,AP-SOUTH-1,t-33
+U6080,ACCT-002,2026/03/09 04:29,Storage,STORAGE-prem,3291,seconds,₹ 1580.54,ap-south-1,t-33
+U6081,acct-003,2026/10/06 08:27,Compute,VM-STD-4,13584,min,₹ 1323.49,ap-south-1,t-33
+U6082,acct-003,2026-08-10 17:51+00:00,Compute,STORAGE-prem,5660,min,₹ 1602.09,us-east 1,t-33
+U6083,ACCT-002,2026/10/03 13:12,Compute,STORAGE-prem,436,hr,₹ 539.26,ap-south-1,T-12
+U6084,ACCT-004,2026/03/26 06:16,Database,VM-std_4,8512,seconds,₹ 233.72,ap-south 1,t-77
+U6085,ACCT-004,2026-08-04 19:27+00:00,Database,vm_std_4,11099,min,₹ 1230.28,us-east 1,t-33
+U6086,ACCT-002,2026-06-27 05:26+00:00,Storage,STORAGE-prem,5320,seconds,₹ 148.63,ap-south 1,t-77
+U6087,ACCT-004,2026-05-31 20:32:00,AI,STORAGE-prem,8602,min,₹ 1135.35,us-east 1,t-77
+U6088,acct-003,2026-09-04 16:26+00:00,Compute,STORAGE-prem,9320,min,₹ 1340.12,us-east 1,t-77
+U6089, acct-001 ,2026/05/20 21:33,Storage,VM-STD-4,11053,hr,₹ 1877.45,ap-south-1,t-33
+U6090,ACCT-004,2026/11/14 16:56,Storage,vm_std_4,16253,hr,₹ 1123.12,ap-south 1,t-77
+U6091,ACCT-004,2026-02-28 23:40:00,Database,vm_std_4,5501,hr,₹ 1279.99,ap-south-1,T-12
+U6092,ACCT-002,2026-05-03 06:45+00:00,Database,vm_std_4,3004,sec,₹ 1149.55,ap-south 1,T-12
+U6093, acct-001 ,2026-10-09 02:40+00:00,Compute,VM-STD-4,6524,sec,₹ 788.14,ap-south 1,T-12
+U6094,ACCT-004,2026-05-16 13:23:00,AI,DB-gp_2,10604,hr,₹ 1102.47,ap-south 1,t-77
+U6095, acct-001 ,2026/07/19 08:29,Database,VM-STD-4,7169,sec,₹ 1143.07,ap-south 1,t-33
+U6096,ACCT-002,2026/04/03 19:21,Database,VM-std_4,2259,min,₹ 977.54,ap-south 1,t-33
+U6097,ACCT-002,2026-01-13 15:16+00:00,Compute,vm_std_4,4795,hr,₹ 1652.08,AP-SOUTH-1,T-45
+U6098,ACCT-004,2026-12-10 00:23:00,AI,STORAGE-prem,1554,hr,₹ 100.67,ap-south 1,t-77
+U6099,ACCT-002,2026/04/14 09:36,Compute,VM-std_4,14001,sec,₹ 122.45,us-east 1,t-77
+U6100,ACCT-004,2026-11-12 03:46+00:00,Database,STORAGE-prem,19597,sec,₹ 318.97,ap-south-1,t-77
+U6101, acct-001 ,2026-03-30 00:54+00:00,AI,vm_std_4,11878,sec,₹ 520.2,AP-SOUTH-1,t-33
+U6102,ACCT-004,2026-01-05 08:23:00,Database,DB-gp_2,8030,hr,₹ 1704.97,AP-SOUTH-1,t-33
+U6103,ACCT-004,2026-11-16 04:28:00,Networking,STORAGE-prem,344,hr,₹ 119.13,ap-south 1,T-45
+U6104,acct-003,2026-09-23 06:10:00,AI,vm_std_4,4446,seconds,₹ 1016.15,ap-south 1,T-12
+U6105, acct-001 ,2026-10-18 21:44+00:00,Compute,vm_std_4,12935,seconds,₹ 1738.58,us-east 1,t-33
+U6106,ACCT-004,2026-02-14 11:52:00,Networking,STORAGE-prem,16496,min,₹ 152.52,ap-south 1,t-77
+U6107,ACCT-002,2026-09-18 23:03:00,Storage,STORAGE-prem,16717,hr,₹ 1557.05,us-east 1,T-45
+U6108,acct-003,2026-08-10 15:56+00:00,Networking,vm_std_4,8934,hr,₹ 1497.55,AP-SOUTH-1,T-45
+U6109,ACCT-002,2026/11/15 05:25,AI,DB-gp_2,2282,hr,₹ 681.32,ap-south-1,t-33
+U6110,acct-003,2026/08/20 07:19,Compute,vm_std_4,16486,seconds,₹ 821.75,ap-south 1,t-77
+U6111,ACCT-002,2026-06-16 18:30+00:00,Database,DB-gp_2,4948,seconds,₹ 43.83,ap-south-1,t-77
+U6112,ACCT-002,2026-07-30 16:25+00:00,AI,VM-STD-4,3742,min,₹ 1430.3,ap-south-1,t-77
+U6113,acct-003,2026/01/16 20:25,Database,vm_std_4,4470,seconds,₹ 68.07,AP-SOUTH-1,t-77
+U6114,ACCT-002,2026-02-01 07:52:00,Networking,DB-gp_2,5968,hr,₹ 314.82,ap-south 1,t-77
+U6115,acct-003,2026/03/16 07:01,Networking,VM-std_4,9306,hr,₹ 109.17,ap-south-1,T-45
+U6116, acct-001 ,2026-12-13 04:36+00:00,Storage,VM-STD-4,18822,min,₹ 1188.95,us-east 1,t-33
+U6117, acct-001 ,2026-08-21 08:20+00:00,AI,DB-gp_2,2338,sec,₹ 819.44,AP-SOUTH-1,T-45
+U6118,ACCT-002,2026-07-13 16:49+00:00,Compute,STORAGE-prem,12363,hr,₹ 823.94,us-east 1,t-33
+U6119,acct-003,2026-03-23 22:05+00:00,Compute,vm_std_4,14965,hr,₹ 999.7,ap-south 1,t-77
+U6120,ACCT-002,2026/07/23 12:19,AI,VM-std_4,17397,min,₹ 980.23,AP-SOUTH-1,T-12
+U6121, acct-001 ,2026-01-12 13:06:00,Networking,VM-std_4,9371,seconds,₹ 641.5,ap-south 1,T-45
+U6122,acct-003,2026-05-14 18:11+00:00,Networking,DB-gp_2,8676,seconds,₹ 248.21,ap-south-1,T-12
+U6123,ACCT-004,2026-10-23 04:41:00,Storage,VM-STD-4,18989,hr,₹ 153.47,AP-SOUTH-1,T-45
+U6124, acct-001 ,2026/03/15 07:56,Database,VM-std_4,8473,seconds,₹ 526.84,ap-south-1,T-45
+U6125,ACCT-004,2026/09/25 08:53,Database,vm_std_4,1125,min,₹ 667.62,ap-south 1,T-12
+U6126,acct-003,2026-05-25 05:45:00,Storage,DB-gp_2,14152,min,₹ 192.22,ap-south 1,T-12
+U6127, acct-001 ,2026-06-09 01:05+00:00,Networking,STORAGE-prem,15984,hr,₹ 651.24,ap-south-1,t-33
+U6128,ACCT-002,2026-08-26 08:58:00,Database,vm_std_4,9940,hr,₹ 825.27,AP-SOUTH-1,T-12
+U6129,ACCT-002,2026/07/04 16:26,Storage,VM-STD-4,18184,min,₹ 1156.56,ap-south-1,T-12
+U6130,ACCT-002,2026-07-30 22:27:00,Networking,VM-std_4,13211,sec,₹ 329.87,ap-south 1,t-33
+U6131, acct-001 ,2026-03-12 18:51:00,Database,VM-std_4,12884,hr,₹ 1691.69,ap-south 1,t-77
+U6132,ACCT-004,2026-01-10 22:25:00,Storage,VM-STD-4,226,sec,₹ 1430.29,us-east 1,T-12
+U6133,ACCT-004,2026-12-04 18:19+00:00,AI,STORAGE-prem,15628,hr,₹ 1414.9,us-east 1,T-45
+U6134, acct-001 ,2026-06-05 02:28+00:00,Networking,STORAGE-prem,18157,hr,₹ 1392.7,AP-SOUTH-1,T-12
+U6135,acct-003,2026-03-06 11:01:00,Compute,VM-STD-4,14927,seconds,₹ 1008.3,ap-south-1,T-45
+U6136,ACCT-002,2026-10-16 11:34:00,Storage,VM-std_4,9996,seconds,₹ 1390.16,us-east 1,T-45
+U6137,ACCT-002,2026-09-21 22:03:00,Database,VM-STD-4,4821,seconds,₹ 603.84,AP-SOUTH-1,t-77
+U6138,acct-003,2026-09-07 15:46:00,Storage,DB-gp_2,18011,hr,₹ 1469.49,us-east 1,T-12
+U6139,ACCT-004,2026/10/22 08:13,Compute,DB-gp_2,171,hr,₹ 1034.7,us-east 1,t-77
+U6140,acct-003,2026-09-07 23:13+00:00,Compute,STORAGE-prem,9970,hr,₹ 529.75,us-east 1,t-77
+U6141,ACCT-002,2026/01/02 10:03,AI,VM-std_4,10563,sec,₹ 1577.79,ap-south-1,T-45
+U6142,ACCT-004,2026-12-08 06:12:00,Compute,DB-gp_2,15520,min,₹ 1801.42,ap-south 1,t-77
+U6143,ACCT-002,2026-08-19 18:44+00:00,Compute,VM-std_4,12742,seconds,₹ 403.59,AP-SOUTH-1,t-33
+U6144, acct-001 ,2026-05-21 14:01+00:00,Storage,DB-gp_2,17800,hr,₹ 165.03,ap-south-1,t-33
+U6145, acct-001 ,2026-11-01 14:53+00:00,AI,STORAGE-prem,4119,seconds,₹ 269.42,us-east 1,T-45
+U6146, acct-001 ,2026-03-02 09:07+00:00,Storage,VM-std_4,14995,seconds,₹ 651.85,ap-south-1,t-77
+U6147,ACCT-004,2026-04-27 19:32:00,Networking,vm_std_4,13628,hr,₹ 1886.01,AP-SOUTH-1,t-33
+U6148,ACCT-004,2026/03/10 02:17,Database,vm_std_4,18339,min,₹ 1630.9,ap-south-1,T-45
+U6149, acct-001 ,2026/12/11 17:29,Networking,vm_std_4,15046,hr,₹ 1973.67,ap-south-1,t-33
+U6150, acct-001 ,2026-04-29 06:19:00,Compute,DB-gp_2,4486,hr,₹ 363.21,AP-SOUTH-1,T-12
+U6151, acct-001 ,2026-05-22 22:30+00:00,Networking,vm_std_4,15601,min,₹ 1256.9,AP-SOUTH-1,T-12
+U6152,ACCT-004,2026-08-14 03:50:00,AI,STORAGE-prem,19321,sec,₹ 1170.96,ap-south-1,t-77
+U6153,ACCT-002,2026/05/25 22:36,Database,DB-gp_2,2700,seconds,₹ 442.36,ap-south 1,t-33
+U6154,acct-003,2026/01/05 02:10,Database,vm_std_4,1097,sec,₹ 567.7,ap-south-1,t-33
+U6155, acct-001 ,2026-07-27 23:47:00,Database,VM-std_4,4484,hr,₹ 893.2,ap-south 1,T-45
+U6156,ACCT-002,2026-12-04 09:28:00,Compute,VM-std_4,9138,seconds,₹ 1067.88,ap-south-1,T-45
+U6157,acct-003,2026-08-31 10:42:00,AI,VM-std_4,7780,sec,₹ 1149.82,ap-south-1,t-77
+U6158, acct-001 ,2026-06-06 02:34+00:00,Database,vm_std_4,15536,sec,₹ 1632.55,us-east 1,T-12
+U6159,ACCT-004,2026-03-19 21:27:00,Database,vm_std_4,6200,seconds,₹ 887.94,us-east 1,T-45
+U6160,ACCT-002,2026-07-17 01:21+00:00,Networking,vm_std_4,5896,seconds,₹ 589.85,ap-south 1,T-12
+U6161, acct-001 ,2026-01-13 00:12+00:00,AI,DB-gp_2,16724,sec,₹ 638.79,AP-SOUTH-1,t-77
+U6162, acct-001 ,2026-03-13 04:45+00:00,AI,VM-std_4,8237,min,₹ 1663.21,us-east 1,t-77
+U6163,acct-003,2026/01/10 07:57,Networking,DB-gp_2,8965,seconds,₹ 1057.03,ap-south 1,T-45
+U6164,ACCT-004,2026-10-22 10:36:00,Database,DB-gp_2,375250,sec,₹ 12643.4,ap-south 1,t-77
+U6165, acct-001 ,2026-02-02 16:41:00,Storage,STORAGE-prem,10804,sec,₹ 1876.33,ap-south-1,T-45
+U6166,ACCT-002,2026-06-01 13:43+00:00,Database,vm_std_4,493,min,₹ 679.2,us-east 1,t-77
+U6167,ACCT-002,2026-05-01 07:59+00:00,Networking,STORAGE-prem,5974,hr,₹ 1354.57,ap-south-1,T-45
+U6168,acct-003,2026-06-18 00:31:00,Compute,VM-STD-4,6863,hr,₹ 647.83,us-east 1,T-12
+U6169,acct-003,2026/01/19 18:33,AI,VM-STD-4,3406,hr,₹ 1580.08,ap-south-1,T-12
+U6170, acct-001 ,2026-08-04 07:20+00:00,Compute,DB-gp_2,17717,seconds,₹ 1061.49,us-east 1,T-45
+U6171,ACCT-004,2026/09/21 02:12,AI,DB-gp_2,5159,min,₹ 1031.14,ap-south 1,T-12
+U6172,acct-003,2026/10/07 07:57,Compute,DB-gp_2,1360,sec,₹ 354.94,us-east 1,T-12
+U6173,ACCT-004,2026-11-10 12:15+00:00,Storage,DB-gp_2,5185,min,₹ 1650.16,AP-SOUTH-1,T-45
+U6174,ACCT-002,2026/11/29 05:35,Database,STORAGE-prem,11045,min,₹ 1686.26,AP-SOUTH-1,t-33
+U6175,ACCT-004,2026/06/11 16:34,Networking,VM-std_4,14252,sec,₹ 411.15,us-east 1,t-33
+U6176,acct-003,2026/09/13 19:55,Networking,VM-std_4,9392,hr,₹ 484.98,AP-SOUTH-1,T-45
+U6177, acct-001 ,2026-11-02 23:18:00,Storage,STORAGE-prem,14529,min,₹ 548.62,ap-south 1,T-12
+U6178,acct-003,2026/03/11 06:20,Networking,DB-gp_2,18910,min,₹ 1849.12,AP-SOUTH-1,T-12
+U6179,ACCT-002,2026-09-04 18:33+00:00,Compute,vm_std_4,196,hr,₹ 406.14,AP-SOUTH-1,t-77
+U6180,ACCT-004,2026-01-19 06:09:00,AI,DB-gp_2,13828,min,₹ 1749.37,ap-south 1,t-33
+U6181, acct-001 ,2026-10-22 15:40+00:00,Storage,STORAGE-prem,1202,seconds,₹ 1135.75,ap-south 1,t-33
+U6182, acct-001 ,2026-10-06 09:42:00,Networking,VM-std_4,1657,hr,₹ 1719.42,us-east 1,t-33
+U6183,ACCT-002,2026/08/09 13:18,Database,VM-std_4,6618,min,₹ 661.65,us-east 1,t-77
+U6184, acct-001 ,2026-09-06 03:00+00:00,Database,DB-gp_2,7688,min,₹ 1365.84,ap-south 1,t-33
+U6185,ACCT-002,2026-11-02 23:08+00:00,Compute,VM-std_4,16492,hr,₹ 1024.33,ap-south-1,t-77
+U6186,acct-003,2026-04-28 22:28:00,Compute,VM-std_4,2032,hr,₹ 1496.11,ap-south 1,t-77
+U6187,ACCT-002,2026-04-08 00:46+00:00,Storage,VM-std_4,5124,hr,₹ 867.59,ap-south 1,T-12
+U6188,acct-003,2026-10-15 05:48:00,Networking,VM-std_4,9589,sec,₹ 938.27,ap-south-1,t-33
+U6189, acct-001 ,2026-06-11 23:00+00:00,Compute,vm_std_4,14945,sec,₹ 1878.89,ap-south 1,t-77
+U6190,ACCT-004,2026/09/01 13:38,Storage,VM-std_4,14339,min,₹ 1958.53,us-east 1,T-12
+U6191,acct-003,2026-01-03 09:01+00:00,Database,vm_std_4,4021,sec,₹ 1149.04,ap-south 1,t-33
+U6192,acct-003,2026-01-19 15:23:00,Compute,STORAGE-prem,16469,seconds,₹ 800.28,ap-south-1,t-33
+U6193,ACCT-002,2026-09-03 15:07:00,Compute,VM-STD-4,9171,hr,₹ 257.36,ap-south-1,t-77
+U6194,ACCT-002,2026-06-10 18:59:00,Database,VM-std_4,8274,min,₹ 478.52,ap-south 1,t-33
+U6195,ACCT-002,2026-05-20 18:23+00:00,AI,vm_std_4,13539,seconds,₹ 28.17,AP-SOUTH-1,t-33
+U6196,ACCT-002,2026-07-08 10:12+00:00,AI,VM-std_4,11653,min,₹ 1173.9,us-east 1,T-45
+U6197,acct-003,2026-04-30 02:25:00,Networking,VM-STD-4,481650,hr,₹ 30217.199999999997,ap-south 1,t-77
+U6198,ACCT-002,2026/08/06 11:18,Compute,vm_std_4,14547,hr,₹ 19.12,AP-SOUTH-1,T-45
+U6199,ACCT-004,2026-06-09 08:13:00,Storage,STORAGE-prem,3102,hr,₹ 1112.96,ap-south-1,T-45
+U6200, acct-001 ,2026-03-26 06:11:00,AI,vm_std_4,14259,seconds,₹ 1998.45,us-east 1,T-45
+U6201,ACCT-004,2026/07/19 14:41,Networking,vm_std_4,15570,hr,₹ 1419.1,us-east 1,t-33
+U6202,ACCT-002,2026-01-18 04:54+00:00,Compute,vm_std_4,12891,sec,₹ 1097.19,ap-south-1,t-33
+U6203,acct-003,2026-10-18 06:25+00:00,AI,VM-STD-4,18519,seconds,₹ 591.44,AP-SOUTH-1,T-12
+U6204,acct-003,2026-03-22 06:08:00,Networking,vm_std_4,14081,sec,₹ 1600.88,ap-south 1,T-12
+U6205,ACCT-004,2026/10/04 20:23,Storage,vm_std_4,12626,hr,₹ 979.34,us-east 1,T-45
+U6206,ACCT-002,2026-12-12 04:58+00:00,Compute,vm_std_4,14142,sec,₹ 1432.08,AP-SOUTH-1,T-45
+U6207,ACCT-004,2026-03-18 23:17:00,Compute,VM-STD-4,1409,min,₹ 683.6,ap-south 1,T-45
+U6208,ACCT-002,2026-09-22 06:45:00,Storage,DB-gp_2,10995,hr,₹ 1705.08,ap-south-1,T-45
+U6209,ACCT-002,2026-03-13 05:42:00,Storage,VM-std_4,2690,sec,₹ 1758.25,ap-south 1,T-12
+U6210,acct-003,2026-06-06 17:19:00,AI,VM-std_4,5887,seconds,₹ 1072.05,ap-south-1,T-45
+U6211,acct-003,2026/01/13 09:53,Storage,VM-std_4,365000,min,₹ 34180.6,us-east 1,T-12
+U6212,acct-003,2026/02/23 02:38,AI,vm_std_4,2999,seconds,₹ 802.39,us-east 1,t-33
+U6213,ACCT-002,2026/11/25 17:31,Networking,vm_std_4,13665,hr,₹ 1519.41,us-east 1,t-77
+U6214,ACCT-004,2026/01/19 03:06,AI,DB-gp_2,13843,sec,₹ 1788.7,us-east 1,t-33
+U6215,acct-003,2026-08-31 06:42:00,Compute,DB-gp_2,19515,sec,₹ 957.05,ap-south-1,T-45
+U6216,ACCT-002,2026-10-16 16:45:00,Compute,vm_std_4,7951,seconds,₹ 308.61,AP-SOUTH-1,T-12
+U6217, acct-001 ,2026-09-27 16:45:00,Networking,vm_std_4,16360,seconds,₹ 1668.0,ap-south-1,T-45
+U6218, acct-001 ,2026-10-20 10:17:00,AI,STORAGE-prem,13686,seconds,₹ 848.04,ap-south 1,T-45
+U6219,ACCT-002,2026-07-22 16:27+00:00,Compute,vm_std_4,17423,min,₹ 1514.57,AP-SOUTH-1,t-77
+U6220,acct-003,2026/10/21 15:22,Database,VM-std_4,2537,sec,₹ 384.57,ap-south 1,t-33
+U6221,ACCT-002,2026/07/24 03:05,Storage,VM-std_4,545,seconds,₹ 763.06,ap-south-1,T-45
+U6222,acct-003,2026/08/10 12:59,AI,VM-std_4,12593,seconds,₹ 1566.61,AP-SOUTH-1,T-45
+U6223,ACCT-004,2026-01-06 01:18+00:00,Database,VM-STD-4,9745,sec,₹ 884.88,ap-south 1,t-77
+U6224,acct-003,2026-05-10 03:33:00,Compute,VM-std_4,8814,min,₹ 905.5,AP-SOUTH-1,T-45
+U6225, acct-001 ,2026/10/19 23:17,AI,VM-STD-4,12321,seconds,₹ 798.6,ap-south-1,T-45
+U6226,acct-003,2026-06-20 08:19+00:00,Compute,VM-STD-4,9111,min,₹ 836.4,ap-south-1,t-33
+U6227,acct-003,2026-09-24 16:47:00,Networking,DB-gp_2,16695,seconds,₹ 1977.89,us-east 1,T-45
+U6228, acct-001 ,2026-03-27 12:22:00,Networking,VM-STD-4,8729,hr,₹ 1606.09,AP-SOUTH-1,T-45
+U6229,acct-003,2026-07-23 05:39:00,Networking,STORAGE-prem,12813,seconds,₹ 778.09,AP-SOUTH-1,t-77
+U6230,ACCT-004,2026-09-04 07:30:00,Compute,DB-gp_2,4243,seconds,₹ 1941.75,us-east 1,t-33
+U6231,ACCT-004,2026/06/16 03:40,AI,VM-std_4,18355,hr,₹ 1999.21,us-east 1,T-12
+U6232, acct-001 ,2026/05/13 19:46,Compute,vm_std_4,16794,seconds,₹ 1979.4,AP-SOUTH-1,t-77
+U6233, acct-001 ,2026-06-01 06:44+00:00,Compute,DB-gp_2,16458,hr,₹ 1522.89,ap-south 1,T-45
+U6234,ACCT-004,2026-06-11 13:31+00:00,AI,VM-std_4,2963,sec,₹ 42.31,ap-south-1,t-33
+U6235,ACCT-004,2026/10/21 23:01,Database,vm_std_4,14278,sec,₹ 1146.87,ap-south 1,t-33
+U6236,acct-003,2026/02/24 08:06,AI,vm_std_4,16311,sec,₹ 1940.26,ap-south-1,T-12
+U6237,acct-003,2026/01/15 08:03,Database,VM-STD-4,9968,min,₹ 1988.28,ap-south-1,T-12
+U6238,acct-003,2026-02-09 17:30+00:00,Compute,vm_std_4,3166,min,₹ 1186.88,ap-south 1,T-12
+U6239, acct-001 ,2026/07/24 21:33,Compute,STORAGE-prem,16838,sec,₹ 1378.47,ap-south 1,T-12
+U6240,acct-003,2026-09-26 15:33:00,AI,VM-std_4,1416,seconds,₹ 1425.54,AP-SOUTH-1,t-33
+U6241,acct-003,2026-11-09 04:59:00,AI,DB-gp_2,13589,seconds,₹ 872.93,ap-south-1,T-45
+U6242,ACCT-004,2026-09-24 23:05+00:00,Networking,VM-STD-4,2474,seconds,₹ 86.4,ap-south-1,T-45
+U6243,ACCT-002,2026-02-27 22:33+00:00,Compute,DB-gp_2,12131,sec,₹ 1448.17,AP-SOUTH-1,t-33
+U6244,ACCT-002,2026-11-02 22:24:00,Storage,DB-gp_2,11728,sec,₹ 1856.25,ap-south-1,t-77
+U6245,ACCT-002,2026/04/05 05:57,Compute,DB-gp_2,11514,hr,₹ 867.8,us-east 1,t-77
+U6246,ACCT-002,2026-10-31 19:27:00,Compute,vm_std_4,7665,min,₹ 1197.26,ap-south-1,T-12
+U6247,ACCT-002,2026-11-03 12:09:00,Storage,VM-STD-4,308,seconds,₹ 1384.79,ap-south-1,T-45
+U6248,ACCT-002,2026-12-07 12:05:00,Compute,DB-gp_2,16158,sec,₹ 129.24,AP-SOUTH-1,T-12
+U6249,acct-003,2026-06-06 18:59+00:00,Storage,vm_std_4,5843,sec,₹ 1346.95,us-east 1,T-45
+U6250,ACCT-004,2026/08/29 19:47,Networking,vm_std_4,19324,sec,₹ 1846.27,AP-SOUTH-1,t-33
+U6251,ACCT-004,2026/10/24 12:20,Networking,DB-gp_2,19923,hr,₹ 412.38,AP-SOUTH-1,T-45
+U6252,acct-003,2026/11/01 02:53,Networking,VM-std_4,19967,hr,₹ 268.24,AP-SOUTH-1,T-45
+U6253,acct-003,2026/01/30 05:02,Networking,DB-gp_2,14242,seconds,₹ 718.63,ap-south-1,t-77
+U6254,ACCT-004,2026/09/14 23:19,Compute,VM-STD-4,3649,hr,₹ 114.56,ap-south 1,T-12
+U6255, acct-001 ,2026-09-12 17:06:00,Networking,STORAGE-prem,3699,hr,₹ 523.16,AP-SOUTH-1,T-12
+U6256, acct-001 ,2026-09-03 10:47:00,Database,VM-std_4,3829,hr,₹ 1717.57,AP-SOUTH-1,t-33
+U6257,ACCT-004,2026-06-27 13:07:00,Storage,VM-std_4,4057,seconds,₹ 1272.59,ap-south 1,T-12
+U6258,ACCT-004,2026-03-15 20:23:00,Storage,vm_std_4,19094,seconds,₹ 159.16,ap-south 1,t-33
+U6259,ACCT-002,2026-11-02 05:23:00,AI,vm_std_4,11700,sec,₹ 1808.56,AP-SOUTH-1,t-33
+U6260,acct-003,2026-01-31 23:58:00,Database,VM-STD-4,4769,min,₹ 1044.29,ap-south 1,t-33
+U6261,ACCT-002,2026/08/09 14:36,AI,DB-gp_2,11155,seconds,₹ 826.79,ap-south 1,T-12
+U6262,acct-003,2026-09-11 08:18+00:00,Database,STORAGE-prem,4862,hr,₹ 1105.01,AP-SOUTH-1,t-77
+U6263,acct-003,2026/04/04 21:41,Storage,VM-std_4,871,seconds,₹ 1195.11,us-east 1,t-33
+U6264, acct-001 ,2026/06/20 06:14,AI,vm_std_4,12594,seconds,₹ 1455.53,ap-south-1,T-45
+U6265,acct-003,2026-07-04 12:54:00,Storage,VM-STD-4,11968,seconds,₹ 29.79,ap-south 1,t-77
+U6266,ACCT-004,2026-02-08 00:59+00:00,Storage,VM-STD-4,4036,min,₹ 570.21,ap-south 1,t-33
+U6267,acct-003,2026-10-08 02:00+00:00,Storage,STORAGE-prem,4780,hr,₹ 1750.84,ap-south-1,t-77
+U6268,ACCT-004,2026/05/13 07:02,Storage,DB-gp_2,10335,seconds,₹ 1325.19,AP-SOUTH-1,T-12
+U6269,ACCT-004,2026/07/24 02:14,Networking,STORAGE-prem,4603,seconds,₹ 374.46,ap-south 1,t-77
+U6270,ACCT-004,2026-04-22 15:47:00,Networking,STORAGE-prem,319,min,₹ 1493.09,us-east 1,t-33
+U6271, acct-001 ,2026/10/14 14:48,Compute,STORAGE-prem,15215,sec,₹ 1135.43,AP-SOUTH-1,T-45
+U6272,ACCT-002,2026-01-18 19:10+00:00,Storage,VM-STD-4,13636,seconds,₹ 1315.63,ap-south 1,t-77
+U6273,ACCT-002,2026/06/05 17:53,Compute,DB-gp_2,14113,seconds,₹ 1987.46,ap-south-1,T-45
+U6274,ACCT-002,2026-03-13 17:26:00,Compute,VM-STD-4,13444,sec,₹ 1808.57,ap-south-1,T-12
+U6275,acct-003,2026-07-17 12:16:00,Compute,vm_std_4,8805,seconds,₹ 941.01,AP-SOUTH-1,T-12
+U6276, acct-001 ,2026/04/18 15:07,Compute,STORAGE-prem,3883,seconds,₹ 71.56,AP-SOUTH-1,T-12
+U6277,ACCT-004,2026-04-23 09:01:00,Compute,VM-std_4,6352,sec,₹ 57.2,ap-south 1,t-77
+U6278,ACCT-004,2026-11-12 01:19:00,Compute,vm_std_4,3307,sec,₹ 1814.85,AP-SOUTH-1,t-77
+U6279,acct-003,2026-11-27 12:41+00:00,AI,VM-STD-4,7293,seconds,₹ 514.57,ap-south-1,t-33
+U6280,ACCT-004,2026-06-01 16:12+00:00,AI,VM-STD-4,3266,min,₹ 1106.99,AP-SOUTH-1,T-12
+U6281, acct-001 ,2026-10-01 05:54+00:00,AI,vm_std_4,6694,min,₹ 857.78,ap-south 1,T-45
+U6282,ACCT-004,2026-08-17 16:10+00:00,Storage,STORAGE-prem,13215,min,₹ 617.49,us-east 1,t-77
+U6283,ACCT-004,2026/06/24 13:58,AI,vm_std_4,9810,sec,₹ 293.69,ap-south 1,t-33
+U6284,ACCT-002,2026-05-19 06:34+00:00,AI,VM-std_4,1051,sec,₹ 1129.39,ap-south 1,t-33
+U6285,ACCT-004,2026-10-03 05:37+00:00,Storage,VM-std_4,894,sec,₹ 1072.33,ap-south-1,T-12
+U6286,acct-003,2026/08/29 17:46,Compute,DB-gp_2,15924,min,₹ 561.87,ap-south-1,T-12
+U6287, acct-001 ,2026-04-11 02:37:00,AI,STORAGE-prem,17077,seconds,₹ 848.93,ap-south 1,T-12
+U6288,acct-003,2026-04-07 07:36:00,Compute,VM-STD-4,13500,seconds,₹ 1346.69,ap-south 1,t-33
+U6289,ACCT-002,2026/08/08 13:56,Storage,STORAGE-prem,7943,seconds,₹ 800.07,us-east 1,t-33
+U6290, acct-001 ,2026-07-25 22:05:00,Storage,STORAGE-prem,19855,seconds,₹ 624.21,ap-south-1,T-45
+U6291,acct-003,2026/11/17 02:03,Database,vm_std_4,3774,hr,₹ 22.78,us-east 1,t-33
+U6292, acct-001 ,2026-06-15 08:25:00,Compute,DB-gp_2,10558,hr,₹ 1018.94,ap-south-1,t-77
+U6293,acct-003,2026/06/23 18:57,Database,DB-gp_2,2631,min,₹ 150.52,ap-south-1,t-77
+U6294,ACCT-002,2026-10-17 07:19+00:00,Compute,vm_std_4,16585,seconds,₹ 1908.36,ap-south 1,t-33
+U6295, acct-001 ,2026-06-10 17:17+00:00,Compute,vm_std_4,18494,sec,₹ 1116.23,AP-SOUTH-1,T-45
+U6296,ACCT-002,2026-04-14 04:21:00,AI,VM-std_4,9727,sec,₹ 750.43,us-east 1,T-45
+U6297, acct-001 ,2026-01-21 13:34:00,Database,VM-STD-4,6114,seconds,₹ 1999.33,ap-south-1,t-77
+U6298,ACCT-002,2026/05/16 02:33,AI,VM-STD-4,12228,seconds,₹ 78.74,AP-SOUTH-1,T-45
+U6299,ACCT-002,2026-11-27 20:48+00:00,Database,DB-gp_2,18976,hr,₹ 1010.12,us-east 1,t-33
+U6300, acct-001 ,2026-09-14 08:23:00,AI,DB-gp_2,12442,hr,₹ 45.26,ap-south 1,T-12
+U6301,ACCT-002,2026-05-21 19:36+00:00,Storage,vm_std_4,7262,min,₹ 642.8,ap-south 1,T-45
+U6302,ACCT-002,2026/01/13 06:08,Database,VM-STD-4,7536,min,₹ 678.67,ap-south-1,t-77
+U6303,ACCT-002,2026/07/04 23:59,Database,STORAGE-prem,8258,sec,₹ 1775.29,ap-south 1,T-12
+U6304,ACCT-004,2026-02-04 18:00+00:00,AI,vm_std_4,18949,hr,₹ 1112.34,ap-south 1,T-12
+U6305,ACCT-004,2026-02-10 02:10+00:00,AI,VM-STD-4,13937,min,₹ 1528.24,ap-south-1,T-12
+U6306,ACCT-002,2026/02/20 20:59,Storage,vm_std_4,12143,min,₹ 1320.95,us-east 1,t-77
+U6307,ACCT-002,2026-09-27 15:26+00:00,Database,vm_std_4,10983,seconds,₹ 1129.0,us-east 1,t-33
+U6308,ACCT-004,2026/06/19 12:51,Storage,DB-gp_2,4879,hr,₹ 1367.78,ap-south-1,T-45
+U6309, acct-001 ,2026-03-22 12:02:00,AI,VM-std_4,19908,sec,₹ 1538.28,us-east 1,t-77
+U6310,ACCT-004,2026/11/10 22:33,Networking,vm_std_4,16891,min,₹ 1954.02,ap-south-1,T-45
+U6311,ACCT-002,2026-11-05 16:17:00,Database,STORAGE-prem,9876,seconds,₹ 241.94,us-east 1,t-77
+U6312,ACCT-004,2026-07-16 10:29:00,Networking,VM-std_4,2402,min,₹ 1349.32,AP-SOUTH-1,T-12
+U6313,acct-003,2026-10-14 18:38:00,AI,VM-STD-4,4919,seconds,₹ 181.86,ap-south-1,t-77
+U6314,ACCT-002,2026-09-04 20:49+00:00,Database,DB-gp_2,71950,hr,₹ 24861.6,us-east 1,T-12
+U6315, acct-001 ,2026-06-15 10:59+00:00,Networking,VM-std_4,13869,min,₹ 182.69,us-east 1,t-33
+U6316, acct-001 ,2026/10/12 16:28,Networking,VM-std_4,8830,seconds,₹ 1841.53,us-east 1,T-12
+U6317,ACCT-002,2026-04-01 05:15+00:00,Networking,STORAGE-prem,6542,min,₹ 1963.61,us-east 1,T-12
+U6318,ACCT-004,2026-07-19 19:08+00:00,Compute,vm_std_4,18358,min,₹ 220.24,AP-SOUTH-1,t-33
+U6319, acct-001 ,2026-04-15 09:58:00,Networking,DB-gp_2,13466,hr,₹ 1347.94,ap-south 1,t-33
+U6320,ACCT-004,2026-06-23 19:39+00:00,Database,DB-gp_2,5867,sec,₹ 1167.68,ap-south 1,T-12
+U6321,ACCT-002,2026-11-08 09:56+00:00,Compute,vm_std_4,11903,seconds,₹ 380.16,ap-south-1,t-77
+U6322, acct-001 ,2026-01-31 10:31:00,Storage,vm_std_4,3176,min,₹ 770.9,ap-south 1,t-77
+U6323,ACCT-002,2026-09-11 06:02+00:00,Database,VM-std_4,10658,seconds,₹ 1244.55,AP-SOUTH-1,T-45
+U6324,acct-003,2026-03-15 16:32:00,Storage,DB-gp_2,15457,seconds,₹ 701.09,AP-SOUTH-1,T-12
+U6325, acct-001 ,2026-09-17 21:04:00,AI,DB-gp_2,432,seconds,₹ 1602.54,ap-south 1,T-12
+U6326,ACCT-002,2026-11-25 09:54:00,Storage,vm_std_4,10804,min,₹ 502.2,ap-south-1,T-12
+U6327,ACCT-004,2026-09-29 19:57+00:00,AI,DB-gp_2,5885,hr,₹ 230.37,us-east 1,t-77
+U6328,acct-003,2026-07-16 06:37+00:00,Database,STORAGE-prem,1584,hr,₹ 516.77,ap-south-1,T-45
+U6329,ACCT-004,2026-09-24 04:21:00,Storage,vm_std_4,4369,sec,₹ 485.61,ap-south-1,t-33
+U6330,acct-003,2026/02/20 12:11,Compute,vm_std_4,16538,sec,₹ 1749.3,ap-south-1,T-12
+U6331,acct-003,2026-01-12 01:05:00,Networking,DB-gp_2,5955,hr,₹ 1440.69,ap-south-1,t-77
+U6332,ACCT-004,2026-08-03 16:58:00,Storage,STORAGE-prem,6651,hr,₹ 1708.05,us-east 1,T-12
+U6333,ACCT-004,2026-07-08 03:52+00:00,Database,VM-std_4,18350,sec,₹ 521.92,AP-SOUTH-1,t-77
+U6334,ACCT-004,2026-05-08 06:55:00,Compute,DB-gp_2,858650,seconds,₹ 21278.800000000003,ap-south-1,t-77
+U6335,ACCT-002,2026-09-03 04:16+00:00,AI,STORAGE-prem,7153,min,₹ 781.33,ap-south 1,T-12
+U6336,acct-003,2026-10-14 08:45:00,Networking,vm_std_4,11085,seconds,₹ 156.19,ap-south 1,T-12
+U6337,acct-003,2026/05/25 07:29,Compute,DB-gp_2,6683,hr,₹ 318.52,ap-south-1,t-77
+U6338,ACCT-002,2026-05-23 10:19+00:00,Compute,vm_std_4,18786,seconds,₹ 1463.15,AP-SOUTH-1,T-12
+U6339,acct-003,2026-04-13 01:10+00:00,AI,DB-gp_2,6862,hr,₹ 545.71,ap-south 1,T-12
+U6340,ACCT-002,2026/07/10 13:45,Database,vm_std_4,19946,seconds,₹ 1500.09,ap-south 1,t-33
+U6341, acct-001 ,2026-04-18 12:20+00:00,Storage,vm_std_4,16104,seconds,₹ 1746.3,ap-south 1,T-45
+U6342,ACCT-004,2026/01/26 23:13,Database,DB-gp_2,14048,seconds,₹ 1993.09,ap-south-1,T-12
+U6343,ACCT-002,2026-10-18 18:47:00,Networking,VM-STD-4,7886,hr,₹ 1928.95,AP-SOUTH-1,t-33
+U6344,ACCT-004,2026/09/28 08:51,AI,DB-gp_2,18189,hr,₹ 814.91,AP-SOUTH-1,T-45
+U6345,ACCT-002,2026-10-05 01:43:00,Compute,DB-gp_2,19807,hr,₹ 193.49,AP-SOUTH-1,t-77
+U6346,ACCT-004,2026-01-21 15:11+00:00,AI,STORAGE-prem,19772,seconds,₹ 1700.97,ap-south 1,t-77
+U6347,acct-003,2026/11/07 17:30,Compute,DB-gp_2,12143,hr,₹ 567.88,us-east 1,T-12
+U6348,ACCT-002,2026-02-20 22:25:00,AI,VM-std_4,2910,min,₹ 1291.86,us-east 1,T-45
+U6349,ACCT-002,2026-12-04 01:54:00,Storage,vm_std_4,1713,min,₹ 679.4,AP-SOUTH-1,T-12
+U6350,ACCT-004,2026/01/25 03:12,AI,STORAGE-prem,11795,min,₹ 576.27,ap-south 1,t-33
+U6351,acct-003,2026-09-28 00:27+00:00,Storage,DB-gp_2,15611,hr,₹ 435.63,us-east 1,t-77
+U6352,acct-003,2026-02-18 13:46+00:00,Networking,VM-STD-4,6810,min,₹ 602.16,us-east 1,t-33
+U6353,acct-003,2026-06-02 16:37+00:00,Compute,VM-STD-4,3464,sec,₹ 1630.13,AP-SOUTH-1,T-12
+U6354,ACCT-004,2026-02-20 12:35:00,AI,VM-STD-4,11130,min,₹ 143.43,us-east 1,t-77
+U6355,acct-003,2026/12/03 09:26,Networking,DB-gp_2,2971,seconds,₹ 1431.74,ap-south-1,T-12
+U6356,ACCT-002,2026-03-01 08:51:00,Networking,VM-std_4,8786,sec,₹ 1751.09,ap-south 1,T-45
+U6357, acct-001 ,2026-07-01 05:55+00:00,Networking,STORAGE-prem,12201,hr,₹ 579.8,ap-south-1,T-45
+U6358,acct-003,2026-01-10 09:20+00:00,Networking,STORAGE-prem,11662,sec,₹ 1495.65,AP-SOUTH-1,t-33
+U6359, acct-001 ,2026/08/04 12:54,Compute,DB-gp_2,4568,hr,₹ 1874.85,us-east 1,T-45
+U6360,ACCT-002,2026/05/08 04:58,Compute,VM-std_4,11208,hr,₹ 1492.46,AP-SOUTH-1,t-77
+U6361, acct-001 ,2026/06/19 15:07,AI,vm_std_4,19682,seconds,₹ 604.48,us-east 1,T-12
+U6362,ACCT-004,2026/09/29 09:06,AI,VM-STD-4,2158,hr,₹ 939.29,AP-SOUTH-1,T-45
+U6363, acct-001 ,2026-11-16 20:14:00,Database,VM-std_4,18965,min,₹ 1187.15,AP-SOUTH-1,t-33
+U6364,ACCT-004,2026/08/15 01:00,Compute,vm_std_4,12464,seconds,₹ 1833.52,AP-SOUTH-1,t-77
+U6365,acct-003,2026-01-20 02:55:00,Database,VM-STD-4,10969,seconds,₹ 479.04,ap-south 1,t-33
+U6366,ACCT-002,2026-12-01 21:02:00,AI,vm_std_4,1069,seconds,₹ 1848.37,ap-south-1,T-45
+U6367, acct-001 ,2026-09-23 09:04:00,Compute,VM-std_4,4965,sec,₹ 863.75,ap-south 1,t-33
+U6368,ACCT-002,2026/05/22 22:02,Storage,VM-STD-4,9604,sec,₹ 214.6,ap-south-1,T-12
+U6369,ACCT-002,2026-02-10 01:39:00,Networking,STORAGE-prem,4019,hr,₹ 605.0,AP-SOUTH-1,T-12
+U6370,ACCT-002,2026/08/27 22:28,Database,vm_std_4,10282,seconds,₹ 1962.78,ap-south-1,t-77
+U6371,acct-003,2026-08-07 07:05+00:00,Database,VM-std_4,6478,sec,₹ 781.77,us-east 1,T-12
+U6372,acct-003,2026-08-27 20:20+00:00,AI,STORAGE-prem,10580,sec,₹ 1828.47,AP-SOUTH-1,t-77
+U6373,acct-003,2026/03/10 06:10,AI,vm_std_4,6775,sec,₹ 1280.2,ap-south 1,t-33
+U6374,ACCT-004,2026/11/20 00:12,Networking,STORAGE-prem,172,seconds,₹ 1180.35,AP-SOUTH-1,T-45
+U6375,ACCT-004,2026-04-18 16:00:00,AI,VM-std_4,17904,seconds,₹ 441.14,ap-south-1,t-77
+U6376, acct-001 ,2026/08/21 04:48,Networking,vm_std_4,16960,seconds,₹ 989.51,ap-south 1,t-77
+U6377,acct-003,2026-10-27 00:25+00:00,Database,vm_std_4,2984,hr,₹ 544.23,AP-SOUTH-1,T-12
+U6378,acct-003,2026/06/08 06:39,Storage,VM-STD-4,6519,sec,₹ 1689.81,ap-south-1,T-12
+U6379, acct-001 ,2026-12-09 04:21:00,Compute,DB-gp_2,9906,hr,₹ 418.92,ap-south 1,T-45
+U6380,ACCT-004,2026/10/20 10:10,Database,vm_std_4,4679,seconds,₹ 1939.06,AP-SOUTH-1,T-12
+U6381, acct-001 ,2026-02-09 10:09+00:00,Storage,DB-gp_2,9006,sec,₹ 1459.78,AP-SOUTH-1,T-12
+U6382,ACCT-002,2026-04-13 22:53:00,Compute,STORAGE-prem,1368,min,₹ 1188.16,ap-south 1,T-45
+U6383,ACCT-004,2026-02-27 10:38:00,Database,vm_std_4,567,min,₹ 817.66,AP-SOUTH-1,T-12
+U6384, acct-001 ,2026-02-28 08:23+00:00,Networking,STORAGE-prem,2448,min,₹ 383.02,us-east 1,t-77
+U6385,acct-003,2026/01/07 00:37,Storage,VM-STD-4,11533,min,₹ 1881.29,AP-SOUTH-1,T-12
+U6386, acct-001 ,2026/01/24 03:13,Compute,DB-gp_2,14771,min,₹ 144.39,ap-south-1,t-77
+U6387, acct-001 ,2026/09/17 00:23,Storage,VM-std_4,10604,min,₹ 1353.32,AP-SOUTH-1,t-77
+U6388,ACCT-004,2026-09-25 06:23+00:00,Compute,vm_std_4,6763,sec,₹ 1946.34,us-east 1,T-45
+U6389, acct-001 ,2026/10/01 12:51,Networking,STORAGE-prem,11093,hr,₹ 486.51,ap-south 1,t-77
+U6390,ACCT-002,2026-02-28 13:30+00:00,Compute,DB-gp_2,7954,sec,₹ 1076.77,ap-south 1,t-33
+U6391,ACCT-004,2026-04-26 04:48+00:00,Compute,VM-std_4,3564,seconds,₹ 231.41,AP-SOUTH-1,T-12
+U6392, acct-001 ,2026-10-21 05:22+00:00,Storage,VM-std_4,1130,min,₹ 1491.27,AP-SOUTH-1,t-77
+U6393,ACCT-002,2026-01-19 18:59:00,Database,VM-std_4,5938,min,₹ 1914.11,ap-south 1,t-77
+U6394,ACCT-002,2026/06/19 15:17,Compute,VM-STD-4,12141,min,₹ 38.45,AP-SOUTH-1,t-77
+U6395,acct-003,2026-04-12 08:07:00,AI,VM-std_4,8813,hr,₹ 322.76,ap-south 1,T-45
+U6396,ACCT-004,2026/11/02 00:19,Database,VM-std_4,15798,sec,₹ 1377.02,ap-south-1,t-77
+U6397,ACCT-004,2026/06/21 13:09,Compute,vm_std_4,13805,sec,₹ 1937.77,ap-south-1,T-45
+U6398,ACCT-004,2026-10-15 22:30:00,AI,VM-std_4,18401,sec,₹ 196.79,AP-SOUTH-1,T-12
+U6399,ACCT-004,2026/02/10 16:02,AI,VM-STD-4,18606,min,₹ 1484.63,ap-south-1,t-33
+U6400,acct-003,2026-03-31 22:03:00,Storage,VM-std_4,11089,hr,₹ 1488.36,AP-SOUTH-1,T-45
+U6401, acct-001 ,2026-04-10 03:02+00:00,AI,VM-std_4,18179,seconds,₹ 1894.63,ap-south-1,t-77
+U6402,acct-003,2026-03-09 18:46+00:00,AI,vm_std_4,9070,seconds,₹ 850.71,AP-SOUTH-1,t-33
+U6403, acct-001 ,2026-07-01 10:49:00,Database,STORAGE-prem,7470,hr,₹ 964.47,ap-south-1,T-45
+U6404,acct-003,2026-07-09 05:40:00,AI,STORAGE-prem,14054,min,₹ 1325.3,us-east 1,t-33
+U6405,ACCT-002,2026-06-22 05:47:00,Storage,vm_std_4,6486,min,₹ 568.92,ap-south-1,t-33
+U6406,ACCT-004,2026/04/04 07:10,Networking,DB-gp_2,12605,min,₹ 735.58,ap-south-1,T-12
+U6407,ACCT-002,2026-03-20 17:08:00,AI,vm_std_4,3243,sec,₹ 1772.05,ap-south 1,t-33
+U6408,ACCT-002,2026-05-31 07:03+00:00,Database,VM-std_4,19211,hr,₹ 1427.14,ap-south-1,T-12
+U6409,ACCT-002,2026-07-05 13:20:00,Compute,VM-std_4,14294,min,₹ 800.9,us-east 1,T-45
+U6410,ACCT-002,2026-01-16 01:24+00:00,Database,VM-std_4,4145,seconds,₹ 1518.23,us-east 1,t-77
+U6411,ACCT-002,2026-09-10 00:06:00,Compute,DB-gp_2,13120,sec,₹ 1751.04,AP-SOUTH-1,t-33
+U6412,ACCT-002,2026-07-26 11:48+00:00,AI,STORAGE-prem,9545,seconds,₹ 1146.34,ap-south 1,t-33
+U6413,acct-003,2026-11-10 15:41+00:00,Database,VM-std_4,17801,min,₹ 1222.93,ap-south 1,t-77
+U6414,acct-003,2026/05/07 10:50,Compute,DB-gp_2,2478,sec,₹ 1655.04,AP-SOUTH-1,t-33
+U6415,ACCT-004,2026/09/09 00:56,Storage,vm_std_4,7251,min,₹ 169.65,ap-south 1,t-77
+U6416, acct-001 ,2026-11-25 04:40:00,Networking,VM-STD-4,15245,sec,₹ 211.08,AP-SOUTH-1,t-33
+U6417,ACCT-002,2026-02-17 19:42+00:00,Database,VM-STD-4,9565,hr,₹ 1250.5,ap-south-1,t-77
+U6418,ACCT-004,2026-05-19 18:01+00:00,Compute,VM-STD-4,19731,min,₹ 244.11,us-east 1,T-45
+U6419,ACCT-004,2026/12/13 22:13,Compute,VM-std_4,12269,hr,₹ 468.92,AP-SOUTH-1,T-12
+U6420,ACCT-004,2026-10-03 21:17:00,AI,VM-std_4,10313,seconds,₹ 1556.03,ap-south-1,T-12
+U6421, acct-001 ,2026-01-31 07:05:00,AI,vm_std_4,19770,min,₹ 1098.92,AP-SOUTH-1,T-12
+U6422, acct-001 ,2026/04/24 23:15,Compute,VM-std_4,11162,seconds,₹ 1241.49,us-east 1,T-12
+U6423,ACCT-002,2026/08/20 21:57,Compute,VM-std_4,129300,seconds,₹ 37963.0,us-east 1,t-77
+U6424,ACCT-004,2026-10-25 10:43:00,Networking,VM-STD-4,10592,min,₹ 526.23,us-east 1,t-77
+U6425,acct-003,2026-01-22 23:45:00,Database,VM-STD-4,16880,min,₹ 1397.43,ap-south-1,T-45
+U6426,ACCT-002,2026-07-09 07:17+00:00,Database,STORAGE-prem,18287,seconds,₹ 181.05,AP-SOUTH-1,T-12
+U6427,ACCT-004,2026-02-09 19:50:00,Storage,VM-STD-4,6059,sec,₹ 1682.75,AP-SOUTH-1,T-12
+U6428,acct-003,2026-12-03 23:31+00:00,Database,VM-std_4,11348,sec,₹ 1952.88,us-east 1,t-77
+U6429,ACCT-004,2026/03/08 15:36,Compute,VM-STD-4,7420,min,₹ 1412.16,AP-SOUTH-1,t-77
+U6430, acct-001 ,2026/08/07 00:38,AI,DB-gp_2,10330,min,₹ 765.67,ap-south-1,t-33
+U6431,ACCT-002,2026-12-10 07:58+00:00,Compute,STORAGE-prem,14954,min,₹ 214.76,ap-south-1,t-33
+U6432,ACCT-002,2026-04-11 13:10:00,Networking,vm_std_4,5180,sec,₹ 1843.49,ap-south 1,t-77
+U6433, acct-001 ,2026-03-10 19:26:00,Compute,DB-gp_2,9396,seconds,₹ 593.9,ap-south 1,t-33
+U6434,ACCT-004,2026-02-15 10:56:00,Database,vm_std_4,2585,seconds,₹ 294.05,AP-SOUTH-1,T-12
+U6435,ACCT-002,2026-11-16 03:10:00,Storage,vm_std_4,19816,hr,₹ 1475.89,us-east 1,T-45
+U6436,acct-003,2026/02/10 21:12,Database,STORAGE-prem,18094,hr,₹ 492.44,us-east 1,T-45
+U6437, acct-001 ,2026/04/22 15:48,Database,STORAGE-prem,16412,hr,₹ 766.53,ap-south-1,T-45
+U6438,ACCT-004,2026-12-03 06:42:00,Compute,VM-std_4,7240,seconds,₹ 730.72,ap-south 1,T-45
+U6439,acct-003,2026/06/21 06:55,AI,VM-std_4,10259,sec,₹ 1812.48,us-east 1,t-33
+U6440,ACCT-004,2026-01-11 19:55+00:00,Storage,VM-STD-4,7816,min,₹ 203.32,AP-SOUTH-1,t-77
+U6441,acct-003,2026/02/05 02:42,Compute,STORAGE-prem,6086,sec,₹ 81.06,ap-south-1,T-45
+U6442,acct-003,2026/09/25 07:51,Compute,STORAGE-prem,12020,min,₹ 1327.85,ap-south 1,t-77
+U6443,ACCT-004,2026-03-05 20:18+00:00,Storage,STORAGE-prem,10858,hr,₹ 892.95,ap-south-1,t-77
+U6444, acct-001 ,2026-09-02 16:30:00,Database,STORAGE-prem,6594,min,₹ 24.97,ap-south-1,t-77
+U6445,ACCT-002,2026-06-05 20:03+00:00,Compute,vm_std_4,18173,seconds,₹ 450.65,ap-south 1,T-12
+U6446,ACCT-002,2026-01-01 15:18:00,Networking,DB-gp_2,1797,seconds,₹ 142.9,ap-south 1,t-77
+U6447, acct-001 ,2026/07/18 11:39,Storage,vm_std_4,382950,hr,₹ 39657.8,AP-SOUTH-1,t-77
+U6448,ACCT-002,2026/08/17 15:25,Networking,VM-STD-4,12871,hr,₹ 241.91,ap-south 1,T-12
+U6449,ACCT-004,2026-10-27 12:19+00:00,AI,vm_std_4,15148,hr,₹ 1406.8,ap-south 1,T-45
+U6450,ACCT-002,2026-07-31 09:19+00:00,Database,VM-std_4,18610,hr,₹ 1082.31,ap-south 1,t-77
+U6451,acct-003,2026/08/30 10:23,Storage,VM-STD-4,6517,min,₹ 580.16,ap-south 1,t-77
+U6452, acct-001 ,2026/08/19 01:31,Compute,VM-std_4,4129,sec,₹ 551.17,ap-south 1,t-33
+U6453, acct-001 ,2026-06-01 23:57:00,Compute,vm_std_4,17635,seconds,₹ 1487.43,us-east 1,t-77
+U6454,ACCT-004,2026-11-02 04:22+00:00,AI,DB-gp_2,15471,hr,₹ 1998.87,ap-south 1,T-45
+U6455, acct-001 ,2026-05-04 17:34+00:00,Compute,vm_std_4,1297,min,₹ 1842.67,us-east 1,T-12
+U6456, acct-001 ,2026/05/07 01:45,Database,STORAGE-prem,13478,sec,₹ 1744.76,AP-SOUTH-1,T-12
+U6457,acct-003,2026/01/19 23:01,Compute,DB-gp_2,15904,hr,₹ 1183.59,AP-SOUTH-1,T-45
+U6458, acct-001 ,2026-11-29 20:52+00:00,AI,DB-gp_2,5035,seconds,₹ 603.6,us-east 1,t-77
+U6459,ACCT-004,2026-09-06 06:00:00,Compute,vm_std_4,1695,sec,₹ 183.62,ap-south 1,t-33
+U6460, acct-001 ,2026-10-21 11:08:00,AI,VM-std_4,1926,sec,₹ 24.85,ap-south-1,T-12
+U6461,ACCT-002,2026-04-13 20:18+00:00,Compute,DB-gp_2,1041,seconds,₹ 1898.29,ap-south 1,t-33
+U6462, acct-001 ,2026-06-20 03:41:00,AI,STORAGE-prem,10514,hr,₹ 732.36,ap-south-1,T-45
+U6463,ACCT-004,2026-06-19 03:30:00,Networking,VM-std_4,15033,min,₹ 1278.41,us-east 1,T-12
+U6464, acct-001 ,2026-02-18 07:11:00,Storage,DB-gp_2,16145,min,₹ 682.59,AP-SOUTH-1,t-77
+U6465,ACCT-004,2026-01-29 17:45+00:00,Storage,vm_std_4,4107,seconds,₹ 564.55,ap-south-1,T-45
+U6466,acct-003,2026/08/10 11:25,Compute,STORAGE-prem,6594,min,₹ 1879.81,ap-south 1,t-33
+U6467,acct-003,2026/11/24 06:31,Networking,DB-gp_2,3137,min,₹ 942.39,ap-south 1,T-45
+U6468,ACCT-004,2026-08-23 15:21:00,AI,DB-gp_2,7038,seconds,₹ 1329.26,ap-south-1,t-77
+U6469,ACCT-002,2026-09-05 02:50:00,Storage,STORAGE-prem,12725,seconds,₹ 869.02,us-east 1,T-45
+U6470,ACCT-002,2026-07-28 05:11:00,Compute,STORAGE-prem,15058,seconds,₹ 1932.69,us-east 1,t-33
+U6471,ACCT-004,2026-03-10 21:01+00:00,Storage,VM-STD-4,720,hr,₹ 1603.11,AP-SOUTH-1,T-45
+U6472, acct-001 ,2026-04-22 16:40+00:00,Compute,vm_std_4,12499,min,₹ 770.03,us-east 1,t-77
+U6473, acct-001 ,2026/08/13 00:05,AI,DB-gp_2,3172,min,₹ 355.15,ap-south-1,T-12
+U6474,ACCT-004,2026-10-05 07:37+00:00,Storage,VM-std_4,18279,min,₹ 1069.95,ap-south 1,t-77
+U6475,acct-003,2026/12/01 16:02,Storage,DB-gp_2,1411,seconds,₹ 21.22,us-east 1,T-45
+U6476,ACCT-004,2026-09-20 19:36+00:00,Networking,vm_std_4,15997,min,₹ 1028.9,ap-south 1,t-77
+U6477,acct-003,2026-08-28 21:07+00:00,Storage,DB-gp_2,16730,seconds,₹ 739.17,ap-south-1,t-77
+U6478,ACCT-002,2026-06-24 08:58:00,Storage,vm_std_4,8695,sec,₹ 192.21,ap-south 1,T-12
+U6479, acct-001 ,2026/07/26 13:46,Compute,VM-std_4,1692,sec,₹ 384.35,AP-SOUTH-1,T-45
+U6480,ACCT-002,2026/01/07 16:43,Storage,VM-std_4,10117,sec,₹ 678.32,AP-SOUTH-1,T-45
+U6481,ACCT-002,2026/09/24 09:46,Networking,STORAGE-prem,4479,min,₹ 550.2,ap-south-1,T-45
+U6482,ACCT-004,2026-08-29 00:32:00,Compute,vm_std_4,18533,min,₹ 596.39,AP-SOUTH-1,t-77
+U6483,ACCT-004,2026-10-15 11:03+00:00,Networking,STORAGE-prem,723,hr,₹ 1775.2,us-east 1,T-12
+U6484,acct-003,2026-03-23 13:22:00,Database,STORAGE-prem,9774,min,₹ 1895.06,us-east 1,T-45
+U6485,ACCT-002,2026-04-14 05:31:00,Compute,VM-STD-4,9618,hr,₹ 817.62,us-east 1,T-45
+U6486, acct-001 ,2026/05/04 12:25,Networking,vm_std_4,7639,hr,₹ 476.56,AP-SOUTH-1,t-33
+U6487, acct-001 ,2026-10-17 11:09:00,Networking,vm_std_4,17309,sec,₹ 835.69,ap-south 1,t-33
+U6488,acct-003,2026/04/09 04:37,Database,vm_std_4,18885,min,₹ 198.34,ap-south-1,t-33
+U6489,ACCT-002,2026/10/02 09:01,AI,STORAGE-prem,15210,hr,₹ 11.16,AP-SOUTH-1,T-12
+U6490,acct-003,2026-12-07 02:00:00,Networking,STORAGE-prem,411,hr,₹ 1936.94,ap-south 1,T-45
+U6491,acct-003,2026-07-28 14:46+00:00,Storage,DB-gp_2,19092,sec,₹ 718.65,ap-south-1,t-77
+U6492,ACCT-002,2026-04-03 06:39+00:00,Database,DB-gp_2,11208,hr,₹ 1638.43,AP-SOUTH-1,t-33
+U6493, acct-001 ,2026-03-03 12:10:00,Networking,vm_std_4,17691,sec,₹ 517.54,AP-SOUTH-1,T-12
+U6494,ACCT-004,2026-10-08 20:04+00:00,AI,VM-STD-4,16827,hr,₹ 1299.27,AP-SOUTH-1,t-33
+U6495,ACCT-004,2026-07-09 04:37+00:00,Storage,STORAGE-prem,19604,seconds,₹ 450.23,ap-south-1,T-12
+U6496,acct-003,2026-03-24 14:38:00,Compute,VM-STD-4,11752,hr,₹ 153.72,ap-south-1,t-77
+U6497,ACCT-002,2026/12/13 02:54,Networking,DB-gp_2,4306,sec,₹ 458.85,ap-south-1,T-12
+U6498, acct-001 ,2026/05/01 06:13,Database,DB-gp_2,14246,hr,₹ 1476.6,AP-SOUTH-1,T-12
+U6499,ACCT-004,2026-07-06 19:35:00,AI,VM-STD-4,7457,seconds,₹ 1536.23,AP-SOUTH-1,T-12
+U6500, acct-001 ,2026-07-05 06:18:00,AI,STORAGE-prem,17692,min,₹ 1340.16,ap-south 1,T-45
+U6501,ACCT-004,2026/04/25 09:05,Networking,VM-std_4,11611,min,₹ 1203.66,AP-SOUTH-1,T-12
+U6502,ACCT-002,2026-07-02 19:33+00:00,Networking,VM-std_4,16539,seconds,₹ 1074.03,AP-SOUTH-1,T-12
+U6503,acct-003,2026-04-18 14:54:00,AI,vm_std_4,1743,min,₹ 1367.24,AP-SOUTH-1,t-33
+U6504, acct-001 ,2026/01/10 15:02,AI,VM-STD-4,18876,min,₹ 1299.39,ap-south 1,T-12
+U6505,ACCT-002,2026-11-26 22:58+00:00,Database,vm_std_4,8479,seconds,₹ 1709.83,ap-south-1,T-12
+U6506, acct-001 ,2026/06/07 16:15,Compute,VM-std_4,15523,sec,₹ 872.46,AP-SOUTH-1,t-77
+U6507,acct-003,2026/05/03 15:18,Database,vm_std_4,3157,min,₹ 1961.45,ap-south 1,t-33
+U6508,ACCT-004,2026/11/23 16:54,Database,DB-gp_2,19148,sec,₹ 1000.2,ap-south 1,T-45
+U6509,ACCT-002,2026-03-03 19:08:00,Compute,STORAGE-prem,4967,sec,₹ 259.97,ap-south 1,t-77
+U6510,ACCT-004,2026-03-25 16:56+00:00,Compute,VM-std_4,6236,seconds,₹ 331.25,ap-south-1,t-77
+U6511, acct-001 ,2026-04-23 13:09+00:00,Storage,VM-std_4,8697,hr,₹ 1993.91,AP-SOUTH-1,T-12
+U6512,ACCT-002,2026/01/01 06:41,AI,DB-gp_2,6801,seconds,₹ 1278.23,ap-south-1,t-77
+U6513,ACCT-004,2026-01-15 02:07+00:00,Networking,DB-gp_2,2103,min,₹ 398.24,AP-SOUTH-1,T-12
+U6514,ACCT-002,2026-02-17 14:12+00:00,Networking,STORAGE-prem,2773,seconds,₹ 1341.27,ap-south-1,t-77
+U6515,ACCT-004,2026/11/11 08:38,Storage,vm_std_4,16305,seconds,₹ 1159.14,ap-south 1,T-12
+U6516, acct-001 ,2026-08-17 10:39+00:00,Compute,STORAGE-prem,11236,sec,₹ 311.24,AP-SOUTH-1,t-77
+U6517,ACCT-002,2026-03-05 01:20+00:00,Storage,STORAGE-prem,14564,seconds,₹ 1720.4,AP-SOUTH-1,t-77
+U6518,ACCT-004,2026-02-14 00:49+00:00,AI,vm_std_4,19986,hr,₹ 499.29,us-east 1,t-33
+U6519,ACCT-004,2026-01-28 06:42+00:00,Compute,STORAGE-prem,3241,min,₹ 1344.29,us-east 1,t-33
+U6520, acct-001 ,2026-03-11 03:34:00,AI,VM-std_4,18324,hr,₹ 1943.46,ap-south-1,t-77
+U6521,acct-003,2026-01-08 21:11+00:00,Storage,VM-std_4,18716,hr,₹ 946.03,AP-SOUTH-1,t-77
+U6522,ACCT-004,2026-05-04 06:38:00,Database,VM-std_4,16727,seconds,₹ 1166.39,us-east 1,t-77
+U6523,acct-003,2026-10-04 15:59:00,Networking,vm_std_4,17341,min,₹ 675.85,ap-south-1,t-77
+U6524,acct-003,2026-07-19 22:32:00,Networking,vm_std_4,19917,sec,₹ 1851.26,AP-SOUTH-1,T-12
+U6525,ACCT-004,2026-02-17 06:52:00,Networking,vm_std_4,809,seconds,₹ 1637.89,ap-south-1,t-33
+U6526,ACCT-002,2026-06-11 22:07+00:00,Storage,VM-STD-4,2252,seconds,₹ 1423.82,us-east 1,t-77
+U6527,acct-003,2026-03-01 23:51+00:00,Networking,VM-STD-4,707,sec,₹ 1557.44,ap-south-1,T-12
+U6528,ACCT-002,2026-01-04 03:23:00,Database,vm_std_4,3968,sec,₹ 748.25,ap-south 1,t-33
+U6529,acct-003,2026/07/13 13:45,Storage,VM-STD-4,17433,min,₹ 1648.51,ap-south-1,T-12
+U6530, acct-001 ,2026-04-14 20:06+00:00,Compute,VM-std_4,10532,sec,₹ 622.51,ap-south-1,t-33
+U6531,acct-003,2026/03/23 08:58,Compute,STORAGE-prem,5554,seconds,₹ 952.95,AP-SOUTH-1,t-33
+U6532, acct-001 ,2026-01-30 20:50+00:00,Storage,vm_std_4,1377,seconds,₹ 1829.11,ap-south-1,T-12
+U6533,acct-003,2026-06-29 12:13+00:00,Compute,VM-STD-4,7019,sec,₹ 415.17,ap-south-1,t-33
+U6534,ACCT-002,2026-11-09 23:45+00:00,Networking,vm_std_4,10008,hr,₹ 610.99,AP-SOUTH-1,t-33
+U6535,ACCT-002,2026-02-18 04:25:00,Networking,VM-std_4,18354,seconds,₹ 1086.07,ap-south 1,T-12
+U6536,acct-003,2026/10/25 14:36,Database,vm_std_4,15602,hr,₹ 508.79,ap-south 1,t-77
+U6537,acct-003,2026/06/16 09:38,Compute,VM-STD-4,13632,min,₹ 1129.75,AP-SOUTH-1,t-33
+U6538,acct-003,2026/09/09 05:06,Database,VM-std_4,14309,min,₹ 324.35,us-east 1,T-12
+U6539,ACCT-004,2026-04-02 07:49+00:00,Compute,VM-STD-4,19242,seconds,₹ 543.9,AP-SOUTH-1,T-45
+U6540, acct-001 ,2026-06-30 20:13+00:00,AI,STORAGE-prem,14578,seconds,₹ 1085.68,ap-south-1,T-12
+U6541, acct-001 ,2026/04/15 16:19,Database,vm_std_4,13901,sec,₹ 1102.25,ap-south 1,T-45
+U6542,acct-003,2026-03-03 10:35+00:00,Networking,STORAGE-prem,224150,sec,₹ 10266.6,AP-SOUTH-1,t-77
+U6543, acct-001 ,2026/05/03 15:11,Compute,STORAGE-prem,10514,hr,₹ 546.24,ap-south-1,T-12
+U6544,ACCT-002,2026/06/07 19:01,Storage,vm_std_4,13174,sec,₹ 300.45,ap-south-1,T-12
+U6545,acct-003,2026-09-11 02:42:00,Database,VM-std_4,2754,hr,₹ 292.22,us-east 1,t-33
+U6546,ACCT-002,2026-06-29 00:55+00:00,Compute,vm_std_4,1668,hr,₹ 217.49,ap-south-1,t-33
+U6547,ACCT-004,2026/12/04 18:54,Database,VM-std_4,13681,seconds,₹ 460.6,ap-south 1,t-33
+U6548,acct-003,2026-05-13 05:06+00:00,Compute,VM-STD-4,11424,seconds,₹ 1235.01,ap-south-1,T-45
+U6549, acct-001 ,2026-09-13 14:40:00,AI,vm_std_4,4987,seconds,₹ 1438.16,ap-south-1,T-45
+U6550,ACCT-004,2026-11-09 08:42:00,Networking,VM-STD-4,7949,min,₹ 1148.77,ap-south 1,t-77
+U6551,ACCT-004,2026-05-04 23:19+00:00,Database,VM-STD-4,4023,sec,₹ 1240.26,us-east 1,T-45
+U6552,ACCT-002,2026-06-19 15:50+00:00,Database,VM-std_4,10131,min,₹ 1466.3,ap-south 1,t-33
+U6553,ACCT-002,2026/06/11 17:19,Storage,DB-gp_2,5948,hr,₹ 873.07,ap-south 1,t-77
+U6554,ACCT-004,2026/02/20 10:20,Storage,DB-gp_2,3653,seconds,₹ 129.98,AP-SOUTH-1,t-77
+U6555, acct-001 ,2026-12-01 10:57:00,Networking,DB-gp_2,5911,hr,₹ 1886.7,ap-south-1,t-33
+U6556,ACCT-002,2026/11/02 13:18,Compute,STORAGE-prem,8166,min,₹ 1737.06,ap-south 1,t-77
+U6557,ACCT-002,2026/12/11 22:30,Database,STORAGE-prem,14334,hr,₹ 1581.42,AP-SOUTH-1,T-12
+U6558,ACCT-002,2026-08-14 00:07+00:00,Storage,VM-STD-4,8868,sec,₹ 1015.49,ap-south-1,t-77
+U6559, acct-001 ,2026-07-15 05:40:00,Storage,VM-STD-4,1150,seconds,₹ 1815.36,ap-south 1,t-33
+U6560,ACCT-002,2026-06-11 12:37+00:00,Networking,DB-gp_2,18380,sec,₹ 1502.71,ap-south-1,t-33
+U6561,acct-003,2026-07-08 21:10+00:00,Compute,DB-gp_2,6977,sec,₹ 1320.92,AP-SOUTH-1,T-12
+U6562,ACCT-004,2026/10/27 02:25,Compute,VM-STD-4,4045,seconds,₹ 755.16,ap-south 1,t-33
+U6563,acct-003,2026-04-30 00:02:00,Compute,VM-STD-4,332,sec,₹ 63.14,ap-south 1,T-45
+U6564,acct-003,2026/10/15 20:02,Database,vm_std_4,10243,hr,₹ 42.51,AP-SOUTH-1,t-33
+U6565,acct-003,2026-10-10 05:35+00:00,Compute,VM-std_4,6648,sec,₹ 444.34,ap-south-1,T-12
+U6566,ACCT-002,2026-07-19 15:43+00:00,AI,VM-STD-4,1359,sec,₹ 706.37,ap-south 1,T-45
+U6567,ACCT-004,2026/05/10 11:40,Networking,vm_std_4,12898,min,₹ 1387.5,ap-south 1,T-12
+U6568,ACCT-002,2026-11-19 02:58+00:00,Networking,VM-std_4,15731,seconds,₹ 680.34,ap-south-1,t-33
+U6569,ACCT-004,2026-01-15 16:49:00,AI,VM-STD-4,18090,hr,₹ 171.16,us-east 1,t-77
+U6570,acct-003,2026/07/19 08:07,Database,vm_std_4,11297,seconds,₹ 1608.65,ap-south-1,t-77
+U6571,ACCT-004,2026/04/12 09:06,Storage,VM-STD-4,4979,hr,₹ 50.93,AP-SOUTH-1,t-77
+U6572,acct-003,2026-11-09 03:18+00:00,AI,VM-STD-4,16960,min,₹ 426.25,AP-SOUTH-1,t-33
+U6573,ACCT-004,2026-09-07 01:35+00:00,Storage,VM-STD-4,14376,hr,₹ 1486.43,ap-south-1,t-77
+U6574, acct-001 ,2026-01-10 23:35:00,Storage,STORAGE-prem,1943,seconds,₹ 1123.48,AP-SOUTH-1,T-45
+U6575, acct-001 ,2026-06-03 21:53:00,Compute,VM-std_4,2545,hr,₹ 1864.69,ap-south 1,t-33
+U6576,ACCT-002,2026-02-22 18:12+00:00,Networking,DB-gp_2,5578,hr,₹ 1770.06,ap-south 1,T-12
+U6577, acct-001 ,2026-01-26 03:16+00:00,Compute,STORAGE-prem,9960,seconds,₹ 1376.74,ap-south 1,T-45
+U6578,acct-003,2026/06/01 12:45,Networking,VM-STD-4,1987,min,₹ 345.29,ap-south 1,T-12
+U6579, acct-001 ,2026/03/11 15:34,Compute,STORAGE-prem,1785,seconds,₹ 225.47,ap-south-1,t-33
+U6580,ACCT-002,2026-10-31 20:04+00:00,AI,VM-STD-4,8389,seconds,₹ 616.61,ap-south 1,T-45
+U6581, acct-001 ,2026-10-06 08:27:00,AI,VM-STD-4,9066,hr,₹ 653.67,us-east 1,T-45
+U6582, acct-001 ,2026-06-03 20:11:00,Compute,VM-STD-4,12440,hr,₹ 1065.19,ap-south-1,t-33
+U6583,ACCT-004,2026-08-13 08:34+00:00,AI,VM-STD-4,544650,seconds,₹ 25243.0,us-east 1,t-77
+U6584,ACCT-002,2026/01/20 00:06,Storage,VM-std_4,7029,seconds,₹ 162.99,ap-south-1,t-33
+U6585,ACCT-002,2026-02-08 21:06+00:00,AI,VM-std_4,5311,min,₹ 910.23,us-east 1,t-77
+U6586,ACCT-004,2026/05/05 05:34,AI,vm_std_4,12937,sec,₹ 160.0,us-east 1,t-33
+U6587,ACCT-004,2026-03-19 00:54+00:00,Database,vm_std_4,19595,seconds,₹ 375.36,ap-south 1,T-45
+U6588,ACCT-004,2026/03/14 06:35,Database,VM-STD-4,6376,min,₹ 469.62,AP-SOUTH-1,T-12
+U6589,ACCT-002,2026-05-19 08:28:00,Database,STORAGE-prem,14524,sec,₹ 993.3,us-east 1,t-77
+U6590, acct-001 ,2026/03/14 17:46,Compute,VM-std_4,968700,min,₹ 30101.8,ap-south-1,T-45
+U6591,ACCT-002,2026/09/19 17:29,Database,VM-STD-4,4632,hr,₹ 611.98,ap-south 1,t-33
+U6592,ACCT-004,2026/04/10 11:25,Storage,STORAGE-prem,4201,hr,₹ 84.24,AP-SOUTH-1,t-77
+U6593,ACCT-004,2026-10-16 01:37+00:00,Database,DB-gp_2,13944,sec,₹ 1643.04,ap-south-1,T-12
+U6594, acct-001 ,2026-01-08 10:14:00,Compute,vm_std_4,1164,sec,₹ 653.72,ap-south-1,T-12
+U6595,ACCT-002,2026-08-31 05:28+00:00,Database,DB-gp_2,2368,sec,₹ 1930.15,us-east 1,t-33
+U6596,ACCT-004,2026-08-21 03:57+00:00,Storage,STORAGE-prem,7138,min,₹ 697.27,ap-south-1,t-33
+U6597,ACCT-002,2026-12-03 23:12+00:00,AI,VM-std_4,2047,sec,₹ 988.85,AP-SOUTH-1,T-45
+U6598,ACCT-002,2026-01-01 16:55+00:00,Storage,DB-gp_2,19323,min,₹ 1731.32,ap-south-1,t-33
+U6599, acct-001 ,2026-04-27 23:59:00,AI,vm_std_4,19514,seconds,₹ 432.36,ap-south 1,T-12
+U6600, acct-001 ,2026-04-20 20:54+00:00,Storage,DB-gp_2,10493,seconds,₹ 946.82,ap-south 1,T-45
+U6601,ACCT-004,2026-03-24 01:47:00,AI,VM-STD-4,16535,min,₹ 1219.26,ap-south 1,T-45
+U6602,acct-003,2026/01/25 17:50,Storage,VM-STD-4,12011,sec,₹ 721.19,AP-SOUTH-1,t-33
+U6603, acct-001 ,2026-05-29 09:33:00,AI,VM-std_4,12055,min,₹ 1513.69,AP-SOUTH-1,T-45
+U6604,ACCT-002,2026-08-28 00:52+00:00,Storage,DB-gp_2,8454,sec,₹ 981.24,ap-south 1,t-33
+U6605,ACCT-004,2026-05-15 06:07:00,Database,vm_std_4,19879,seconds,₹ 517.42,ap-south-1,T-12
+U6606, acct-001 ,2026-10-20 06:45:00,AI,VM-STD-4,5833,sec,₹ 663.21,AP-SOUTH-1,T-45
+U6607, acct-001 ,2026-08-07 01:34:00,Storage,VM-STD-4,200,seconds,₹ 136.71,ap-south-1,t-77
+U6608,acct-003,2026/01/31 23:50,Compute,VM-std_4,6351,seconds,₹ 769.68,us-east 1,T-45
+U6609,acct-003,2026/01/25 14:33,Networking,VM-STD-4,15053,seconds,₹ 1403.66,AP-SOUTH-1,t-77
+U6610,ACCT-004,2026-09-13 03:45:00,AI,VM-STD-4,5336,sec,₹ 929.05,us-east 1,T-12
+U6611,ACCT-002,2026/10/23 09:29,Compute,DB-gp_2,546,sec,₹ 73.27,AP-SOUTH-1,t-77
+U6612,ACCT-004,2026-06-06 21:14:00,Database,DB-gp_2,9306,sec,₹ 1051.88,AP-SOUTH-1,T-45
+U6613,ACCT-002,2026/05/22 04:31,Storage,VM-STD-4,5665,seconds,₹ 109.12,ap-south 1,t-33
+U6614,ACCT-004,2026/02/20 09:36,AI,STORAGE-prem,17283,sec,₹ 1674.88,ap-south 1,t-77
+U6615,acct-003,2026-07-12 18:19:00,Database,STORAGE-prem,2330,sec,₹ 1319.62,ap-south 1,t-33
+U6616, acct-001 ,2026/02/20 23:29,Storage,vm_std_4,2905,hr,₹ 752.61,AP-SOUTH-1,t-33
+U6617, acct-001 ,2026-07-14 11:39+00:00,AI,STORAGE-prem,864600,sec,₹ 15214.8,ap-south 1,t-77
+U6618,ACCT-002,2026-01-18 22:25+00:00,Database,DB-gp_2,920,min,₹ 56.33,ap-south-1,T-45
+U6619, acct-001 ,2026-10-13 06:20+00:00,Networking,VM-STD-4,11302,min,₹ 1574.31,ap-south-1,T-12
+U6620,ACCT-004,2026/06/03 05:33,Storage,vm_std_4,9280,min,₹ 1979.78,ap-south-1,T-12
+U6621, acct-001 ,2026/03/10 17:36,Database,DB-gp_2,10613,hr,₹ 1286.65,ap-south 1,T-12
+U6622,ACCT-004,2026/12/06 05:15,AI,DB-gp_2,10068,sec,₹ 1693.68,ap-south-1,T-12
+U6623, acct-001 ,2026/09/11 20:01,Networking,STORAGE-prem,19514,seconds,₹ 1444.05,us-east 1,T-45
+U6624,ACCT-004,2026/11/24 07:39,Networking,DB-gp_2,3779,seconds,₹ 556.33,us-east 1,T-12
+U6625,acct-003,2026-04-14 08:01+00:00,AI,DB-gp_2,14592,min,₹ 1064.54,ap-south-1,t-33
+U6626, acct-001 ,2026-04-27 16:53+00:00,Compute,VM-STD-4,230,sec,₹ 628.78,AP-SOUTH-1,T-12
+U6627,ACCT-004,2026-02-07 14:48:00,Compute,DB-gp_2,14039,seconds,₹ 225.27,us-east 1,t-77
+U6628, acct-001 ,2026/01/01 16:12,Database,STORAGE-prem,16436,min,₹ 1467.37,AP-SOUTH-1,T-12
+U6629,ACCT-002,2026/03/28 04:47,Networking,VM-std_4,10218,min,₹ 601.3,us-east 1,T-12
+U6630,ACCT-002,2026-02-01 06:35+00:00,Storage,vm_std_4,19201,hr,₹ 1543.47,ap-south-1,t-77
+U6631,acct-003,2026-06-04 05:46:00,Networking,VM-std_4,5819,sec,₹ 1366.03,AP-SOUTH-1,T-12
+U6632, acct-001 ,2026-08-13 12:58+00:00,Database,VM-std_4,13018,sec,₹ 854.39,ap-south-1,T-45
+U6633,ACCT-004,2026-09-16 05:29:00,Database,VM-std_4,18475,min,₹ 1088.92,ap-south 1,T-12
+U6634,acct-003,2026-10-21 22:17:00,AI,VM-STD-4,4246,sec,₹ 215.01,us-east 1,T-45
+U6635, acct-001 ,2026/11/30 11:47,Database,DB-gp_2,800,hr,₹ 1367.6,AP-SOUTH-1,T-45
+U6636, acct-001 ,2026-02-24 12:59+00:00,Storage,vm_std_4,9045,seconds,₹ 1705.5,us-east 1,T-45
+U6637,ACCT-002,2026-07-27 20:14:00,AI,STORAGE-prem,11988,min,₹ 1821.25,ap-south-1,T-45
+U6638, acct-001 ,2026-05-29 01:25:00,AI,DB-gp_2,1112,seconds,₹ 307.81,ap-south 1,t-33
+U6639,ACCT-004,2026/08/03 20:03,AI,STORAGE-prem,6361,hr,₹ 1769.16,ap-south 1,T-45
+U6640,ACCT-002,2026-04-29 01:05+00:00,Compute,VM-std_4,16585,hr,₹ 1765.42,ap-south-1,t-77
+U6641,ACCT-004,2026-08-03 11:12:00,Compute,VM-std_4,9626,seconds,₹ 1239.19,AP-SOUTH-1,t-33
+U6642,ACCT-002,2026/08/03 12:35,Storage,DB-gp_2,5818,min,₹ 242.0,us-east 1,t-33
+U6643,ACCT-004,2026-11-09 10:27+00:00,Database,VM-std_4,13020,min,₹ 14.53,ap-south-1,t-33
+U6644,ACCT-002,2026/03/23 21:59,Networking,DB-gp_2,16705,min,₹ 971.85,ap-south-1,T-12
+U6645,ACCT-004,2026/12/12 07:34,Compute,DB-gp_2,549,seconds,₹ 1903.41,ap-south 1,t-77
+U6646,acct-003,2026-09-26 05:54+00:00,Database,vm_std_4,8665,min,₹ 701.08,ap-south-1,T-45
+U6647, acct-001 ,2026/03/30 20:37,Storage,STORAGE-prem,526600,seconds,₹ 13300.8,AP-SOUTH-1,T-12
+U6648,acct-003,2026/01/12 22:03,Compute,vm_std_4,15927,sec,₹ 1545.07,ap-south 1,t-33
+U6649, acct-001 ,2026-06-09 06:19:00,Database,VM-std_4,10847,sec,₹ 834.66,us-east 1,t-33
+U6650,ACCT-004,2026/11/19 02:58,Compute,STORAGE-prem,19361,min,₹ 853.71,ap-south 1,T-45
+U6651, acct-001 ,2026-07-13 07:27:00,Storage,VM-STD-4,3298,seconds,₹ 1074.63,ap-south-1,t-77
+U6652,ACCT-002,2026-09-23 08:42:00,Compute,vm_std_4,5630,min,₹ 1660.7,us-east 1,t-33
+U6653,ACCT-002,2026/11/25 17:57,Database,DB-gp_2,7776,seconds,₹ 1847.05,ap-south-1,T-45
+U6654, acct-001 ,2026/02/11 18:52,AI,VM-STD-4,11010,hr,₹ 1195.75,ap-south 1,T-12
+U6655,acct-003,2026-09-06 00:30+00:00,Database,vm_std_4,12417,min,₹ 574.8,us-east 1,T-45
+U6656, acct-001 ,2026-07-06 06:54:00,Compute,DB-gp_2,16261,sec,₹ 948.77,ap-south-1,T-45
+U6657,ACCT-002,2026-11-30 10:59+00:00,Storage,DB-gp_2,1763,sec,₹ 1359.0,AP-SOUTH-1,t-77
+U6658,ACCT-002,2026-01-19 02:43+00:00,Database,VM-std_4,8403,min,₹ 1471.78,us-east 1,T-45
+U6659, acct-001 ,2026-06-18 05:25+00:00,Compute,VM-std_4,12061,sec,₹ 1455.03,AP-SOUTH-1,T-12
+U6660, acct-001 ,2026/11/01 22:42,Networking,VM-STD-4,7077,sec,₹ 1635.34,AP-SOUTH-1,T-45
+U6661,ACCT-004,2026/10/02 11:01,AI,VM-std_4,12346,seconds,₹ 604.38,AP-SOUTH-1,T-45
+U6662,acct-003,2026-03-06 13:16:00,Networking,vm_std_4,1720,hr,₹ 653.53,us-east 1,t-77
+U6663,ACCT-002,2026-05-12 23:37:00,Database,VM-std_4,2606,min,₹ 1116.42,us-east 1,t-77
+U6664, acct-001 ,2026/01/14 21:46,Storage,VM-std_4,10982,seconds,₹ 934.51,AP-SOUTH-1,t-33
+U6665,ACCT-004,2026-12-05 12:31+00:00,AI,DB-gp_2,3399,hr,₹ 1849.35,AP-SOUTH-1,t-77
+U6666,ACCT-002,2026/05/13 18:29,Networking,DB-gp_2,3246,seconds,₹ 227.36,ap-south 1,t-77
+U6667,ACCT-002,2026/02/23 10:25,Storage,STORAGE-prem,12601,hr,₹ 56.39,ap-south-1,t-33
+U6668,ACCT-002,2026-11-01 08:49+00:00,Storage,VM-STD-4,3976,hr,₹ 1131.32,ap-south-1,T-45
+U6669, acct-001 ,2026/11/24 13:10,AI,STORAGE-prem,19915,seconds,₹ 81.65,ap-south-1,T-45
+U6670,acct-003,2026-01-08 20:24+00:00,Compute,vm_std_4,11700,hr,₹ 679.84,ap-south-1,t-77
+U6671, acct-001 ,2026-08-03 04:28+00:00,Networking,VM-STD-4,464100,sec,₹ 25006.199999999997,AP-SOUTH-1,t-33
+U6672,ACCT-004,2026-08-23 10:13:00,Storage,vm_std_4,17617,min,₹ 999.69,ap-south-1,t-33
+U6673,ACCT-004,2026-03-23 08:43:00,Storage,VM-STD-4,8765,hr,₹ 1647.38,AP-SOUTH-1,T-45
+U6674,acct-003,2026-06-27 12:48+00:00,Networking,STORAGE-prem,2457,hr,₹ 773.12,ap-south 1,T-12
+U6675,ACCT-002,2026-09-04 19:51:00,Compute,VM-std_4,13787,min,₹ 166.84,us-east 1,T-45
+U6676,ACCT-004,2026-06-11 07:36:00,Database,STORAGE-prem,14137,hr,₹ 1036.62,ap-south 1,T-12
+U6677,ACCT-004,2026/03/17 11:02,Compute,vm_std_4,824050,min,₹ 16587.0,AP-SOUTH-1,T-45
+U6678, acct-001 ,2026-02-02 09:05+00:00,AI,VM-STD-4,3146,seconds,₹ 1858.76,ap-south-1,t-33
+U6679,ACCT-004,2026-03-12 01:45+00:00,Compute,VM-STD-4,6362,sec,₹ 595.32,us-east 1,t-33
+U6680,acct-003,2026-10-19 07:34:00,Storage,STORAGE-prem,14201,hr,₹ 1740.39,ap-south 1,T-45
+U6681,acct-003,2026-02-12 18:17:00,Storage,STORAGE-prem,16099,hr,₹ 1777.1,us-east 1,T-12
+U6682,ACCT-004,2026-06-29 00:49+00:00,Storage,VM-STD-4,265,min,₹ 1853.57,us-east 1,t-33
+U6683,ACCT-002,2026-04-15 02:00+00:00,AI,VM-std_4,4229,min,₹ 1258.36,ap-south 1,T-12
+U6684,ACCT-002,2026-01-27 05:01:00,Networking,DB-gp_2,4955,sec,₹ 679.03,us-east 1,t-33
+U6685,ACCT-002,2026-06-03 03:25:00,Compute,STORAGE-prem,13717,min,₹ 348.71,AP-SOUTH-1,t-33
+U6686,ACCT-002,2026-08-05 16:58:00,Storage,STORAGE-prem,12713,seconds,₹ 757.78,us-east 1,T-45
+U6687,acct-003,2026-11-09 06:47+00:00,Compute,STORAGE-prem,8870,seconds,₹ 1089.25,ap-south 1,T-12
+U6688, acct-001 ,2026-09-02 08:57:00,Networking,vm_std_4,13449,seconds,₹ 868.82,ap-south 1,T-12
+U6689, acct-001 ,2026-03-08 03:52:00,Storage,DB-gp_2,1471,hr,₹ 62.57,us-east 1,t-77
+U6690, acct-001 ,2026-03-07 15:29:00,Storage,STORAGE-prem,4748,seconds,₹ 986.53,us-east 1,t-77
+U6691,ACCT-004,2026-10-29 12:30+00:00,Networking,VM-std_4,19428,hr,₹ 1747.41,us-east 1,t-77
+U6692,acct-003,2026/01/06 12:00,Database,DB-gp_2,16159,hr,₹ 1577.37,ap-south-1,T-45
+U6693,acct-003,2026-02-12 19:25+00:00,AI,vm_std_4,7386,min,₹ 1693.19,us-east 1,T-12
+U6694,acct-003,2026-09-06 20:52+00:00,Database,VM-STD-4,7166,seconds,₹ 1135.23,AP-SOUTH-1,t-77
+U6695, acct-001 ,2026-08-14 00:36:00,Database,DB-gp_2,9431,sec,₹ 1584.54,AP-SOUTH-1,t-33
+U6696,ACCT-002,2026-11-28 18:02:00,Compute,VM-std_4,12272,hr,₹ 1445.0,AP-SOUTH-1,t-33
+U6697,ACCT-002,2026-01-19 13:35:00,Networking,DB-gp_2,9790,hr,₹ 1136.85,ap-south-1,t-77
+U6698,ACCT-004,2026/06/28 11:59,AI,STORAGE-prem,1712,seconds,₹ 782.08,ap-south-1,t-33
+U6699,ACCT-002,2026/09/14 05:04,AI,STORAGE-prem,9410,seconds,₹ 1845.59,ap-south 1,t-33
+U6700,ACCT-002,2026-03-30 23:58+00:00,AI,DB-gp_2,8557,min,₹ 10.29,ap-south 1,T-12
+U6701,acct-003,2026-02-05 20:17:00,Networking,STORAGE-prem,4795,seconds,₹ 862.56,AP-SOUTH-1,T-45
+U6702,acct-003,2026/11/02 20:54,Compute,VM-std_4,4964,sec,₹ 550.99,ap-south 1,T-45
+U6703,ACCT-004,2026/08/04 02:51,Storage,VM-STD-4,9219,min,₹ 1655.09,us-east 1,T-12
+U6704, acct-001 ,2026-04-27 11:28:00,Database,VM-STD-4,5982,hr,₹ 823.28,ap-south 1,t-77
+U6705,acct-003,2026/05/02 18:44,Networking,VM-std_4,273,hr,₹ 572.22,us-east 1,t-33
+U6706,acct-003,2026-01-27 20:53+00:00,Storage,DB-gp_2,13680,seconds,₹ 30.53,ap-south-1,T-45
+U6707,ACCT-004,2026-01-08 15:59:00,Database,VM-STD-4,13252,sec,₹ 1188.47,ap-south 1,T-45
+U6708, acct-001 ,2026-01-07 13:03+00:00,Storage,DB-gp_2,5011,seconds,₹ 320.71,AP-SOUTH-1,T-45
+U6709,ACCT-004,2026-02-26 00:15:00,Networking,VM-std_4,12676,hr,₹ 1530.07,us-east 1,T-45
+U6710,ACCT-004,2026-06-25 17:27:00,Storage,DB-gp_2,1848,min,₹ 1892.79,AP-SOUTH-1,T-12
+U6711,ACCT-004,2026-11-12 04:19:00,Storage,VM-STD-4,11265,min,₹ 1818.8,us-east 1,t-33
+U6712,ACCT-004,2026-10-30 14:46:00,Storage,DB-gp_2,4323,min,₹ 1812.23,AP-SOUTH-1,t-33
+U6713,ACCT-004,2026-12-01 17:54:00,Storage,STORAGE-prem,7459,sec,₹ 1555.67,ap-south 1,t-33
+U6714, acct-001 ,2026-09-16 21:13:00,AI,vm_std_4,6149,min,₹ 986.23,us-east 1,T-12
+U6715,acct-003,2026/08/29 21:40,AI,DB-gp_2,15075,sec,₹ 970.21,ap-south-1,T-45
+U6716, acct-001 ,2026-01-05 14:58:00,Database,STORAGE-prem,7928,seconds,₹ 90.29,ap-south-1,t-33
+U6717,ACCT-002,2026/06/14 17:40,Storage,STORAGE-prem,15131,seconds,₹ 863.82,us-east 1,t-77
+U6718,acct-003,2026-05-02 20:11+00:00,AI,vm_std_4,7949,sec,₹ 1923.87,ap-south-1,T-45
+U6719,acct-003,2026-06-07 22:29+00:00,Database,vm_std_4,18240,min,₹ 80.78,us-east 1,T-45
+U6720, acct-001 ,2026-11-02 03:18:00,Networking,VM-std_4,3406,hr,₹ 1843.13,us-east 1,T-12
+U6721, acct-001 ,2026-01-24 18:46+00:00,Database,vm_std_4,3530,seconds,₹ 639.51,ap-south 1,t-77
+U6722,acct-003,2026-08-17 22:07:00,Database,DB-gp_2,18413,min,₹ 368.68,ap-south-1,T-12
+U6723, acct-001 ,2026/08/01 16:45,Storage,VM-std_4,434,sec,₹ 333.83,AP-SOUTH-1,t-77
+U6724,acct-003,2026-08-16 09:50+00:00,Networking,VM-STD-4,2124,hr,₹ 1944.58,ap-south 1,T-12
+U6725,ACCT-002,2026-11-10 13:29:00,Networking,vm_std_4,3555,min,₹ 14.52,AP-SOUTH-1,T-45
+U6726,ACCT-004,2026-12-13 08:15+00:00,AI,DB-gp_2,3414,seconds,₹ 245.93,ap-south 1,t-33
+U6727,ACCT-002,2026-04-14 14:27:00,Storage,VM-STD-4,11829,seconds,₹ 268.42,ap-south 1,T-45
+U6728,ACCT-002,2026/05/08 20:56,Networking,VM-std_4,15551,sec,₹ 1599.92,AP-SOUTH-1,t-33
+U6729, acct-001 ,2026-05-19 07:19+00:00,Networking,vm_std_4,11302,hr,₹ 1442.04,AP-SOUTH-1,T-45
+U6730,ACCT-002,2026-01-31 00:43+00:00,Database,VM-std_4,3805,sec,₹ 385.65,us-east 1,t-77
+U6731,ACCT-002,2026-02-25 10:38+00:00,Database,DB-gp_2,17174,sec,₹ 1762.65,AP-SOUTH-1,T-45
+U6732,ACCT-004,2026/05/29 08:53,Database,STORAGE-prem,10167,seconds,₹ 392.99,us-east 1,T-45
+U6733,ACCT-004,2026-11-06 00:18+00:00,AI,STORAGE-prem,8055,hr,₹ 883.58,us-east 1,T-45
+U6734,ACCT-002,2026-01-06 02:56+00:00,Compute,vm_std_4,18595,sec,₹ 778.99,AP-SOUTH-1,t-77
+U6735,acct-003,2026-05-25 07:33+00:00,Compute,VM-std_4,9179,min,₹ 1459.85,ap-south 1,T-12
+U6736,ACCT-004,2026-10-07 11:21:00,Compute,VM-std_4,10837,min,₹ 1063.8,ap-south-1,t-77
+U6737,ACCT-004,2026-04-01 21:19:00,Database,VM-STD-4,13753,min,₹ 928.86,AP-SOUTH-1,t-77
+U6738,ACCT-004,2026-07-02 16:09:00,Networking,DB-gp_2,3727,min,₹ 1162.3,ap-south 1,t-33
+U6739, acct-001 ,2026-03-15 07:30+00:00,AI,STORAGE-prem,13378,hr,₹ 1240.37,AP-SOUTH-1,t-77
+U6740,ACCT-002,2026/12/09 07:36,Compute,DB-gp_2,15086,min,₹ 730.73,AP-SOUTH-1,T-12
+U6741,ACCT-004,2026-05-14 20:07:00,Database,vm_std_4,8240,min,₹ 1819.3,us-east 1,t-77
+U6742, acct-001 ,2026/05/02 21:51,Networking,VM-std_4,15905,hr,₹ 1053.13,ap-south-1,T-12
+U6743,ACCT-004,2026-02-18 14:22:00,AI,VM-std_4,16744,hr,₹ 734.17,ap-south 1,t-77
+U6744,ACCT-002,2026-05-13 01:10:00,Storage,STORAGE-prem,184450,min,₹ 26302.199999999997,AP-SOUTH-1,T-45
+U6745, acct-001 ,2026-11-28 10:13:00,AI,VM-STD-4,132800,seconds,₹ 39128.8,ap-south 1,T-12
+U6746,ACCT-002,2026-09-27 20:13+00:00,Database,STORAGE-prem,9296,min,₹ 1779.86,AP-SOUTH-1,T-45
+U6747,acct-003,2026/02/14 17:57,Compute,STORAGE-prem,267,hr,₹ 1412.42,AP-SOUTH-1,t-33
+U6748,ACCT-004,2026/04/08 22:18,Storage,DB-gp_2,10483,seconds,₹ 1028.93,us-east 1,T-12
+U6749,acct-003,2026/07/31 03:39,Networking,DB-gp_2,17792,min,₹ 1810.66,us-east 1,t-33
+U6750,acct-003,2026-09-11 00:24+00:00,Storage,vm_std_4,8113,seconds,₹ 1303.77,ap-south-1,T-45
+U6751,acct-003,2026-05-16 11:02+00:00,Storage,STORAGE-prem,19885,min,₹ 251.5,us-east 1,T-12
+U6752,ACCT-004,2026/01/30 12:10,Storage,VM-STD-4,618,seconds,₹ 1557.12,ap-south 1,T-45
+U6753, acct-001 ,2026-06-04 04:23:00,AI,DB-gp_2,2616,min,₹ 879.2,ap-south-1,T-45
+U6754, acct-001 ,2026/12/13 12:52,Storage,VM-std_4,5262,seconds,₹ 698.13,ap-south-1,T-45
+U6755, acct-001 ,2026-09-18 03:05:00,Storage,DB-gp_2,574,seconds,₹ 1153.91,us-east 1,t-33
+U6756,ACCT-002,2026-10-03 09:57:00,Database,vm_std_4,1167,hr,₹ 875.96,us-east 1,t-33
+U6757,ACCT-004,2026-07-15 11:44+00:00,Storage,vm_std_4,18115,min,₹ 188.2,us-east 1,T-45
+U6758,ACCT-002,2026-01-03 03:46+00:00,AI,DB-gp_2,5243,min,₹ 819.57,us-east 1,T-45
+U6759,acct-003,2026-09-06 14:23+00:00,Database,vm_std_4,11939,seconds,₹ 171.13,ap-south-1,t-33
+U6760,acct-003,2026-01-16 11:54+00:00,Database,VM-std_4,18873,hr,₹ 484.13,us-east 1,t-33
+U6761, acct-001 ,2026/06/04 01:15,AI,STORAGE-prem,12005,sec,₹ 510.41,us-east 1,t-33
+U6762,ACCT-004,2026/09/28 06:27,Database,STORAGE-prem,9383,hr,₹ 1491.79,ap-south 1,T-45
+U6763,ACCT-004,2026-08-15 02:07+00:00,AI,STORAGE-prem,17510,sec,₹ 1439.77,AP-SOUTH-1,T-12
+U6764, acct-001 ,2026-05-21 14:24+00:00,Database,STORAGE-prem,4794,sec,₹ 1947.55,ap-south 1,T-45
+U6765,acct-003,2026-09-12 20:37:00,Database,DB-gp_2,16080,sec,₹ 178.42,ap-south-1,T-45
+U6766,ACCT-004,2026-05-13 07:47:00,AI,VM-STD-4,17958,sec,₹ 1445.28,us-east 1,T-45
+U6767,ACCT-002,2026-01-16 12:56:00,Networking,STORAGE-prem,7734,min,₹ 139.52,us-east 1,t-33
+U6768, acct-001 ,2026-07-19 22:45+00:00,Storage,DB-gp_2,14577,hr,₹ 595.48,ap-south-1,t-77
+U6769,ACCT-004,2026/08/21 10:19,Database,VM-std_4,16537,min,₹ 757.0,ap-south-1,T-12
+U6770, acct-001 ,2026/05/09 17:26,Networking,VM-STD-4,405300,hr,₹ 25892.199999999997,us-east 1,t-77
+U6771,ACCT-002,2026-09-13 23:28+00:00,Compute,vm_std_4,5616,sec,₹ 466.92,ap-south 1,t-77
+U6772,acct-003,2026-08-09 05:04:00,Compute,VM-std_4,5458,hr,₹ 845.08,AP-SOUTH-1,t-77
+U6773,ACCT-002,2026-09-29 20:21+00:00,AI,vm_std_4,19220,hr,₹ 622.73,ap-south-1,T-45
+U6774, acct-001 ,2026/02/13 15:04,Networking,VM-STD-4,11269,hr,₹ 368.34,ap-south-1,T-12
+U6775,acct-003,2026/04/22 04:50,Database,vm_std_4,6469,sec,₹ 86.88,AP-SOUTH-1,t-33
+U6776,ACCT-004,2026-09-19 02:09+00:00,Compute,VM-std_4,7095,sec,₹ 478.98,us-east 1,T-12
+U6777,ACCT-004,2026-07-25 16:07:00,Storage,VM-STD-4,3877,hr,₹ 163.35,AP-SOUTH-1,t-77
+U6778,ACCT-004,2026-02-17 16:10+00:00,Database,DB-gp_2,17671,seconds,₹ 311.86,ap-south 1,T-12
+U6779,ACCT-002,2026-06-11 00:42+00:00,AI,VM-std_4,6505,hr,₹ 1955.61,us-east 1,T-45
+U6780,ACCT-004,2026/10/20 01:23,Storage,VM-std_4,4758,seconds,₹ 656.56,ap-south 1,T-12
+U6781, acct-001 ,2026/06/26 07:34,Networking,DB-gp_2,6922,hr,₹ 926.34,us-east 1,t-33
+U6782,ACCT-004,2026-02-14 02:49+00:00,Networking,vm_std_4,6367,hr,₹ 1624.03,AP-SOUTH-1,T-45
+U6783,ACCT-002,2026-08-05 01:12:00,Storage,vm_std_4,18379,hr,₹ 1257.07,us-east 1,T-45
+U6784,acct-003,2026-07-07 02:56:00,Storage,VM-std_4,13641,sec,₹ 208.54,ap-south 1,T-45
+U6785,ACCT-004,2026/04/03 01:02,Networking,VM-STD-4,15394,seconds,₹ 1214.59,AP-SOUTH-1,T-12
+U6786, acct-001 ,2026/06/29 01:49,Database,vm_std_4,12150,min,₹ 1503.17,AP-SOUTH-1,t-33
+U6787, acct-001 ,2026-06-25 06:08:00,Storage,DB-gp_2,12037,sec,₹ 1953.98,AP-SOUTH-1,T-12
+U6788,ACCT-004,2026-07-31 08:55+00:00,Storage,STORAGE-prem,8271,min,₹ 835.03,AP-SOUTH-1,t-77
+U6789, acct-001 ,2026-09-29 03:05:00,Database,VM-std_4,19883,min,₹ 214.51,us-east 1,t-33
+U6790,acct-003,2026/07/17 00:07,AI,vm_std_4,9086,seconds,₹ 1640.69,us-east 1,t-77
+U6791,ACCT-004,2026-06-11 05:34:00,Storage,DB-gp_2,3245,seconds,₹ 1276.27,AP-SOUTH-1,t-77
+U6792,ACCT-004,2026-06-15 04:53:00,Compute,vm_std_4,7426,min,₹ 289.55,AP-SOUTH-1,T-12
+U6793, acct-001 ,2026/09/22 01:18,Compute,VM-STD-4,18066,min,₹ 358.06,ap-south 1,t-33
+U6794, acct-001 ,2026/04/17 00:47,Networking,DB-gp_2,8900,sec,₹ 1185.07,AP-SOUTH-1,t-77
+U6795, acct-001 ,2026-05-19 10:15+00:00,AI,VM-STD-4,9722,sec,₹ 1041.48,ap-south 1,t-77
+U6796,ACCT-002,2026-11-18 02:21:00,AI,VM-STD-4,9073,seconds,₹ 343.72,ap-south-1,T-12
+U6797, acct-001 ,2026/05/26 15:45,AI,VM-STD-4,16142,hr,₹ 523.49,AP-SOUTH-1,T-12
+U6798, acct-001 ,2026/09/04 22:22,Database,vm_std_4,2397,seconds,₹ 1421.53,AP-SOUTH-1,t-77
+U6799,acct-003,2026-05-25 14:42+00:00,Storage,vm_std_4,7269,seconds,₹ 657.7,ap-south-1,t-33
