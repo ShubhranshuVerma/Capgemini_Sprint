@@ -1,0 +1,6 @@
+Service,avg_mttr,incident_count
+AI,100.0,11
+Compute,102.375,8
+Database,230.0909090909091,11
+Networking,100.14285714285714,7
+Storage,256.6923076923077,13

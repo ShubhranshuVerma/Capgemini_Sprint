@@ -38,22 +38,28 @@ tickets = ["t-77","T-12","t-33","T-45"]
 
 for i in range(800):
 
+    usage_val = random.randint(100, 20000)
+    cost_val = round(random.uniform(10, 2000),2)
+
+    # introduce random cost spikes
+    if random.random() < 0.02:
+        usage_val *= 50
+        cost_val *= 20
+
     rows.append({
         "Usage_ID": f"U{6000+i}",
         "Account": random.choice(accounts),
         "TS": random_timestamp(),
         "Service": random.choice(services),
         "SKU": random.choice(skus),
-        "Usage": random.randint(100,20000),
+        "Usage": usage_val,
         "Unit": random.choice(units),
-        "Cost": f"₹ {round(random.uniform(10,2000),2)}",
+        "Cost": f"₹ {cost_val}",
         "Region": random.choice(regions),
         "Ticket_ID": random.choice(tickets)
     })
-
 usage_df = pd.DataFrame(rows)
-
-usage_df.to_csv(OUTPUT_PATH+"usage_raw.csv",index=False)
+usage_df.to_csv(OUTPUT_PATH + "usage_raw.csv", index=False)
 
 inventory = []
 
@@ -70,10 +76,8 @@ for i in range(400):
         "Status": random.choice(["running","stopped"])
     })
 
-pd.DataFrame(inventory).to_csv(
-    OUTPUT_PATH+"resource_inventory.csv",
-    index=False
-)
+pd.DataFrame(inventory).to_csv(OUTPUT_PATH+"resource_inventory.csv",index=False)
+
 
 pricing = []
 
@@ -96,13 +100,21 @@ pd.DataFrame(pricing).to_csv(
 
 tickets_meta = []
 
-for i in range(100):
+for i in range(150):
+
+    issue = random.choice([
+        "billing problem",
+        "latency issue",
+        "service outage",
+        "storage failure",
+        "network latency"
+    ])
 
     tickets_meta.append({
         "Ticket_ID": f"T-{i}",
-        "Severity": random.choice(["low","medium","high"]),
-        "Issue_Type": random.choice(["billing","outage","performance"]),
-        "Description": "Customer reported issue with service",
+        "Severity": random.choice(["low", "medium", "high"]),
+        "Issue_Type": random.choice(["billing", "outage", "performance"]),
+        "Description": f"Customer reported issue 9876543210 with service",
         "Created_TS": random_timestamp()
     })
 
@@ -116,12 +128,18 @@ incidents = []
 for i in range(50):
 
     start = datetime(2026,1,1) + timedelta(days=random.randint(1,100))
-    end = start + timedelta(minutes=random.randint(10,200))
+    duration = random.randint(10,200)
+
+    # occasional major outage
+    if random.random() < 0.1:
+        duration *= 10
+
+    end = start + timedelta(minutes=duration)
 
     incidents.append({
         "Incident_ID": f"I{i}",
         "Service": random.choice(services),
-        "Region": "ap-south-1",
+        "Region": random.choice(["ap-south-1","us-east-1"]),
         "Start_TS": start,
         "End_TS": end,
         "Severity": random.choice(["sev1","sev2","sev3"])
@@ -154,13 +172,18 @@ security = []
 
 for i in range(120):
 
+    severity = random.choice(["low","medium","high"])
+
+    if random.random() < 0.05:
+        severity = "high"
+
     security.append({
         "Event_ID": f"E{i}",
         "Account": random.choice(accounts),
         "Service": random.choice(services),
         "Region": random.choice(["ap-south-1","us-east-1"]),
         "Event_TS": random_timestamp(),
-        "Severity": random.choice(["low","medium","high"])
+        "Severity": severity
     })
 
 pd.DataFrame(security).to_csv(

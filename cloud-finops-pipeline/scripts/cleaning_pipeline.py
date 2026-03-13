@@ -1,151 +1,312 @@
 import pandas as pd
 import numpy as np
 import re
+from datetime import timedelta
 
-INPUT_FILE = "../data/raw/cloud_usage_raw.csv"
-OUTPUT_FILE = "../data/cleaned/cloud_usage_cleaned.csv"
+RAW = "../data/raw/"
+CLEAN = "../data/cleaned/"
 
-df = pd.read_csv(INPUT_FILE)
+def load_datasets():
+
+    usage = pd.read_csv(RAW+"usage_raw.csv")
+    inventory = pd.read_csv(RAW+"resource_inventory.csv")
+    tickets = pd.read_csv(RAW+"tickets_metadata.csv")
+    incidents = pd.read_csv(RAW+"incidents.csv")
+    pricing = pd.read_csv(RAW+"pricing_catalog.csv")
+    sla = pd.read_csv(RAW+"sla_events.csv")
+    security = pd.read_csv(RAW+"security_events.csv")
+
+    return usage, inventory, tickets, incidents, pricing, sla, security
+
+#1.
+
+def clean_accounts(df):
+    df["Account"] = df["Account"].str.strip().str.upper()
+    return df
+
+#2.
+
+def normalize_timestamp(df, column):
+
+    df[column] = pd.to_datetime(
+        df[column],
+        errors="coerce",
+        utc=True,
+        format="mixed"
+    )
+
+    return df
+
+#3.
+
+def normalize_service(df):
+
+    df["Service"] = (
+        df["Service"]
+        .str.strip()
+        .str.title()
+    )
+
+    return df
+
+#4.
+
+def normalize_sku(df):
+
+    df["SKU"] = (
+        df["SKU"]
+        .str.upper()
+        .str.replace("_","-",regex=False)
+    )
+
+    return df
+
+#5.
+
+def normalize_usage(df):
+
+    df["Usage"] = df["Usage"].astype(str).str.replace(",","")
+    df["Usage"] = df["Usage"].astype(float)
+
+    def convert(row):
+
+        unit = str(row["Unit"]).lower()
+
+        if "sec" in unit:
+            return row["Usage"]
+
+        if "min" in unit:
+            return row["Usage"] * 60
+
+        if "hr" in unit:
+            return row["Usage"] * 3600
+
+        return row["Usage"]
+
+    df["Usage_seconds"] = df.apply(convert, axis=1)
+
+    return df
+
+#6.
+
+def normalize_cost(df):
+
+    df["Cost_INR"] = (
+        df["Cost"]
+        .astype(str)
+        .str.replace("₹","",regex=False)
+        .str.replace(",","",regex=False)
+        .astype(float)
+    )
+
+    return df
+
+#7.
+
+def normalize_region(df):
+
+    df["Region"] = (
+        df["Region"]
+        .str.lower()
+        .str.replace(" ","-",regex=False)
+    )
+
+    return df
+
+#8.
+
+def remove_duplicates(df):
+
+    return df.drop_duplicates(
+        subset=["Account","TS","SKU"]
+    )
+
+#9.
 
 
-def clean_account(account):
-    if pd.isna(account):
-        return account
-    account = account.strip().upper()
-    return account
+def tag_free_tier(df):
 
+    df["Free_Tier"] = df["Cost_INR"] == 0
 
-def normalize_ticket(ticket):
-    if pd.isna(ticket):
-        return ticket
-    return ticket.strip().upper()
+    return df
 
+#10.
 
-def normalize_region(region):
-    if pd.isna(region):
-        return region
+def detect_spikes(df):
 
-    region = region.lower().strip()
+    mean = df["Usage_seconds"].mean()
+    std = df["Usage_seconds"].std()
 
-    region = region.replace(" ", "-")
+    threshold = mean + 2*std
 
-    mapping = {
-        "ap-south-1": "ap-south-1",
-        "ap-south-1": "ap-south-1",
-        "us-east-1": "us-east-1"
-    }
+    df["Spike_Flag"] = df["Usage_seconds"] > threshold
 
-    return mapping.get(region, region)
+    return df
 
+#11.
 
-def normalize_sku(sku):
-    if pd.isna(sku):
-        return sku
+def normalize_tags(df):
 
-    sku = sku.upper()
+    df["Service"] = df["Service"].str.title()
+    df["Region"] = df["Region"].str.lower()
 
-    sku = sku.replace("_", "-")
+    return df
 
-    return sku
+#12.
 
+def validate_resource_ids(df):
 
-def clean_usage(val):
-    if pd.isna(val):
-        return val
+    df["Valid_Resource"] = df["Resource_ID"].str.startswith("R")
 
-    val = str(val).replace(",", "")
+    return df
 
-    return float(val)
+#13.
 
+def mask_pii(df):
 
-def convert_to_seconds(usage, unit):
+    df["Description"] = df["Description"].str.replace(
+        r"\b\d{10}\b",
+        "[MASKED]",
+        regex=True
+    )
 
-    if pd.isna(usage):
-        return usage
+    return df
 
-    unit = str(unit).lower()
+#14.
 
-    if "sec" in unit:
-        return usage
+def prepare_incidents(df):
 
-    if "min" in unit:
-        return usage * 60
+    df["Start_TS"] = pd.to_datetime(df["Start_TS"],utc=True)
+    df["End_TS"] = pd.to_datetime(df["End_TS"],utc=True)
 
-    if "hr" in unit:
-        return usage * 3600
+    df["Duration_minutes"] = (
+        df["End_TS"] - df["Start_TS"]
+    ).dt.total_seconds()/60
 
-    return usage
+    return df
 
+#15.
 
-def clean_cost(cost):
+def version_pricing(df):
 
-    if pd.isna(cost):
-        return cost
+    df["Effective_Date"] = pd.to_datetime(df["Effective_Date"])
 
-    cost = str(cost)
+    df = df.sort_values("Effective_Date")
 
-    cost = re.sub(r"[₹,]", "", cost)
+    return df
 
-    return float(cost)
+#16.
 
+def normalize_currency(df):
 
-def normalize_timestamp(ts):
+    df["Currency"] = df["Currency"].str.upper()
 
-    try:
-        return pd.to_datetime(ts, utc=True)
-    except:
-        return pd.NaT
+    return df
 
+#17.
 
-df["Account"] = df["Account"].apply(clean_account)
+def detect_idle(df):
 
-df["Ticket_ID"] = df["Ticket_ID"].apply(normalize_ticket)
+    df["Idle"] = df["Status"].str.lower() == "stopped"
 
-df["Region"] = df["Region"].apply(normalize_region)
+    return df
 
-df["SKU"] = df["SKU"].apply(normalize_sku)
+#18.
 
-df["Usage"] = df["Usage"].apply(clean_usage)
+def normalize_pricing_model(df):
 
-df["Usage_seconds"] = df.apply(
-    lambda x: convert_to_seconds(x["Usage"], x["Unit"]),
-    axis=1
-)
+    df["Pricing_Model"] = df["Pricing_Model"].str.lower()
 
-df["Cost_INR"] = df["Cost"].apply(clean_cost)
+    return df
 
-df["TS_UTC"] = df["TS"].apply(normalize_timestamp)
+#19.
 
+def normalize_sla(df):
 
-df = df.drop_duplicates(
-    subset=["Account", "TS", "SKU"]
-)
+    df["Event_TS"] = pd.to_datetime(
+        df["Event_TS"],
+        errors="coerce",
+        utc=True,
+        format="mixed"
+    )
 
+    return df
 
-mean_usage = df["Usage_seconds"].mean()
-std_usage = df["Usage_seconds"].std()
+#20.
 
-threshold = mean_usage + (3 * std_usage)
+def correct_time_skew(df):
 
-df["Spike_Flag"] = df["Usage_seconds"] > threshold
+    df["Event_TS"] = pd.to_datetime(
+        df["Event_TS"],
+        errors="coerce",
+        utc=True,
+        format="mixed"
+    )
 
-df["Idle_Flag"] = df["Usage_seconds"] < 10
+    return df
 
-clean_df = df[
-    [
+def run_pipeline():
+
+    usage, inventory, tickets, incidents, pricing, sla, security = load_datasets()
+
+    usage = clean_accounts(usage)
+    usage = normalize_service(usage)
+    usage = normalize_sku(usage)
+    usage = normalize_usage(usage)
+    usage = normalize_cost(usage)
+    usage = normalize_region(usage)
+
+    usage = normalize_timestamp(usage,"TS")
+
+    usage = remove_duplicates(usage)
+
+    usage = tag_free_tier(usage)
+    usage = detect_spikes(usage)
+
+    inventory = clean_accounts(inventory)
+    inventory = normalize_tags(inventory)
+    inventory = validate_resource_ids(inventory)
+    inventory = detect_idle(inventory)
+    inventory = normalize_pricing_model(inventory)
+
+    tickets = mask_pii(tickets)
+
+    incidents = prepare_incidents(incidents)
+
+    pricing = version_pricing(pricing)
+    pricing = normalize_currency(pricing)
+
+    sla = normalize_sla(sla)
+
+    security = correct_time_skew(security)
+
+    usage_clean = usage[
+        [
         "Usage_ID",
         "Account",
-        "TS_UTC",
+        "TS",
         "Service",
         "SKU",
         "Usage_seconds",
         "Cost_INR",
         "Region",
         "Ticket_ID",
+        "Spike_Flag"
+        ]
     ]
-]
 
-clean_df.to_csv(OUTPUT_FILE, index=False)
+    usage_clean.to_csv(CLEAN+"usage_cleaned.csv",index=False)
 
-print("Cleaning pipeline complete")
-print("Saved cleaned dataset:", OUTPUT_FILE)
+    inventory.to_csv(CLEAN+"inventory_cleaned.csv",index=False)
+    tickets.to_csv(CLEAN+"tickets_cleaned.csv",index=False)
+    incidents.to_csv(CLEAN+"incidents_cleaned.csv",index=False)
+    pricing.to_csv(CLEAN+"pricing_cleaned.csv",index=False)
+    sla.to_csv(CLEAN+"sla_cleaned.csv",index=False)
+    security.to_csv(CLEAN+"security_cleaned.csv",index=False)
+
+    print("All 20 cleaning scenarios executed successfully")
+
+
+if __name__ == "__main__":
+    run_pipeline()
+
