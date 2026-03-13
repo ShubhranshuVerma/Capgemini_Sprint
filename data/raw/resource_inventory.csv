@@ -1,0 +1,401 @@
+Resource_ID,Account,Service,Region,Instance_Type,Pricing_Model,Created_TS,Status
+R0,acct-003,Storage,us-east-1,t2.micro,OnDemand,2026-09-08 11:07:00,stopped
+R1, acct-001 ,AI,ap-south-1,c5.xlarge,Spot,2026/04/13 04:38,stopped
+R2,acct-003,Database,ap-south-1,c5.xlarge,Reserved,2026/01/28 00:10,stopped
+R3, acct-001 ,Database,us-east-1,c5.xlarge,Reserved,2026-07-01 07:09+00:00,running
+R4,ACCT-002,Storage,us-east-1,m5.large,OnDemand,2026-06-05 12:31:00,stopped
+R5,acct-003,Networking,ap-south-1,c5.xlarge,Spot,2026-08-10 15:13:00,running
+R6,acct-003,Compute,ap-south-1,c5.xlarge,Reserved,2026-06-11 10:23+00:00,running
+R7, acct-001 ,Database,us-east-1,m5.large,OnDemand,2026-02-11 19:25:00,stopped
+R8,ACCT-004,Storage,us-east-1,c5.xlarge,Spot,2026/08/16 03:10,stopped
+R9, acct-001 ,AI,us-east-1,m5.large,OnDemand,2026/09/02 22:12,stopped
+R10, acct-001 ,AI,ap-south-1,m5.large,Spot,2026/06/13 23:29,running
+R11, acct-001 ,AI,ap-south-1,c5.xlarge,Spot,2026-02-01 23:45:00,running
+R12,ACCT-002,Database,ap-south-1,t2.micro,Spot,2026-06-11 15:59+00:00,running
+R13,acct-003,Database,ap-south-1,t2.micro,Reserved,2026-08-15 19:28+00:00,running
+R14,ACCT-004,Storage,ap-south-1,m5.large,Reserved,2026-03-11 13:45+00:00,running
+R15,ACCT-004,Networking,us-east-1,t2.micro,Reserved,2026-03-29 05:53+00:00,stopped
+R16,ACCT-004,Networking,us-east-1,m5.large,OnDemand,2026-08-08 13:08+00:00,running
+R17, acct-001 ,Compute,ap-south-1,c5.xlarge,Spot,2026-09-08 18:47:00,stopped
+R18, acct-001 ,Networking,ap-south-1,t2.micro,OnDemand,2026-03-11 02:09:00,running
+R19,acct-003,Networking,us-east-1,t2.micro,Reserved,2026/02/27 16:26,stopped
+R20,ACCT-002,AI,ap-south-1,t2.micro,OnDemand,2026-05-13 07:21+00:00,stopped
+R21,acct-003,Storage,us-east-1,t2.micro,OnDemand,2026-10-02 17:14:00,running
+R22, acct-001 ,Storage,us-east-1,m5.large,Spot,2026/01/29 09:58,stopped
+R23,acct-003,Storage,us-east-1,t2.micro,OnDemand,2026/07/05 13:04,running
+R24,acct-003,Database,us-east-1,c5.xlarge,OnDemand,2026/02/15 03:08,stopped
+R25,ACCT-002,Database,us-east-1,c5.xlarge,Reserved,2026-08-06 11:53+00:00,running
+R26,ACCT-002,Compute,ap-south-1,t2.micro,Reserved,2026/06/04 17:08,running
+R27,acct-003,AI,us-east-1,c5.xlarge,OnDemand,2026-07-26 10:48+00:00,stopped
+R28,ACCT-002,Storage,ap-south-1,c5.xlarge,Reserved,2026/01/15 06:27,stopped
+R29,ACCT-004,Networking,ap-south-1,c5.xlarge,OnDemand,2026-08-20 18:41:00,running
+R30, acct-001 ,AI,ap-south-1,t2.micro,OnDemand,2026-05-04 00:19:00,stopped
+R31,ACCT-002,Networking,us-east-1,c5.xlarge,Reserved,2026/08/28 23:23,stopped
+R32, acct-001 ,AI,us-east-1,t2.micro,Spot,2026/10/09 03:36,stopped
+R33, acct-001 ,AI,ap-south-1,c5.xlarge,Reserved,2026-05-22 18:56:00,stopped
+R34,ACCT-002,Networking,ap-south-1,t2.micro,Reserved,2026-10-19 21:30:00,stopped
+R35, acct-001 ,Storage,ap-south-1,m5.large,OnDemand,2026/03/07 02:31,running
+R36,ACCT-002,Storage,ap-south-1,t2.micro,OnDemand,2026/08/08 15:55,stopped
+R37, acct-001 ,AI,ap-south-1,m5.large,Spot,2026-12-09 10:31+00:00,running
+R38,acct-003,Storage,us-east-1,t2.micro,Spot,2026/05/29 22:47,running
+R39,ACCT-002,AI,ap-south-1,c5.xlarge,Reserved,2026-08-09 01:32+00:00,stopped
+R40, acct-001 ,Database,ap-south-1,m5.large,Spot,2026-09-03 00:29+00:00,stopped
+R41,ACCT-002,Storage,us-east-1,m5.large,OnDemand,2026-02-08 19:14+00:00,stopped
+R42, acct-001 ,Compute,ap-south-1,m5.large,Reserved,2026/01/08 09:58,running
+R43,ACCT-004,Networking,ap-south-1,t2.micro,Reserved,2026-11-27 19:28+00:00,running
+R44, acct-001 ,Networking,ap-south-1,t2.micro,OnDemand,2026-03-16 04:27+00:00,running
+R45,acct-003,Networking,ap-south-1,t2.micro,Spot,2026-10-05 12:21+00:00,running
+R46, acct-001 ,Compute,ap-south-1,m5.large,Spot,2026-04-01 10:27+00:00,stopped
+R47,acct-003,Database,us-east-1,t2.micro,Reserved,2026-04-22 09:29+00:00,running
+R48, acct-001 ,Storage,ap-south-1,m5.large,Reserved,2026/01/06 16:23,stopped
+R49,ACCT-004,Database,us-east-1,c5.xlarge,Spot,2026/04/20 15:01,stopped
+R50,ACCT-004,Database,ap-south-1,t2.micro,Spot,2026/04/28 22:19,stopped
+R51,acct-003,Storage,ap-south-1,m5.large,Spot,2026/08/31 13:52,running
+R52, acct-001 ,Networking,us-east-1,m5.large,Spot,2026/04/08 14:22,running
+R53,ACCT-004,AI,ap-south-1,m5.large,Reserved,2026/02/13 06:50,stopped
+R54, acct-001 ,Database,us-east-1,t2.micro,Reserved,2026-06-21 06:12+00:00,stopped
+R55,ACCT-004,Database,us-east-1,c5.xlarge,Spot,2026/10/16 21:48,stopped
+R56, acct-001 ,Database,ap-south-1,t2.micro,Reserved,2026/10/02 22:01,stopped
+R57,ACCT-004,Compute,us-east-1,t2.micro,OnDemand,2026-08-29 23:20+00:00,stopped
+R58,acct-003,Database,us-east-1,m5.large,Spot,2026-06-15 02:42+00:00,stopped
+R59,acct-003,Networking,us-east-1,c5.xlarge,Reserved,2026-10-04 11:01:00,running
+R60,acct-003,AI,us-east-1,m5.large,Reserved,2026/08/12 16:45,running
+R61, acct-001 ,AI,us-east-1,m5.large,OnDemand,2026/01/14 13:38,running
+R62,ACCT-002,Compute,us-east-1,m5.large,Reserved,2026/09/18 21:49,running
+R63,ACCT-002,Storage,us-east-1,t2.micro,Reserved,2026-10-13 07:34:00,running
+R64, acct-001 ,Database,ap-south-1,m5.large,Reserved,2026/07/19 08:45,running
+R65,acct-003,AI,us-east-1,m5.large,Reserved,2026/11/13 17:22,stopped
+R66,ACCT-002,Networking,ap-south-1,m5.large,Spot,2026/02/18 17:16,running
+R67,ACCT-002,AI,us-east-1,t2.micro,OnDemand,2026-08-25 12:31+00:00,stopped
+R68,acct-003,AI,us-east-1,c5.xlarge,Spot,2026-08-01 10:07+00:00,stopped
+R69, acct-001 ,Networking,ap-south-1,c5.xlarge,OnDemand,2026-01-15 15:50:00,stopped
+R70, acct-001 ,Networking,ap-south-1,t2.micro,OnDemand,2026-01-18 07:52+00:00,stopped
+R71,acct-003,Storage,us-east-1,c5.xlarge,Spot,2026-01-30 17:06:00,running
+R72,ACCT-004,AI,ap-south-1,c5.xlarge,OnDemand,2026-12-07 15:24+00:00,running
+R73, acct-001 ,Compute,us-east-1,c5.xlarge,Spot,2026-05-24 19:38:00,stopped
+R74,ACCT-004,Storage,ap-south-1,m5.large,OnDemand,2026-09-15 12:51:00,running
+R75,acct-003,Compute,us-east-1,m5.large,Reserved,2026/01/09 05:02,running
+R76, acct-001 ,Database,us-east-1,c5.xlarge,OnDemand,2026-02-26 08:15:00,running
+R77,acct-003,Networking,us-east-1,t2.micro,Reserved,2026-06-10 21:34:00,stopped
+R78,ACCT-002,Storage,us-east-1,m5.large,Spot,2026-08-01 20:18:00,running
+R79,ACCT-002,Networking,us-east-1,c5.xlarge,Spot,2026-03-02 22:05+00:00,stopped
+R80,acct-003,Database,us-east-1,t2.micro,Spot,2026/07/21 09:34,stopped
+R81, acct-001 ,Compute,ap-south-1,m5.large,Reserved,2026/07/06 14:58,stopped
+R82,ACCT-002,AI,ap-south-1,t2.micro,Reserved,2026-07-09 19:10:00,stopped
+R83,acct-003,Networking,ap-south-1,m5.large,OnDemand,2026/06/25 07:06,running
+R84, acct-001 ,AI,ap-south-1,m5.large,Spot,2026-01-16 02:26+00:00,stopped
+R85, acct-001 ,Storage,us-east-1,c5.xlarge,Spot,2026/01/12 09:21,stopped
+R86,ACCT-004,Networking,ap-south-1,m5.large,Spot,2026/06/12 16:27,stopped
+R87,ACCT-002,Compute,ap-south-1,m5.large,Reserved,2026-10-13 02:26+00:00,stopped
+R88,ACCT-004,Networking,ap-south-1,m5.large,Spot,2026-06-06 23:43+00:00,running
+R89, acct-001 ,Networking,ap-south-1,m5.large,Spot,2026/09/04 02:53,stopped
+R90,acct-003,Compute,us-east-1,m5.large,Spot,2026-11-27 14:33+00:00,stopped
+R91, acct-001 ,Database,ap-south-1,c5.xlarge,Reserved,2026-12-07 16:20:00,running
+R92,ACCT-004,AI,ap-south-1,t2.micro,Spot,2026-07-07 01:48+00:00,stopped
+R93,ACCT-002,Database,ap-south-1,m5.large,Spot,2026-08-29 02:30+00:00,stopped
+R94,acct-003,Networking,us-east-1,m5.large,Reserved,2026-06-08 03:50+00:00,stopped
+R95, acct-001 ,Database,us-east-1,m5.large,Reserved,2026-11-16 13:01+00:00,stopped
+R96,ACCT-002,AI,ap-south-1,c5.xlarge,Spot,2026-09-09 20:32+00:00,stopped
+R97,acct-003,Database,us-east-1,t2.micro,OnDemand,2026-05-02 09:19:00,running
+R98, acct-001 ,AI,ap-south-1,c5.xlarge,Spot,2026/03/28 08:49,running
+R99, acct-001 ,AI,ap-south-1,m5.large,Spot,2026-01-15 03:20+00:00,running
+R100, acct-001 ,AI,us-east-1,t2.micro,Spot,2026-08-17 13:15+00:00,stopped
+R101,ACCT-002,Networking,ap-south-1,t2.micro,OnDemand,2026/02/06 18:31,stopped
+R102,acct-003,Database,ap-south-1,m5.large,OnDemand,2026-02-20 04:43:00,running
+R103,ACCT-004,Storage,ap-south-1,m5.large,OnDemand,2026-08-19 18:38+00:00,stopped
+R104,ACCT-004,Compute,us-east-1,c5.xlarge,Spot,2026-06-15 05:23+00:00,running
+R105,ACCT-004,Compute,us-east-1,m5.large,Reserved,2026-04-08 18:15:00,running
+R106, acct-001 ,Networking,ap-south-1,c5.xlarge,Spot,2026-01-12 20:01:00,stopped
+R107, acct-001 ,Database,us-east-1,c5.xlarge,Spot,2026-11-07 08:16:00,running
+R108,ACCT-002,Storage,ap-south-1,m5.large,Reserved,2026-08-13 13:25+00:00,running
+R109,ACCT-002,Compute,us-east-1,t2.micro,Reserved,2026-11-20 16:10+00:00,running
+R110,ACCT-002,Storage,ap-south-1,t2.micro,Reserved,2026-04-15 15:41+00:00,stopped
+R111,acct-003,Networking,ap-south-1,t2.micro,Reserved,2026-07-26 12:50+00:00,running
+R112,ACCT-004,Database,us-east-1,t2.micro,OnDemand,2026/05/17 12:08,stopped
+R113,ACCT-002,AI,ap-south-1,c5.xlarge,Spot,2026/04/25 16:15,stopped
+R114,ACCT-002,Compute,us-east-1,c5.xlarge,Spot,2026-08-05 03:44:00,running
+R115, acct-001 ,Database,us-east-1,t2.micro,Reserved,2026-02-12 08:36:00,running
+R116,ACCT-002,Networking,us-east-1,t2.micro,Spot,2026-06-29 16:29+00:00,stopped
+R117,ACCT-002,AI,ap-south-1,c5.xlarge,OnDemand,2026/04/26 08:39,running
+R118,acct-003,Compute,us-east-1,t2.micro,Spot,2026-09-13 10:14:00,stopped
+R119,ACCT-002,Compute,ap-south-1,c5.xlarge,Spot,2026/07/03 06:29,stopped
+R120,ACCT-004,Storage,us-east-1,m5.large,Spot,2026-06-20 08:53:00,running
+R121,ACCT-002,Compute,us-east-1,c5.xlarge,Reserved,2026-05-27 09:09+00:00,stopped
+R122,acct-003,Storage,us-east-1,m5.large,Spot,2026/04/22 16:43,stopped
+R123, acct-001 ,Compute,us-east-1,t2.micro,Spot,2026-06-19 06:34+00:00,running
+R124,acct-003,Database,ap-south-1,m5.large,Reserved,2026-08-07 03:25+00:00,stopped
+R125,acct-003,Networking,ap-south-1,m5.large,OnDemand,2026/07/04 11:12,stopped
+R126,acct-003,Networking,ap-south-1,c5.xlarge,OnDemand,2026-02-18 01:44+00:00,running
+R127,acct-003,Networking,us-east-1,t2.micro,Reserved,2026-11-05 19:25:00,stopped
+R128, acct-001 ,AI,ap-south-1,c5.xlarge,Reserved,2026-03-20 13:05:00,stopped
+R129,ACCT-002,Database,us-east-1,t2.micro,OnDemand,2026-08-16 09:59:00,running
+R130,acct-003,Database,us-east-1,m5.large,Spot,2026-03-10 05:38+00:00,running
+R131,ACCT-002,Storage,us-east-1,t2.micro,Reserved,2026-09-25 13:17+00:00,stopped
+R132,ACCT-002,Database,ap-south-1,c5.xlarge,OnDemand,2026/01/27 19:06,running
+R133, acct-001 ,Compute,ap-south-1,c5.xlarge,Spot,2026-07-22 07:31:00,running
+R134,ACCT-004,Database,us-east-1,c5.xlarge,Reserved,2026-06-13 04:41+00:00,stopped
+R135, acct-001 ,Networking,us-east-1,c5.xlarge,Reserved,2026-05-14 07:32+00:00,stopped
+R136,acct-003,Compute,ap-south-1,c5.xlarge,Reserved,2026/04/16 09:30,stopped
+R137,ACCT-002,Storage,us-east-1,m5.large,Spot,2026/06/15 20:21,running
+R138,ACCT-004,Database,us-east-1,t2.micro,Reserved,2026-01-25 15:40+00:00,stopped
+R139,ACCT-002,Storage,ap-south-1,c5.xlarge,Reserved,2026-04-29 13:10+00:00,running
+R140,acct-003,AI,us-east-1,t2.micro,Spot,2026/06/25 12:42,stopped
+R141, acct-001 ,Networking,ap-south-1,c5.xlarge,Reserved,2026/03/07 17:31,running
+R142, acct-001 ,Database,us-east-1,c5.xlarge,Reserved,2026-03-31 10:02+00:00,stopped
+R143, acct-001 ,Database,us-east-1,t2.micro,Spot,2026-11-11 22:31+00:00,running
+R144,acct-003,Database,us-east-1,c5.xlarge,Reserved,2026-06-30 12:37+00:00,stopped
+R145,acct-003,AI,us-east-1,t2.micro,OnDemand,2026-07-05 19:35+00:00,running
+R146,ACCT-002,Storage,ap-south-1,t2.micro,Spot,2026/12/04 04:07,stopped
+R147,ACCT-002,AI,ap-south-1,c5.xlarge,Spot,2026/02/14 18:32,running
+R148,acct-003,AI,ap-south-1,c5.xlarge,Spot,2026/11/17 05:39,running
+R149,ACCT-002,Storage,ap-south-1,t2.micro,OnDemand,2026-02-16 12:53+00:00,running
+R150,ACCT-004,Networking,ap-south-1,m5.large,Spot,2026/05/12 13:18,stopped
+R151, acct-001 ,Networking,ap-south-1,c5.xlarge,Reserved,2026-11-11 03:18:00,running
+R152, acct-001 ,Compute,ap-south-1,c5.xlarge,Spot,2026-04-02 22:29+00:00,stopped
+R153,acct-003,AI,ap-south-1,m5.large,Spot,2026-08-05 14:40+00:00,stopped
+R154,ACCT-002,Networking,us-east-1,c5.xlarge,OnDemand,2026-09-30 10:04+00:00,running
+R155, acct-001 ,Database,us-east-1,c5.xlarge,Reserved,2026-05-14 20:38:00,running
+R156,ACCT-002,Compute,us-east-1,c5.xlarge,Spot,2026/05/02 02:47,stopped
+R157, acct-001 ,AI,us-east-1,m5.large,OnDemand,2026-07-10 19:13:00,stopped
+R158,ACCT-002,Database,us-east-1,m5.large,OnDemand,2026-04-01 19:31:00,stopped
+R159,ACCT-002,Storage,ap-south-1,m5.large,Reserved,2026-08-11 07:58:00,stopped
+R160,acct-003,AI,us-east-1,t2.micro,Reserved,2026-06-23 21:23:00,running
+R161,ACCT-002,Storage,us-east-1,c5.xlarge,Spot,2026-04-09 05:13:00,running
+R162,ACCT-004,AI,ap-south-1,m5.large,Spot,2026-11-09 02:21+00:00,running
+R163,ACCT-002,Storage,ap-south-1,t2.micro,Reserved,2026/03/03 08:59,stopped
+R164,ACCT-002,Compute,us-east-1,t2.micro,OnDemand,2026/11/14 19:21,running
+R165, acct-001 ,Compute,ap-south-1,t2.micro,OnDemand,2026/08/06 03:02,stopped
+R166,acct-003,Storage,us-east-1,c5.xlarge,Reserved,2026-09-11 02:29:00,running
+R167,ACCT-002,Storage,us-east-1,c5.xlarge,Spot,2026-08-21 05:22:00,stopped
+R168, acct-001 ,Database,ap-south-1,c5.xlarge,Spot,2026-03-19 09:24+00:00,stopped
+R169,ACCT-002,Storage,ap-south-1,c5.xlarge,OnDemand,2026-06-24 14:21:00,running
+R170,acct-003,Database,us-east-1,c5.xlarge,Spot,2026-03-22 09:26:00,stopped
+R171,acct-003,Storage,us-east-1,c5.xlarge,OnDemand,2026-07-21 07:27+00:00,stopped
+R172,ACCT-004,Storage,us-east-1,m5.large,Spot,2026-06-19 21:04:00,running
+R173,ACCT-004,Storage,us-east-1,t2.micro,Reserved,2026/11/17 17:16,running
+R174,acct-003,Storage,ap-south-1,c5.xlarge,Reserved,2026-12-09 23:09+00:00,running
+R175,ACCT-002,Storage,us-east-1,t2.micro,Spot,2026/03/14 12:17,stopped
+R176,ACCT-004,Storage,ap-south-1,t2.micro,OnDemand,2026/03/08 10:37,running
+R177,ACCT-002,Networking,us-east-1,c5.xlarge,OnDemand,2026-02-15 12:35:00,running
+R178,acct-003,Storage,us-east-1,m5.large,Reserved,2026/06/11 19:16,running
+R179, acct-001 ,Compute,us-east-1,t2.micro,OnDemand,2026-07-30 18:45:00,running
+R180, acct-001 ,Compute,us-east-1,t2.micro,OnDemand,2026/06/06 23:17,stopped
+R181,ACCT-002,Storage,ap-south-1,c5.xlarge,Reserved,2026/08/22 22:30,stopped
+R182, acct-001 ,Compute,us-east-1,c5.xlarge,OnDemand,2026-04-04 23:55+00:00,running
+R183,acct-003,Storage,us-east-1,c5.xlarge,OnDemand,2026-01-01 16:43+00:00,stopped
+R184,ACCT-002,Database,us-east-1,c5.xlarge,Reserved,2026/02/08 16:38,stopped
+R185, acct-001 ,Database,ap-south-1,t2.micro,Reserved,2026-01-23 08:01:00,stopped
+R186,ACCT-004,Storage,us-east-1,c5.xlarge,OnDemand,2026-04-22 15:40+00:00,running
+R187, acct-001 ,Storage,us-east-1,c5.xlarge,Spot,2026/04/02 12:19,stopped
+R188,ACCT-004,Networking,us-east-1,c5.xlarge,Spot,2026-11-10 21:36:00,running
+R189,ACCT-004,Networking,ap-south-1,t2.micro,Reserved,2026/09/20 09:02,stopped
+R190, acct-001 ,Networking,ap-south-1,m5.large,Reserved,2026-04-11 14:52+00:00,running
+R191,ACCT-002,AI,ap-south-1,c5.xlarge,OnDemand,2026-09-18 01:38:00,running
+R192,ACCT-004,Database,ap-south-1,c5.xlarge,Reserved,2026-01-16 18:53+00:00,stopped
+R193, acct-001 ,Storage,ap-south-1,c5.xlarge,Reserved,2026-10-01 02:50+00:00,running
+R194,ACCT-004,Networking,us-east-1,m5.large,Reserved,2026-05-17 21:41:00,stopped
+R195, acct-001 ,Compute,us-east-1,m5.large,OnDemand,2026/10/22 16:09,running
+R196,ACCT-002,Database,ap-south-1,t2.micro,Reserved,2026-09-24 09:25:00,stopped
+R197, acct-001 ,AI,ap-south-1,c5.xlarge,Spot,2026-12-08 21:13+00:00,running
+R198, acct-001 ,Storage,ap-south-1,c5.xlarge,OnDemand,2026-12-12 07:42:00,running
+R199,ACCT-002,AI,ap-south-1,m5.large,Spot,2026/04/23 05:44,running
+R200,ACCT-002,Networking,ap-south-1,t2.micro,OnDemand,2026/12/06 22:31,stopped
+R201,ACCT-002,Storage,us-east-1,c5.xlarge,Spot,2026-09-12 05:12:00,running
+R202,ACCT-004,AI,ap-south-1,m5.large,OnDemand,2026-06-11 00:42:00,stopped
+R203,acct-003,Compute,us-east-1,c5.xlarge,Spot,2026-02-25 23:18:00,stopped
+R204,ACCT-002,Compute,us-east-1,t2.micro,OnDemand,2026-03-10 07:28+00:00,stopped
+R205,acct-003,Storage,us-east-1,c5.xlarge,OnDemand,2026-02-19 07:56:00,stopped
+R206,ACCT-004,AI,us-east-1,m5.large,OnDemand,2026-09-16 13:28:00,running
+R207, acct-001 ,Storage,us-east-1,c5.xlarge,OnDemand,2026-11-13 07:14+00:00,stopped
+R208,ACCT-002,Networking,us-east-1,t2.micro,Reserved,2026-09-16 19:57:00,stopped
+R209,acct-003,AI,us-east-1,t2.micro,OnDemand,2026/04/07 23:44,stopped
+R210, acct-001 ,Networking,us-east-1,m5.large,OnDemand,2026-02-14 13:22:00,running
+R211, acct-001 ,AI,ap-south-1,c5.xlarge,Reserved,2026-05-28 16:10+00:00,stopped
+R212,ACCT-002,Storage,us-east-1,t2.micro,Spot,2026/02/13 07:24,running
+R213,ACCT-002,Compute,ap-south-1,m5.large,Reserved,2026-04-29 05:41:00,stopped
+R214, acct-001 ,Database,us-east-1,m5.large,Spot,2026-07-04 02:48+00:00,stopped
+R215,acct-003,Database,ap-south-1,c5.xlarge,OnDemand,2026/03/18 23:24,stopped
+R216, acct-001 ,AI,ap-south-1,m5.large,Reserved,2026-01-18 08:22:00,running
+R217,acct-003,Compute,ap-south-1,t2.micro,OnDemand,2026-08-15 17:26+00:00,running
+R218,ACCT-002,Database,ap-south-1,m5.large,Reserved,2026-10-22 01:40+00:00,stopped
+R219,ACCT-004,AI,us-east-1,t2.micro,Reserved,2026/04/19 11:13,stopped
+R220,ACCT-004,Compute,ap-south-1,t2.micro,OnDemand,2026-04-04 13:12:00,running
+R221,acct-003,Networking,ap-south-1,m5.large,OnDemand,2026/01/31 01:04,stopped
+R222,acct-003,Storage,ap-south-1,m5.large,Spot,2026-07-21 19:44:00,running
+R223,acct-003,AI,ap-south-1,c5.xlarge,OnDemand,2026-09-12 17:08:00,stopped
+R224,acct-003,Networking,ap-south-1,t2.micro,Spot,2026/11/09 03:03,stopped
+R225,ACCT-002,Networking,us-east-1,c5.xlarge,Spot,2026-12-03 20:49+00:00,running
+R226,ACCT-002,Storage,ap-south-1,t2.micro,Reserved,2026/07/04 00:42,stopped
+R227,ACCT-002,Storage,ap-south-1,c5.xlarge,Reserved,2026/12/06 07:09,stopped
+R228,ACCT-002,Compute,ap-south-1,t2.micro,OnDemand,2026-11-09 18:08+00:00,stopped
+R229, acct-001 ,Networking,ap-south-1,c5.xlarge,OnDemand,2026/07/05 23:05,stopped
+R230,ACCT-002,Storage,ap-south-1,t2.micro,OnDemand,2026/08/22 17:16,stopped
+R231,acct-003,Database,us-east-1,m5.large,Reserved,2026/02/21 19:47,running
+R232,acct-003,AI,us-east-1,c5.xlarge,Reserved,2026-03-25 04:01:00,running
+R233, acct-001 ,Compute,us-east-1,m5.large,Reserved,2026-06-10 15:04+00:00,stopped
+R234,ACCT-004,Database,us-east-1,c5.xlarge,OnDemand,2026-01-04 13:06:00,stopped
+R235,ACCT-002,Storage,ap-south-1,c5.xlarge,OnDemand,2026-01-30 12:10:00,stopped
+R236, acct-001 ,Networking,ap-south-1,c5.xlarge,Reserved,2026-03-02 04:38+00:00,stopped
+R237,acct-003,AI,ap-south-1,t2.micro,OnDemand,2026/12/08 08:30,running
+R238,ACCT-002,Compute,ap-south-1,m5.large,OnDemand,2026-02-15 00:28:00,stopped
+R239,acct-003,Compute,us-east-1,m5.large,Reserved,2026-06-19 02:43:00,running
+R240,ACCT-002,Database,us-east-1,t2.micro,OnDemand,2026/06/27 06:33,running
+R241,ACCT-002,AI,ap-south-1,t2.micro,Reserved,2026-12-13 19:49:00,stopped
+R242, acct-001 ,Compute,us-east-1,c5.xlarge,Reserved,2026-06-28 21:35:00,running
+R243,ACCT-002,Database,us-east-1,t2.micro,Spot,2026-07-19 01:08+00:00,stopped
+R244, acct-001 ,Compute,us-east-1,t2.micro,OnDemand,2026-11-02 04:41:00,stopped
+R245,ACCT-002,Database,us-east-1,m5.large,Spot,2026/11/25 03:48,running
+R246,acct-003,AI,ap-south-1,m5.large,Spot,2026-08-08 19:57:00,stopped
+R247,acct-003,Compute,ap-south-1,t2.micro,Reserved,2026-10-11 15:15:00,stopped
+R248,acct-003,Database,us-east-1,t2.micro,Spot,2026-10-29 08:23:00,stopped
+R249,ACCT-004,AI,us-east-1,c5.xlarge,OnDemand,2026/09/20 19:45,stopped
+R250,acct-003,Compute,ap-south-1,m5.large,Reserved,2026/02/25 03:20,stopped
+R251, acct-001 ,Storage,ap-south-1,m5.large,OnDemand,2026-04-08 10:12:00,running
+R252,ACCT-004,Storage,us-east-1,t2.micro,Reserved,2026-01-11 12:21:00,running
+R253,acct-003,Compute,us-east-1,t2.micro,OnDemand,2026-02-12 00:07:00,running
+R254,ACCT-004,Database,us-east-1,m5.large,Reserved,2026/08/10 20:12,running
+R255, acct-001 ,Storage,us-east-1,c5.xlarge,Reserved,2026-02-01 08:11+00:00,running
+R256,acct-003,AI,ap-south-1,c5.xlarge,OnDemand,2026-07-09 14:48+00:00,running
+R257, acct-001 ,AI,us-east-1,c5.xlarge,Spot,2026-05-29 03:39:00,stopped
+R258,ACCT-004,Networking,us-east-1,m5.large,Reserved,2026/06/13 14:33,running
+R259, acct-001 ,Storage,us-east-1,t2.micro,OnDemand,2026-07-20 07:43+00:00,running
+R260, acct-001 ,Database,ap-south-1,t2.micro,Reserved,2026-07-13 09:18:00,running
+R261,acct-003,Networking,ap-south-1,c5.xlarge,Reserved,2026/11/29 18:08,stopped
+R262,ACCT-002,Database,us-east-1,m5.large,Reserved,2026/07/02 17:02,running
+R263,ACCT-004,Storage,us-east-1,c5.xlarge,Reserved,2026-03-12 13:23+00:00,stopped
+R264, acct-001 ,Compute,ap-south-1,c5.xlarge,Spot,2026-04-19 17:54+00:00,stopped
+R265,acct-003,Networking,us-east-1,t2.micro,OnDemand,2026/11/16 03:07,running
+R266,ACCT-004,AI,us-east-1,m5.large,OnDemand,2026/06/28 04:21,running
+R267,ACCT-002,Database,ap-south-1,t2.micro,Reserved,2026-07-14 08:00+00:00,running
+R268,ACCT-004,AI,us-east-1,c5.xlarge,OnDemand,2026-01-17 05:42+00:00,stopped
+R269, acct-001 ,Compute,us-east-1,c5.xlarge,OnDemand,2026-10-27 16:07+00:00,running
+R270,acct-003,Compute,us-east-1,t2.micro,OnDemand,2026-02-22 18:56:00,stopped
+R271, acct-001 ,Networking,us-east-1,c5.xlarge,OnDemand,2026-02-15 11:27+00:00,running
+R272,acct-003,Networking,us-east-1,t2.micro,Spot,2026-09-16 20:27:00,stopped
+R273,ACCT-002,AI,ap-south-1,c5.xlarge,OnDemand,2026/03/18 02:08,stopped
+R274,ACCT-002,Storage,us-east-1,c5.xlarge,OnDemand,2026-11-15 10:04+00:00,running
+R275,acct-003,Database,us-east-1,t2.micro,OnDemand,2026-02-24 21:56:00,running
+R276, acct-001 ,Storage,us-east-1,c5.xlarge,OnDemand,2026-04-17 14:05+00:00,running
+R277, acct-001 ,Storage,ap-south-1,c5.xlarge,OnDemand,2026/04/09 05:00,running
+R278,ACCT-002,Database,ap-south-1,m5.large,OnDemand,2026-02-10 07:12+00:00,running
+R279,ACCT-004,Compute,us-east-1,c5.xlarge,OnDemand,2026/07/15 11:29,stopped
+R280,ACCT-002,Storage,ap-south-1,c5.xlarge,Reserved,2026/10/22 20:42,stopped
+R281,ACCT-002,Networking,us-east-1,c5.xlarge,OnDemand,2026/03/20 11:54,stopped
+R282,acct-003,Storage,us-east-1,t2.micro,OnDemand,2026/03/09 14:11,stopped
+R283,ACCT-002,Compute,us-east-1,c5.xlarge,Spot,2026-12-01 10:18+00:00,running
+R284,acct-003,AI,ap-south-1,m5.large,OnDemand,2026-10-24 07:07+00:00,running
+R285, acct-001 ,Compute,us-east-1,c5.xlarge,Spot,2026-12-07 21:53:00,stopped
+R286,ACCT-002,Storage,us-east-1,t2.micro,Reserved,2026-09-12 23:36:00,running
+R287, acct-001 ,Database,us-east-1,m5.large,Spot,2026-07-29 02:07+00:00,running
+R288,ACCT-002,Storage,ap-south-1,t2.micro,Reserved,2026-10-25 17:19:00,stopped
+R289, acct-001 ,AI,ap-south-1,m5.large,OnDemand,2026-03-20 00:29:00,running
+R290, acct-001 ,Compute,us-east-1,m5.large,OnDemand,2026-04-09 07:51:00,running
+R291, acct-001 ,Database,ap-south-1,m5.large,Spot,2026-05-01 10:59:00,running
+R292, acct-001 ,Compute,ap-south-1,c5.xlarge,OnDemand,2026/02/09 20:21,running
+R293, acct-001 ,Networking,us-east-1,t2.micro,Spot,2026-02-02 11:26:00,running
+R294, acct-001 ,Storage,ap-south-1,c5.xlarge,Reserved,2026-01-18 15:45+00:00,running
+R295,ACCT-002,Networking,us-east-1,m5.large,Spot,2026/04/14 03:57,running
+R296, acct-001 ,Storage,ap-south-1,m5.large,Spot,2026-02-09 17:00+00:00,running
+R297, acct-001 ,Storage,us-east-1,m5.large,Spot,2026-04-11 00:22+00:00,stopped
+R298,ACCT-004,Storage,ap-south-1,c5.xlarge,Spot,2026-05-09 23:51+00:00,running
+R299,ACCT-004,Networking,ap-south-1,m5.large,OnDemand,2026-09-26 23:37:00,stopped
+R300, acct-001 ,Database,ap-south-1,t2.micro,OnDemand,2026-03-19 12:51:00,running
+R301, acct-001 ,Networking,ap-south-1,t2.micro,OnDemand,2026-04-10 16:44:00,stopped
+R302,ACCT-004,Compute,ap-south-1,t2.micro,OnDemand,2026-03-25 10:25:00,stopped
+R303,ACCT-002,Compute,us-east-1,m5.large,Spot,2026/06/28 15:14,running
+R304,ACCT-004,Database,ap-south-1,t2.micro,OnDemand,2026-08-02 21:51+00:00,stopped
+R305,ACCT-002,AI,ap-south-1,t2.micro,Reserved,2026-07-07 02:29:00,running
+R306,acct-003,Database,ap-south-1,c5.xlarge,Spot,2026-09-04 16:35:00,running
+R307,ACCT-002,AI,us-east-1,m5.large,Spot,2026-07-21 02:05+00:00,stopped
+R308,acct-003,Storage,ap-south-1,c5.xlarge,Reserved,2026/09/26 09:47,stopped
+R309,ACCT-002,AI,ap-south-1,t2.micro,OnDemand,2026-09-12 17:06:00,running
+R310,ACCT-004,Database,us-east-1,t2.micro,Spot,2026/02/28 06:43,stopped
+R311, acct-001 ,Networking,us-east-1,m5.large,Spot,2026-01-02 06:03:00,running
+R312, acct-001 ,Storage,ap-south-1,c5.xlarge,OnDemand,2026/11/26 17:35,stopped
+R313,ACCT-002,AI,us-east-1,c5.xlarge,Reserved,2026-09-15 11:02+00:00,running
+R314, acct-001 ,AI,us-east-1,t2.micro,OnDemand,2026/06/12 04:20,stopped
+R315, acct-001 ,Compute,ap-south-1,m5.large,OnDemand,2026/05/29 20:32,running
+R316, acct-001 ,Storage,ap-south-1,t2.micro,Reserved,2026-10-28 23:42:00,running
+R317,ACCT-002,Database,us-east-1,t2.micro,Reserved,2026-01-10 23:56:00,running
+R318,acct-003,Storage,us-east-1,t2.micro,Reserved,2026-01-04 12:43:00,running
+R319,ACCT-002,Networking,ap-south-1,m5.large,Spot,2026-03-05 11:25+00:00,running
+R320,ACCT-002,Compute,ap-south-1,c5.xlarge,Spot,2026-08-09 05:09+00:00,running
+R321,ACCT-004,AI,ap-south-1,c5.xlarge,OnDemand,2026-01-17 04:01+00:00,stopped
+R322,ACCT-002,Networking,us-east-1,t2.micro,OnDemand,2026-10-02 10:53:00,stopped
+R323,ACCT-002,Storage,us-east-1,m5.large,OnDemand,2026/08/13 06:55,running
+R324,acct-003,Networking,us-east-1,t2.micro,OnDemand,2026-03-19 11:25:00,running
+R325,ACCT-002,Storage,us-east-1,m5.large,Reserved,2026-02-11 11:57:00,running
+R326,acct-003,Database,ap-south-1,t2.micro,OnDemand,2026-08-02 09:51:00,stopped
+R327,acct-003,Database,ap-south-1,t2.micro,Reserved,2026/06/11 16:26,running
+R328,ACCT-004,Storage,us-east-1,t2.micro,OnDemand,2026-06-12 03:52+00:00,running
+R329, acct-001 ,Database,us-east-1,t2.micro,Spot,2026-02-22 09:56:00,running
+R330,ACCT-004,Storage,ap-south-1,c5.xlarge,OnDemand,2026-11-14 15:18:00,running
+R331,ACCT-004,Networking,us-east-1,m5.large,Reserved,2026-09-27 10:01+00:00,running
+R332,ACCT-004,AI,ap-south-1,t2.micro,OnDemand,2026/05/20 13:47,stopped
+R333,ACCT-002,Compute,ap-south-1,c5.xlarge,Reserved,2026/04/10 17:53,running
+R334,acct-003,Networking,us-east-1,m5.large,Spot,2026-04-27 15:23+00:00,running
+R335,acct-003,Storage,ap-south-1,t2.micro,Reserved,2026/06/12 21:26,stopped
+R336,acct-003,AI,us-east-1,m5.large,OnDemand,2026-10-03 07:46+00:00,running
+R337,ACCT-004,Storage,us-east-1,m5.large,OnDemand,2026/02/14 16:01,stopped
+R338,ACCT-002,Networking,ap-south-1,m5.large,Spot,2026/10/01 15:49,running
+R339, acct-001 ,Storage,ap-south-1,c5.xlarge,OnDemand,2026/10/16 08:15,running
+R340,ACCT-004,AI,ap-south-1,m5.large,Reserved,2026-06-12 07:32+00:00,stopped
+R341,ACCT-004,Networking,us-east-1,c5.xlarge,Spot,2026-04-20 18:00:00,running
+R342,acct-003,Storage,us-east-1,m5.large,OnDemand,2026-02-09 05:25+00:00,stopped
+R343,ACCT-004,AI,ap-south-1,c5.xlarge,OnDemand,2026-01-05 09:57+00:00,stopped
+R344, acct-001 ,Storage,ap-south-1,m5.large,Reserved,2026-11-09 05:15:00,running
+R345,ACCT-004,Compute,us-east-1,m5.large,Reserved,2026-05-31 03:36:00,stopped
+R346,ACCT-004,Compute,ap-south-1,c5.xlarge,OnDemand,2026-03-02 04:26+00:00,stopped
+R347,ACCT-004,Storage,ap-south-1,m5.large,Reserved,2026-05-03 07:14:00,running
+R348,ACCT-002,Compute,us-east-1,c5.xlarge,OnDemand,2026-03-20 02:27:00,stopped
+R349,acct-003,Networking,ap-south-1,c5.xlarge,OnDemand,2026-05-16 20:20+00:00,running
+R350, acct-001 ,Networking,ap-south-1,c5.xlarge,Reserved,2026/03/22 09:10,stopped
+R351, acct-001 ,Compute,ap-south-1,m5.large,OnDemand,2026-10-11 01:33:00,running
+R352,acct-003,Compute,us-east-1,t2.micro,OnDemand,2026-01-23 07:05+00:00,stopped
+R353,ACCT-004,AI,ap-south-1,t2.micro,Reserved,2026-10-28 07:44:00,running
+R354, acct-001 ,Database,us-east-1,c5.xlarge,Reserved,2026-11-16 23:56+00:00,stopped
+R355,acct-003,AI,ap-south-1,m5.large,Spot,2026-06-19 21:57:00,stopped
+R356,ACCT-004,Networking,ap-south-1,t2.micro,OnDemand,2026/03/02 00:44,stopped
+R357,ACCT-004,AI,us-east-1,t2.micro,Reserved,2026-10-05 15:04+00:00,running
+R358, acct-001 ,Database,us-east-1,c5.xlarge,Reserved,2026-11-20 20:18+00:00,running
+R359,acct-003,Compute,us-east-1,c5.xlarge,Spot,2026-02-20 06:56+00:00,running
+R360,acct-003,Compute,us-east-1,c5.xlarge,Spot,2026-07-29 02:45+00:00,stopped
+R361, acct-001 ,Database,ap-south-1,m5.large,Spot,2026-06-11 02:34+00:00,stopped
+R362, acct-001 ,Storage,ap-south-1,t2.micro,OnDemand,2026-02-14 04:25+00:00,stopped
+R363,ACCT-002,Compute,us-east-1,c5.xlarge,OnDemand,2026-01-03 16:59+00:00,stopped
+R364,ACCT-004,Database,us-east-1,c5.xlarge,Spot,2026/11/25 14:01,stopped
+R365,acct-003,Storage,ap-south-1,c5.xlarge,Reserved,2026/11/29 10:13,running
+R366,acct-003,Database,us-east-1,c5.xlarge,OnDemand,2026/06/04 17:32,stopped
+R367,ACCT-004,Database,us-east-1,c5.xlarge,Reserved,2026-08-10 09:27+00:00,running
+R368,ACCT-002,Database,us-east-1,m5.large,Reserved,2026-07-28 21:00:00,stopped
+R369,acct-003,Database,ap-south-1,m5.large,Reserved,2026-06-04 13:56:00,stopped
+R370,acct-003,AI,ap-south-1,t2.micro,Reserved,2026/01/10 07:00,stopped
+R371,ACCT-002,Compute,us-east-1,t2.micro,OnDemand,2026-03-07 10:37:00,stopped
+R372,acct-003,AI,us-east-1,t2.micro,Reserved,2026/10/14 05:22,running
+R373,acct-003,Storage,ap-south-1,m5.large,Reserved,2026/08/12 01:12,stopped
+R374,ACCT-004,Storage,us-east-1,m5.large,Reserved,2026-07-04 17:04+00:00,stopped
+R375,ACCT-004,Compute,us-east-1,t2.micro,Spot,2026-08-01 10:55+00:00,running
+R376, acct-001 ,Networking,ap-south-1,t2.micro,Spot,2026-05-29 01:30+00:00,stopped
+R377, acct-001 ,AI,ap-south-1,m5.large,OnDemand,2026/11/05 11:57,stopped
+R378,acct-003,Storage,us-east-1,m5.large,Spot,2026-02-09 01:41:00,stopped
+R379,ACCT-004,AI,ap-south-1,c5.xlarge,OnDemand,2026-05-29 22:31:00,running
+R380,ACCT-002,Storage,us-east-1,c5.xlarge,Reserved,2026-06-13 22:47:00,running
+R381,acct-003,Database,us-east-1,m5.large,Spot,2026-04-06 07:24+00:00,stopped
+R382,acct-003,Compute,us-east-1,c5.xlarge,Spot,2026/09/17 03:57,running
+R383,ACCT-004,Compute,us-east-1,m5.large,Reserved,2026-12-07 08:05:00,running
+R384, acct-001 ,Networking,ap-south-1,m5.large,Spot,2026-08-20 15:48+00:00,stopped
+R385,acct-003,Compute,us-east-1,t2.micro,Reserved,2026/06/03 15:59,running
+R386,ACCT-004,Networking,us-east-1,c5.xlarge,Spot,2026-03-03 19:22:00,stopped
+R387,ACCT-002,Database,us-east-1,c5.xlarge,Reserved,2026/03/12 16:59,running
+R388,acct-003,Networking,ap-south-1,c5.xlarge,OnDemand,2026/06/18 08:35,running
+R389,ACCT-002,Database,us-east-1,t2.micro,OnDemand,2026-07-01 22:39+00:00,running
+R390,acct-003,AI,us-east-1,t2.micro,Reserved,2026-01-18 11:52:00,stopped
+R391,ACCT-004,AI,us-east-1,m5.large,OnDemand,2026-03-17 20:25:00,stopped
+R392,acct-003,Compute,ap-south-1,t2.micro,Spot,2026/03/07 12:54,stopped
+R393,ACCT-002,AI,ap-south-1,m5.large,Reserved,2026-04-03 04:57+00:00,stopped
+R394,acct-003,Networking,us-east-1,m5.large,Spot,2026-05-22 02:21:00,stopped
+R395,ACCT-002,Storage,ap-south-1,m5.large,Reserved,2026/08/11 07:43,stopped
+R396,ACCT-002,Networking,us-east-1,m5.large,OnDemand,2026-11-25 00:00:00,running
+R397, acct-001 ,Database,us-east-1,m5.large,Reserved,2026/11/30 06:37,stopped
+R398,ACCT-002,Database,ap-south-1,t2.micro,Reserved,2026/02/23 13:36,running
+R399,ACCT-004,AI,ap-south-1,m5.large,Spot,2026-05-26 09:35:00,running
