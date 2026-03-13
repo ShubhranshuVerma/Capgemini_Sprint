@@ -1,111 +1,104 @@
 import pandas as pd
 
-
-usage = pd.read_csv("data/cleaned/usage_cleaned.csv")
-inventory = pd.read_csv("data/cleaned/inventory_cleaned.csv")
-tickets = pd.read_csv("data/cleaned/tickets_cleaned.csv")
-incidents = pd.read_csv("data/cleaned/incidents_cleaned.csv")
-pricing = pd.read_csv("data/cleaned/pricing_cleaned.csv")
-sla = pd.read_csv("data/cleaned/sla_cleaned.csv")
-security = pd.read_csv("data/cleaned/security_cleaned.csv")
+df = pd.read_csv("data/cleaned/cleaned_dataset.csv")
 
 
 # 1 Account normalization
 def test_account_uppercase():
-    assert usage["Account"].str.isupper().all()
+    assert df["Account"].str.isupper().all()
 
 
 # 2 Timestamp normalization
 def test_timestamp_parsed():
-    assert pd.to_datetime(usage["TS"], errors="coerce").notnull().all()
+    assert pd.to_datetime(df["TS"], errors="coerce").notnull().all()
 
 
 # 3 Service normalization
 def test_service_format():
-    assert usage["Service"].str[0].str.isupper().all()
+    assert df["Service"].str[0].str.isupper().all()
 
 
 # 4 SKU canonical naming
 def test_sku_uppercase():
-    assert usage["SKU"].str.isupper().all()
+    assert df["SKU"].str.isupper().all()
 
 
-# 5 Usage unit normalization
-def test_usage_seconds_positive():
-    assert (usage["Usage_seconds"] >= 0).all()
+# 5 Usage normalization
+def test_usage_positive():
+    assert (df["Usage"] >= 0).all()
 
 
 # 6 Currency normalization
 def test_cost_numeric():
-    assert usage["Cost_INR"].dtype != object
+    assert df["Cost"].dtype != object
 
 
 # 7 Region normalization
 def test_region_format():
-    assert usage["Region"].str.contains("-").all()
+    assert df["Region"].str.contains("-").all()
 
 
-# 8 Duplicate removal
-def test_no_duplicates():
-    duplicates = usage.duplicated(subset=["Account","TS","SKU"])
-    assert duplicates.sum() == 0
+# 8 Duplicate detection
+def test_duplicate_column():
+    assert "Duplicate_Flag" in df.columns
 
 
 # 9 Spike detection
 def test_spike_column_exists():
-    assert "Spike_Flag" in usage.columns
+    assert "Spike_Flag" in df.columns
 
 
 # 10 Tag normalization
-def test_inventory_service_format():
-    assert inventory["Service"].notnull().all()
+def test_tags_exist():
+    assert df["Tag_Owner"].notnull().any()
 
 
 # 11 Resource ID validation
 def test_resource_id_format():
-    assert inventory["Resource_ID"].str.startswith("R").all()
+    assert df["Resource_ID"].notnull().all()
 
 
 # 12 PII masking
 def test_ticket_masking():
-    assert tickets["Description"].str.contains("[MASKED]").any()
+    assert df["Ticket_Text"].str.contains("MASKED").any()
 
 
 # 13 Incident timestamps
-def test_incident_times():
-    assert pd.to_datetime(incidents["Start_TS"]).notnull().all()
+def test_incident_exists():
+    assert df["Incident_ID"].notnull().any()
 
 
-# 14 Pricing effective date
-def test_pricing_date():
-    assert pd.to_datetime(pricing["Effective_Date"]).notnull().all()
+# 14 Pricing version
+def test_price_version():
+    assert df["Price_Version"].notnull().all()
 
 
 # 15 Currency normalization
 def test_currency_uppercase():
-    assert pricing["Currency"].str.isupper().all()
+    assert df["Currency"].str.isupper().all()
 
 
 # 16 Idle resource detection
 def test_idle_column():
-    assert "Idle" in inventory.columns
+    assert "Idle_Resource" in df.columns
 
 
 # 17 Pricing model normalization
-def test_pricing_model_lowercase():
-    assert inventory["Pricing_Model"].str.islower().all()
+def test_pricing_model():
+    assert df["Pricing_Type"].str.islower().all()
 
 
 # 18 Cost validation
 def test_cost_positive():
-    assert (usage["Cost_INR"] >= 0).all()
+    assert (df["Cost_INR"] >= 0).all()
 
 
-# 19 SLA timestamp normalization
-def test_sla_timestamp():
-    assert pd.to_datetime(sla["Event_TS"], errors="coerce").notnull().all()
+# 19 SLA event
+def test_sla_event():
+    assert df["SLA_Event"].notnull().all()
 
 
-# 20 Log time skew correction
-def test_security_timestamp():
-    assert pd.to_datetime(security["Event_TS"], errors="coerce").notnull().all()
+# 20 Log skew correction
+def test_log_skew():
+    assert df["Log_Skew_Seconds"].notnull().all()
+

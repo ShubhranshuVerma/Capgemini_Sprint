@@ -1,4 +1,0 @@
-SKU,Service,Region,Price_per_unit,Currency,Effective_Date
-VM-STD-4,Compute,ap-south-1,0.4724,INR,2026-01-01
-STORAGE-PREM,Compute,ap-south-1,0.3988,INR,2026-01-01
-DB-GP-2,Compute,ap-south-1,0.3693,INR,2026-01-01

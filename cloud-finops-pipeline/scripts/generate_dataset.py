@@ -1,194 +1,149 @@
 import pandas as pd
-import numpy as np
 import random
-from datetime import datetime, timedelta
-import os
+from datetime import datetime, timedelta, timezone
 
-OUTPUT_PATH = "../data/raw/"
-
-os.makedirs(OUTPUT_PATH, exist_ok=True)
-
-def random_timestamp():
-    base = datetime(2026,1,1)
-    delta = timedelta(minutes=random.randint(0,500000))
-    ts = base + delta
-
-    formats = [
-        ts.strftime("%Y-%m-%d %H:%M:%S"),
-        ts.strftime("%Y/%m/%d %H:%M"),
-        ts.strftime("%Y-%m-%d %H:%M+00:00")
-    ]
-
-    return random.choice(formats)
-
-
-rows = []
+rows = 10000
 
 services = ["Compute","Storage","Database","AI","Networking"]
+regions = ["us-east-1","eu-west-1","ap-south-1"]
+units = ["hours","seconds","minutes"]
+pricing_types = ["on-demand","reserved","spot"]
 
-skus = ["VM-std_4","VM-STD-4","vm_std_4","STORAGE-prem","DB-gp_2"]
+departments = ["Engineering","Finance","Sales","Research"]
+projects = ["Project-A","Project-B","Project-C"]
 
-regions = ["ap-south 1","ap-south-1","AP-SOUTH-1","us-east 1"]
+owners = ["alice","bob","charlie","david",None]
+envs = ["prod","dev","test",None]
 
-units = ["sec","seconds","min","hr"]
+currencies = ["USD","EUR","INR"]
 
-accounts = [" acct-001 ","ACCT-002","acct-003","ACCT-004"]
+# different timezone offsets
+timezones = [
+    timezone.utc,
+    timezone(timedelta(hours=5, minutes=30)),   # India
+    timezone(timedelta(hours=-4)),              # US East
+    timezone(timedelta(hours=1)),               # Europe
+    timezone(timedelta(hours=9))                # Japan
+]
 
-tickets = ["t-77","T-12","t-33","T-45"]
+start = datetime(2026,1,1)
 
-for i in range(800):
+data = []
 
-    usage_val = random.randint(100, 20000)
-    cost_val = round(random.uniform(10, 2000),2)
+for i in range(rows):
 
-    # introduce random cost spikes
-    if random.random() < 0.02:
-        usage_val *= 50
-        cost_val *= 20
+    tz = random.choice(timezones)
 
-    rows.append({
-        "Usage_ID": f"U{6000+i}",
-        "Account": random.choice(accounts),
-        "TS": random_timestamp(),
+    ts = start + timedelta(minutes=random.randint(0,500000))
+
+    ts = ts.replace(tzinfo=tz)
+
+    usage = random.uniform(1,500)
+
+    if random.random() < 0.03:
+        usage *= 20
+
+    cost = usage * random.uniform(0.2,2)
+
+    data.append({
+
+        "Usage_ID": f"U{i}",
+
+        "Account": random.choice([
+            "acct-001",
+            "ACCT-002",
+            " acct-003 "
+        ]),
+
+        "TS": random.choice([
+            ts.isoformat(),                  # timezone timestamp
+            ts.strftime("%Y/%m/%d %H:%M"),   # messy timestamp
+            ts.strftime("%Y-%m-%d %H:%M:%S"),
+            "2026/03/10 25:05"               # invalid
+        ]),
+
         "Service": random.choice(services),
-        "SKU": random.choice(skus),
-        "Usage": usage_val,
+
+        "SKU": random.choice([
+            "vm_std_4",
+            "VM-STD-4",
+            "db_gp_2"
+        ]),
+
+        "Usage": round(usage,2),
+
         "Unit": random.choice(units),
-        "Cost": f"₹ {cost_val}",
-        "Region": random.choice(regions),
-        "Ticket_ID": random.choice(tickets)
-    })
-usage_df = pd.DataFrame(rows)
-usage_df.to_csv(OUTPUT_PATH + "usage_raw.csv", index=False)
 
-inventory = []
+        "Cost": random.choice([
+            f"${round(cost,2)}",
+            f"₹{round(cost,2)}"
+        ]),
 
-for i in range(400):
+        "Currency": random.choice(currencies),
 
-    inventory.append({
-        "Resource_ID": f"R{i}",
-        "Account": random.choice(accounts),
-        "Service": random.choice(services),
-        "Region": random.choice(["ap-south-1","us-east-1"]),
-        "Instance_Type": random.choice(["t2.micro","m5.large","c5.xlarge"]),
-        "Pricing_Model": random.choice(["OnDemand","Reserved","Spot"]),
-        "Created_TS": random_timestamp(),
-        "Status": random.choice(["running","stopped"])
-    })
+        "Region": random.choice([
+            "US East 1",
+            "us-east-1",
+            "ap south 1"
+        ]),
 
-pd.DataFrame(inventory).to_csv(OUTPUT_PATH+"resource_inventory.csv",index=False)
+        "Free_Tier_Flag": random.choice([True,False]),
 
+        "Tag_Owner": random.choice(owners),
 
-pricing = []
+        "Tag_Env": random.choice(envs),
 
-for sku in ["VM-STD-4","STORAGE-PREM","DB-GP-2"]:
+        "Resource_ID": random.choice([
+            f"R{random.randint(1000,9999)}",
+            f"resource-{random.randint(1000,9999)}"
+        ]),
 
-    pricing.append({
-        "SKU": sku,
-        "Service": "Compute",
-        "Region": "ap-south-1",
-        "Price_per_unit": round(random.uniform(0.01,0.5),4),
-        "Currency": "INR",
-        "Effective_Date": "2026-01-01"
-    })
+        "Ticket_ID": f"T-{random.randint(1,200)}",
 
-pd.DataFrame(pricing).to_csv(
-    OUTPUT_PATH+"pricing_catalog.csv",
-    index=False
-)
+        "Ticket_Text": random.choice([
+            f"Customer phone {random.randint(6000000000,9999999999)} reported outage",
+            "User email john@example.com cannot login",
+            "Customer reported latency issue"
+        ]),
 
+        "Incident_ID": random.choice([
+            f"I-{random.randint(1,100)}",
+            None
+        ]),
 
-tickets_meta = []
+        "Price_Version": random.choice(["v1","v2","v3"]),
 
-for i in range(150):
+        "Pricing_Type": random.choice(pricing_types),
 
-    issue = random.choice([
-        "billing problem",
-        "latency issue",
-        "service outage",
-        "storage failure",
-        "network latency"
-    ])
+        "Department": random.choice(departments),
 
-    tickets_meta.append({
-        "Ticket_ID": f"T-{i}",
-        "Severity": random.choice(["low", "medium", "high"]),
-        "Issue_Type": random.choice(["billing", "outage", "performance"]),
-        "Description": f"Customer reported issue 9876543210 with service",
-        "Created_TS": random_timestamp()
-    })
+        "Project": random.choice(projects),
 
-pd.DataFrame(tickets_meta).to_csv(
-    OUTPUT_PATH+"tickets_metadata.csv",
-    index=False
-)
+        "SLA_Event": random.choice([
+            "NONE",
+            "OUTAGE",
+            "DEGRADED"
+        ]),
 
-incidents = []
+        "Log_Skew_Seconds": random.choice([
+            random.randint(0,120),
+            None
+        ]),
 
-for i in range(50):
+        "FX_Rate": random.uniform(70,90),
 
-    start = datetime(2026,1,1) + timedelta(days=random.randint(1,100))
-    duration = random.randint(10,200)
-
-    # occasional major outage
-    if random.random() < 0.1:
-        duration *= 10
-
-    end = start + timedelta(minutes=duration)
-
-    incidents.append({
-        "Incident_ID": f"I{i}",
-        "Service": random.choice(services),
-        "Region": random.choice(["ap-south-1","us-east-1"]),
-        "Start_TS": start,
-        "End_TS": end,
-        "Severity": random.choice(["sev1","sev2","sev3"])
+        "Purchase_Type": random.choice([
+            "reserved",
+            "spot",
+            "on-demand"
+        ])
     })
 
-pd.DataFrame(incidents).to_csv(
-    OUTPUT_PATH+"incidents.csv",
-    index=False
-)
+df = pd.DataFrame(data)
 
-sla = []
+# introduce duplicates
+df = pd.concat([df, df.sample(200)])
 
-for i in range(50):
+df.to_csv("../data/raw/cloud_case_study_dataset.csv", index=False)
 
-    sla.append({
-        "Event_ID": f"S{i}",
-        "Service": random.choice(services),
-        "Region": "ap-south-1",
-        "Event_TS": random_timestamp(),
-        "Event_Type": random.choice(["downtime","degraded"])
-    })
-
-pd.DataFrame(sla).to_csv(
-    OUTPUT_PATH+"sla_events.csv",
-    index=False
-)
-
-
-security = []
-
-for i in range(120):
-
-    severity = random.choice(["low","medium","high"])
-
-    if random.random() < 0.05:
-        severity = "high"
-
-    security.append({
-        "Event_ID": f"E{i}",
-        "Account": random.choice(accounts),
-        "Service": random.choice(services),
-        "Region": random.choice(["ap-south-1","us-east-1"]),
-        "Event_TS": random_timestamp(),
-        "Severity": severity
-    })
-
-pd.DataFrame(security).to_csv(
-    OUTPUT_PATH+"security_events.csv",
-    index=False
-)
-
-print("All datasets generated successfully")
+print("Dataset generated successfully")

@@ -1,11 +1,3 @@
-Region,Service,cost
-ap-south-1,Ai,176743.47
-ap-south-1,Compute,194095.5
-ap-south-1,Database,173822.62
-ap-south-1,Networking,174765.54
-ap-south-1,Storage,209851.33
-us-east-1,Ai,67077.69
-us-east-1,Compute,76538.76
-us-east-1,Database,54479.75
-us-east-1,Networking,59610.13
-us-east-1,Storage,78898.2
+Region,Cost_INR
+ap-south-1,14379792.6
+us-east-1,30979176.31

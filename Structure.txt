@@ -1,77 +1,66 @@
 cloud-finops-pipeline/
-
-│
 ├── data/
-│   │
+│
 │   ├── raw/
-│   │   ├── usage_raw.csv
-│   │   ├── resource_inventory.csv
-│   │   ├── pricing_catalog.csv
-│   │   ├── tickets_metadata.csv
-│   │   ├── incidents.csv
-│   │   ├── sla_events.csv
-│   │   └── security_events.csv
+│   │   └── cloud_case_study_dataset.csv
 │   │
 │   ├── cleaned/
-│   │   ├── usage_cleaned.csv
-│   │   ├── inventory_cleaned.csv
-│   │   ├── tickets_cleaned.csv
-│   │   ├── incidents_cleaned.csv
-│   │   ├── pricing_cleaned.csv
-│   │   ├── sla_cleaned.csv
-│   │   └── security_cleaned.csv
+│   │   └── cleaned_dataset.csv
 │   │
 │   └── transformed/
-│       ├── daily_cost_cube.csv
-│       ├── monthly_cost_cube.csv
+│       ├── anomaly_spikes.csv
+│       ├── benchmark.csv
+│       ├── carbon_estimates.csv
 │       ├── chargeback.csv
+│       ├── churn_signals.csv
+│       ├── cost_forecast.csv
+│       ├── daily_cost_cube.csv
+│       ├── finops_kpis.csv
+│       ├── incident_metrics.csv
+│       ├── monthly_cost_cube.csv
+│       ├── multi_cloud_view.csv
+│       ├── optimization_backlog.csv
 │       ├── reserved_utilization.csv
 │       ├── rightsizing.csv
+│       ├── security_correlation.csv
 │       ├── sre_kpis.csv
-│       ├── incident_metrics.csv
-│       ├── anomaly_spikes.csv
-│       ├── unit_cost_metrics.csv
-│       ├── carbon_estimates.csv
-│       ├── cost_forecast.csv
 │       ├── tag_scorecards.csv
-│       ├── finops_kpis.csv
-│       ├── optimization_backlog.csv
-│       ├── benchmark.csv
 │       ├── ticket_topics.csv
-│       ├── churn_signals.csv
-│       ├── unit_economics.csv
-│       ├── multi_cloud_view.csv
-│       └── security_correlation.csv
-│
+│       ├── unit_cost_metrics.csv
+│       └── unit_economics.csv
 │
 ├── scripts/
-│   │
-│   ├── generate_datasets.py
-│   │
+│
+│   ├── generate_case_study_dataset.py
 │   ├── run_cleaning_pipeline.py
-│   │
 │   └── run_transformation_pipeline.py
 │
-├── tests/
-│   ├── test_cleaning_rules.py
-│   ├── test_transformation_rules.py
-│   ├── test_data_generation.py
-│   ├── test_anomaly_detection.py
-│   └── test_analytics.py
-├──dashboards/
-│   │
+├── dashboards/
 │   ├── analytics_dashboard.py
 │   │
 │   └── output/
-│       ├── cost_trend.png
-│       ├── monthly_service_cost.png
+│       ├── carbon_region.png
 │       ├── chargeback.png
 │       ├── cost_anomalies.png
-│       ├── carbon_region.png
-│       ├── unit_cost.png
+│       ├── cost_forecast.png
+│       ├── cost_trend.png
+│       ├── monthly_service_cost.png
 │       ├── mttr_metrics.png
-│       ├── ticket_topics.png
 │       ├── security_events.png
-│       └── cost_forecast.png
+│       ├── ticket_topics.png
+│       └── unit_cost.png
 │
-└── README.md
+├── tests/
+│   ├── test_data_generation.py
+│   ├── test_cleaning_pipeline.py
+│   ├── test_transformation_pipeline.py
+│   ├── test_anomaly_detection.py
+│   └── test_analytics.py
+│
+├── requirements.txt
+│
+├── README.md
+│
+├── Jenkinsfile
+│
+└── pytest_report.html   (generated after tests)

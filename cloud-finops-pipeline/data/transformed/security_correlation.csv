@@ -1,4 +1,11 @@
-Severity,event_count
-high,40
-low,41
-medium,39
+Region,Service,Security_Event_Count
+ap-south-1,Ai,113
+ap-south-1,Compute,105
+ap-south-1,Database,97
+ap-south-1,Networking,129
+ap-south-1,Storage,116
+us-east-1,Ai,246
+us-east-1,Compute,235
+us-east-1,Database,209
+us-east-1,Networking,235
+us-east-1,Storage,210

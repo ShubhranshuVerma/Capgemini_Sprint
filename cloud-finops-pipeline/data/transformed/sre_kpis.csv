@@ -1,6 +1,6 @@
-Service,sla_events
-AI,13
-Compute,8
-Database,7
-Networking,12
-Storage,10
+Service,DEGRADED,NONE,OUTAGE
+Ai,184,162,175
+Compute,173,163,167
+Database,155,148,151
+Networking,176,183,188
+Storage,160,175,166

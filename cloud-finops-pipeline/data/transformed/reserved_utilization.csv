@@ -1,4 +1,4 @@
-Pricing_Model,count
-ondemand,127
-reserved,132
-spot,141
+Purchase_Type,count
+on-demand,871
+reserved,850
+spot,805

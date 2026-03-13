@@ -1,4 +1,6 @@
-Metric,Value
-Total_Cost,1265882.9899999998
-Average_Cost,1582.3537374999996
-Top_Service,Storage
+Service,Cost_INR
+Ai,10208560.84
+Compute,9937499.76
+Database,6454639.92
+Networking,9182759.05
+Storage,9575509.34
