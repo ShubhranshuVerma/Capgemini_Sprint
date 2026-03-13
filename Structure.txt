@@ -1,20 +1,77 @@
 cloud-finops-pipeline/
+
 │
 ├── data/
+│   │
 │   ├── raw/
+│   │   ├── usage_raw.csv
+│   │   ├── resource_inventory.csv
+│   │   ├── pricing_catalog.csv
+│   │   ├── tickets_metadata.csv
+│   │   ├── incidents.csv
+│   │   ├── sla_events.csv
+│   │   └── security_events.csv
+│   │
 │   ├── cleaned/
+│   │   ├── usage_cleaned.csv
+│   │   ├── inventory_cleaned.csv
+│   │   ├── tickets_cleaned.csv
+│   │   ├── incidents_cleaned.csv
+│   │   ├── pricing_cleaned.csv
+│   │   ├── sla_cleaned.csv
+│   │   └── security_cleaned.csv
+│   │
 │   └── transformed/
+│       ├── daily_cost_cube.csv
+│       ├── monthly_cost_cube.csv
+│       ├── chargeback.csv
+│       ├── reserved_utilization.csv
+│       ├── rightsizing.csv
+│       ├── sre_kpis.csv
+│       ├── incident_metrics.csv
+│       ├── anomaly_spikes.csv
+│       ├── unit_cost_metrics.csv
+│       ├── carbon_estimates.csv
+│       ├── cost_forecast.csv
+│       ├── tag_scorecards.csv
+│       ├── finops_kpis.csv
+│       ├── optimization_backlog.csv
+│       ├── benchmark.csv
+│       ├── ticket_topics.csv
+│       ├── churn_signals.csv
+│       ├── unit_economics.csv
+│       ├── multi_cloud_view.csv
+│       └── security_correlation.csv
+│
 │
 ├── scripts/
-│   ├── generate_dataset.py
-│   ├── cleaning_pipeline.py
-│   ├── transformations.py
-│   └── analytics_metrics.py
+│   │
+│   ├── generate_datasets.py
+│   │
+│   ├── run_cleaning_pipeline.py
+│   │
+│   └── run_transformation_pipeline.py
 │
-├── dashboards/
-│   └── plots.py
-│
-├── notebooks/
-│   └── exploration.ipynb
+├── tests/
+│   ├── test_cleaning_rules.py
+│   ├── test_transformation_rules.py
+│   ├── test_data_generation.py
+│   ├── test_anomaly_detection.py
+│   └── test_analytics.py
+├──dashboards/
+│   │
+│   ├── analytics_dashboard.py
+│   │
+│   └── output/
+│       ├── cost_trend.png
+│       ├── monthly_service_cost.png
+│       ├── chargeback.png
+│       ├── cost_anomalies.png
+│       ├── carbon_region.png
+│       ├── unit_cost.png
+│       ├── mttr_metrics.png
+│       ├── ticket_topics.png
+│       ├── security_events.png
+│       └── cost_forecast.png
 │
 └── README.md
