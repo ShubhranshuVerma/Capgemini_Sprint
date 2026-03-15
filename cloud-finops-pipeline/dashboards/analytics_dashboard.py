@@ -4,9 +4,6 @@ import seaborn as sns
 import os
 
 OUTPUT = "./output/"
-os.makedirs(OUTPUT, exist_ok=True)
-
-sns.set(style="whitegrid")
 
 daily = pd.read_csv("../data/transformed/daily_cost_cube.csv")
 monthly = pd.read_csv("../data/transformed/monthly_cost_cube.csv")

@@ -31,6 +31,8 @@ currencies = ["USD","EUR","INR"]
 
 severity_levels = ["LOW","MEDIUM","HIGH",None]
 
+fx_rates = {"USD": 83,"EUR": 90,"INR": 1}
+
 # timezone offsets
 timezones = [
     timezone.utc,
@@ -58,6 +60,8 @@ for i in range(rows):
         usage *= 20
 
     cost = usage * random.uniform(0.2,2)
+
+    currency = random.choice(currencies)
 
     data.append({
 
@@ -100,7 +104,7 @@ for i in range(rows):
             f"{round(cost,2)}"
         ]),
 
-        "Currency": random.choice(currencies),
+        "Currency": currency,
 
         "Region": random.choice(regions),
 
@@ -152,7 +156,7 @@ for i in range(rows):
             None
         ]),
 
-        "FX_Rate": random.uniform(70,90)
+        "FX_Rate": fx_rates[currency]
     })
 
 df = pd.DataFrame(data)
